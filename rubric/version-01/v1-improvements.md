@@ -1,9 +1,9 @@
 # v1 Improvements — tuning notes for the next revision
 
-Running list of changes agreed while tuning v01 with the team. Items here are
-**pending** — applied to the mds/graphics in batches, then re-rendered.
+Running list of changes agreed while tuning v01 with the team. Items are applied to the
+mds/graphics in batches, then re-rendered — status marked per item.
 
-## 1. Team pod: drop the dedicated demo screen (Asitha, 14 Jul)
+## 1. Team pod: drop the dedicated demo screen (Asitha, 14 Jul) — ✅ APPLIED 14 Jul
 
 Teams don't need a separate demo screen at the pod — **showing the run on one
 laptop screen is enough**. The bar stays the same: any judge, any lap, "run it
@@ -11,7 +11,7 @@ now" should be a 30-second ask. Update `team-area` graphic (remove the DEMO
 SCREEN element, reposition the callout to a laptop) and the pod checklist
 ("demo screen live" → "demo laptop ready").
 
-## 2. L2 "The Customer" — clarify what it actually measures (discussion, 14 Jul)
+## 2. L2 "The Customer" — clarify what it actually measures (discussion, 14 Jul) — ✅ APPLIED 14 Jul (renamed "The Offering")
 
 Every team *has* a customer by construction (they're project teams) — so the axis
 must not read as "do you have a customer?". What it measures is **offering
@@ -20,7 +20,7 @@ not a hackathon demo. Candidate rename: **"The Offering"**. Scored substance
 stays: named user + workflow it lands in, cost-to-run vs value-per-run (unit
 economics), honest gap list, credible path past pilot.
 
-## 3. L2 "The Stress Test" — judge guidance on edge-case probing (discussion, 14 Jul)
+## 3. L2 "The Stress Test" — judge guidance on edge-case probing (discussion, 14 Jul) — ✅ APPLIED 14 Jul
 
 Two layers, both belong to the axis:
 

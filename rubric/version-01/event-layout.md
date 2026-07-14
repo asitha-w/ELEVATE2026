@@ -30,11 +30,11 @@ crews within a floor with a shared calibration huddle at the end).
 
 ## Team pod (`graphics/team-area.png`)
 
-One table = one team's stage. Layout: 5–6 seats around a work table, demo screen
-at the walkway end, **name plate facing the judges' walkway**, power strip, sodas
-& water within reach.
+One table = one team's stage. Layout: 5–6 seats around a work table; **one laptop serves as the demo
+screen** (no projector or extra monitor needed); **name plate facing the judges'
+walkway**; power strip; sodas & water within reach.
 
-Pod checklist (printed on the graphic): plate visible ☐ · demo screen live ☐ ·
+Pod checklist (printed on the graphic): plate visible ☐ · demo laptop ready ☐ ·
 gate on screen ☐ · before/after number written down ☐ · power ☐.
 
 The 10-minute visit, in order (what teams should be ready for): 1) What's the
