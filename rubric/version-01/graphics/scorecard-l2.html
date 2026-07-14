@@ -1,0 +1,102 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0}
+  body{background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:40px 90px 22px}
+  .top{display:flex;justify-content:space-between;align-items:flex-end}
+  .kicker{color:#7a4fc0;font-size:15px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  .kicker::before{content:"✦ ";letter-spacing:0}
+  h1{font-size:42px;font-weight:800;letter-spacing:-.01em;margin-top:10px}
+  h1 .em{color:#7a4fc0}
+  .who{color:#6d6779;font-size:17.5px;text-align:right;line-height:1.45}
+  .who b{color:#241f2d}
+  .idrow{display:flex;gap:12px;margin-top:18px;align-items:center}
+  .idbox{border:1.5px solid #d9d4e4;border-radius:10px;padding:10px 16px;color:#6d6779;font-size:16px}
+  .idbox .line{display:inline-block;border-bottom:1.5px solid #9a92ab;width:140px;margin-left:8px}
+  .fresh{margin-left:auto;color:#4a4453;font-size:15.5px;border:2px solid #241f2d;border-radius:10px;padding:10px 16px}
+  .fresh b{color:#241f2d}
+  .grid{margin-top:18px;border:2px solid #241f2d;border-radius:14px;overflow:hidden;flex:1;min-height:0;
+        display:grid;grid-template-columns:64px 350px 118px 1fr 1fr 1fr;grid-template-rows:auto repeat(4,1fr)}
+  .hd{background:#241f2d;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center}
+  .hd.n{justify-content:center}
+  .snum{border-bottom:1.5px solid #d9d4e4;display:flex;align-items:center;justify-content:center}
+  .snum span{width:38px;height:38px;border-radius:50%;background:#7a4fc0;color:#fff;font-size:19px;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .axis{border-bottom:1.5px solid #d9d4e4;padding:12px 18px 12px 4px;display:flex;flex-direction:column;justify-content:center}
+  .axis .t{font-size:22px;font-weight:800}
+  .axis .q{font-size:15px;color:#6d6779;margin-top:4px;line-height:1.3;font-style:italic}
+  .score{border-bottom:1.5px solid #d9d4e4;display:flex;align-items:center;justify-content:center;gap:6px}
+  .dot{width:14px;height:14px;border-radius:50%;border:2px solid #9a92ab}
+  .cell{border-bottom:1.5px solid #d9d4e4;border-left:1.5px solid #eceaf2;padding:12px 18px;display:flex;flex-direction:column;justify-content:center}
+  .cell .d{font-size:15px;color:#4a4453;line-height:1.42}
+  .cell .d b{color:#241f2d}
+  .nb{border-bottom:none!important}
+  .foot{display:flex;gap:16px;margin-top:14px;align-items:stretch}
+  .tot{border:2px solid #7a4fc0;border-radius:12px;padding:13px 24px;font-size:19px;font-weight:800;color:#7a4fc0;display:flex;align-items:center}
+  .qa{flex:1;border:1.5px solid #d9d4e4;border-radius:12px;padding:12px 20px}
+  .qa .h{font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#7a4fc0;margin-bottom:5px}
+  .qa p{color:#4a4453;font-size:14.5px;line-height:1.5}
+  .delib{border:1.5px solid #d9d4e4;border-radius:12px;padding:12px 20px;max-width:430px}
+  .delib .h{font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#7a4fc0;margin-bottom:5px}
+  .delib p{color:#4a4453;font-size:14.5px;line-height:1.5}
+  .delib b{color:#241f2d}
+</style></head><body>
+  <div class="top">
+    <div>
+      <div class="kicker">Elevate 2026 · Level 2 · pitch round</div>
+      <h1>Pitch Scorecard — <span class="em">prove the offering</span></h1>
+    </div>
+    <div class="who">Full panel · every judge sees all 8 finalists · 5 min + 2 Q&amp;A<br><b>Winners ship to the customer as a real offering.</b></div>
+  </div>
+
+  <div class="idrow">
+    <div class="idbox">Team<span class="line"></span></div>
+    <div class="idbox">Customer<span class="line" style="width:120px"></span></div>
+    <div class="idbox">Surface<span class="line" style="width:100px"></span></div>
+    <div class="fresh"><b>Fresh scores.</b> Floor scores feed the five surface awards only — they do not carry into this round.</div>
+  </div>
+
+  <div class="grid">
+    <div class="hd"></div><div class="hd">Step</div><div class="hd n">Score</div>
+    <div class="hd">0–1 · a claim</div><div class="hd">2–3 · a demonstration</div><div class="hd">4–5 · a measurement</div>
+
+    <div class="snum"><span>1</span></div>
+    <div class="axis"><div class="t">The Number</div><div class="q">One honest before/after on the declared surface</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Vibes; self-reported speedup with no measurement</div></div>
+    <div class="cell"><div class="d">A real number with a rough baseline; honest about what it misses</div></div>
+    <div class="cell"><div class="d"><b>Clean before/after on the real project</b>; the method survives Q&amp;A</div></div>
+
+    <div class="snum"><span>2</span></div>
+    <div class="axis"><div class="t">The Customer</div><div class="q">Who uses this on Monday, and what does it cost to run?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">A demo with no owner, no user, no cost story</div></div>
+    <div class="cell"><div class="d">Named user &amp; workflow; rough cost-to-run; honest gap list</div></div>
+    <div class="cell"><div class="d">Customer + user + <b>unit economics</b> + credible path past pilot</div></div>
+
+    <div class="snum"><span>3</span></div>
+    <div class="axis"><div class="t">The Stress Test</div><div class="q">Break it on purpose — does the gate hold?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">No failure shown, or the gate is a confirm-click</div></div>
+    <div class="cell"><div class="d">Failure demonstrated; human catches it, recovery is manual</div></div>
+    <div class="cell"><div class="d">Human rejects/edits, <b>agent incorporates it</b>; team states oversight numbers</div></div>
+
+    <div class="snum nb"><span>4</span></div>
+    <div class="axis nb"><div class="t">Beyond the Demo</div><div class="q">Does this change how the project works?</div></div>
+    <div class="score nb"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell nb"><div class="d">A bolt-on tool beside the real workflow</div></div>
+    <div class="cell nb"><div class="d">Workflow actually changed; team can say what they stopped doing</div></div>
+    <div class="cell nb"><div class="d">Redesigned around the agent + <b>repeatable on other 99x projects</b></div></div>
+  </div>
+
+  <div class="foot">
+    <div class="tot">Total / 20</div>
+    <div class="qa"><div class="h">Q&amp;A prompts</div>
+      <p>Why does this need to be an agent? · What does one run cost, and what is one run worth? · What did the floor crew challenge, and what changed? · What breaks first at 10× usage? · If the customer says yes tomorrow, what must you build first?</p>
+    </div>
+    <div class="delib"><div class="h">Deliberation</div>
+      <p>Sum → provisional rank of 8 · ties break on <b>The Stress Test</b> · pick ~3 winners · list <b>every</b> entry worth offering to a customer.</p>
+    </div>
+  </div>
+</body></html>

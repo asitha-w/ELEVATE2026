@@ -1,0 +1,67 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0;
+       background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:44px 120px 30px}
+  .card{flex:1;border:4px solid #7a4fc0;border-radius:22px;display:flex;flex-direction:column;overflow:hidden;min-height:0}
+  .band{background:#7a4fc0;color:#fff;padding:14px 36px;display:flex;align-items:center;justify-content:space-between}
+  .band .l{font-size:17px;font-weight:800;letter-spacing:.3em;text-transform:uppercase}
+  .band .l::before{content:"✦ ";letter-spacing:0}
+  .band .r{font-size:15px;font-weight:700;letter-spacing:.1em}
+  .name{padding:34px 36px 6px}
+  .name .lab{font-size:14px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#7a4fc0}
+  .name .line{border-bottom:3px solid #241f2d;height:190px;display:flex;align-items:flex-end;padding-bottom:6px;
+              color:#c9c2d8;font-size:26px;font-style:italic}
+  .row2{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;padding:26px 36px 4px}
+  .fld .lab{font-size:13px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#7a4fc0}
+  .fld .line{border-bottom:2.5px solid #241f2d;height:110px;display:flex;align-items:flex-end;padding-bottom:4px;color:#c9c2d8;font-size:18px;font-style:italic}
+  .row3{display:grid;grid-template-columns:1fr 1fr;gap:36px;padding:28px 36px 6px;align-items:start}
+  .opts{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+  .opt{font-size:20px;font-weight:700;padding:9px 20px;border-radius:999px;border:2.5px solid #9a92ab;color:#4a4453}
+  .chip{font-size:20px;font-weight:800;padding:12px 26px;border-radius:999px;border:3px solid}
+  .c1{color:#4f7d2c;border-color:#4f7d2c}.c2{color:#1f8a7d;border-color:#1f8a7d}.c3{color:#a8811c;border-color:#a8811c}
+  .c4{color:#c04f7c;border-color:#c04f7c}.c5{color:#2f6fb8;border-color:#2f6fb8}
+  .hint{font-size:13.5px;color:#8d86a0;margin-top:6px;font-style:italic}
+  .foot{margin-top:auto;background:#f6f3fb;border-top:2px solid #e3dcf2;padding:14px 36px;display:flex;align-items:center;gap:28px}
+  .foot .fl{font-size:20px;font-weight:800;color:#7a4fc0;display:flex;align-items:baseline;gap:10px}
+  .foot .fl .bl{display:inline-block;border-bottom:2.5px solid #241f2d;width:70px}
+  .foot .msg{margin-left:auto;font-size:14.5px;color:#6d6779;max-width:760px;line-height:1.35}
+  .foot .msg b{color:#241f2d}
+  .below{padding-top:14px;text-align:center;color:#8d86a0;font-size:14px}
+</style></head><body>
+  <div class="card">
+    <div class="band">
+      <div class="l">Elevate 2026</div>
+      <div class="r">Agents deliver. You decide.</div>
+    </div>
+    <div class="name">
+      <div class="lab">Team</div>
+      <div class="line">write it big — readable from the walkway</div>
+    </div>
+    <div class="row2">
+      <div class="fld"><div class="lab">Project &amp; customer</div><div class="line">the real project this elevates</div></div>
+      <div class="fld"><div class="lab">Lifecycle stage the agent owns</div><div class="line">discovery / construction / operation / adoption</div></div>
+    </div>
+    <div class="row3">
+      <div>
+        <div class="fld"><div class="lab">Surfaces declared — circle 1 or 2</div></div>
+        <div class="opts">
+          <span class="chip c1">Pace</span><span class="chip c2">Quality</span><span class="chip c3">Value</span>
+          <span class="chip c4">Partnership</span><span class="chip c5">Happiness</span>
+        </div>
+        <div class="hint">you are scored on the circled surface(s) only</div>
+      </div>
+      <div>
+        <div class="fld"><div class="lab">The pain we're elevating — one line</div><div class="line" style="height:150px"></div></div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="fl">Floor <span class="bl"></span></div>
+      <div class="fl">Table <span class="bl"></span></div>
+      <div class="msg"><b>Judges read this plate to ID your team.</b> Keep it facing the walkway — pain, mapping and proof live at this table.</div>
+    </div>
+  </div>
+  <div class="below">Print A4 landscape · fold or stand in the tent holder · one per team</div>
+</body></html>

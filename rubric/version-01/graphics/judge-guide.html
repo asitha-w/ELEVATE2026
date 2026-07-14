@@ -1,0 +1,88 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0}
+  body{background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:48px 90px 26px}
+  .kicker{color:#7a4fc0;font-size:17px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  .kicker::before{content:"✦ ";letter-spacing:0}
+  h1{font-size:54px;font-weight:800;letter-spacing:-.01em;margin-top:14px}
+  h1 .em{color:#7a4fc0}
+  .sub{color:#6d6779;font-size:23px;margin-top:10px}
+  .principles{display:flex;gap:16px;margin-top:26px}
+  .pr{flex:1;border:2px solid #241f2d;border-radius:12px;padding:14px 20px;background:#fff}
+  .pr .t{font-size:18px;font-weight:700}
+  .pr .d{font-size:15px;color:#6d6779;margin-top:4px;line-height:1.35}
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:30px;flex:1;min-height:0;position:relative}
+  .step{border:2px solid #d9d4e4;border-radius:14px;background:#fff;padding:22px 24px;margin-right:34px;position:relative;display:flex;flex-direction:column}
+  .step:last-child{margin-right:0}
+  .step::after{content:"→";position:absolute;right:-29px;top:44%;font-size:30px;color:#7a4fc0;font-weight:700}
+  .step:last-child::after{content:""}
+  .step .num{width:46px;height:46px;border-radius:50%;background:#7a4fc0;color:#fff;font-size:23px;font-weight:800;
+             display:flex;align-items:center;justify-content:center}
+  .step .when{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#7a4fc0;margin-top:14px}
+  .step h2{font-size:24px;font-weight:800;margin-top:6px;line-height:1.15}
+  .step p{font-size:16.5px;color:#4a4453;line-height:1.5;margin-top:10px}
+  .step p b{color:#241f2d}
+  .step .tail{margin-top:auto;padding-top:12px;font-size:14.5px;color:#6d6779;border-top:1.5px dashed #d9d4e4;line-height:1.4}
+  .s3{border-color:#7a4fc0;box-shadow:0 0 0 2px #ede6f9 inset}
+  .foot{display:flex;gap:14px;margin-top:20px;align-items:center}
+  .foot .lab{font-size:14px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#6d6779}
+  .chip{font-size:15.5px;font-weight:700;padding:7px 18px;border-radius:999px;background:#fff;border:2px solid}
+  .c1{color:#4f7d2c;border-color:#4f7d2c}.c2{color:#1f8a7d;border-color:#1f8a7d}.c3{color:#a8811c;border-color:#a8811c}
+  .c4{color:#c04f7c;border-color:#c04f7c}.c5{color:#2f6fb8;border-color:#2f6fb8}
+  .foot .right{margin-left:auto;font-size:16px;color:#6d6779}
+  .foot .right b{color:#241f2d}
+</style></head><body>
+  <div class="kicker">Elevate 2026 · Judge's guide</div>
+  <h1>Five steps from the floor <span class="em">to the podium</span>.</h1>
+  <div class="sub">Score the elevation, not the agent — a solution is measured by its effectiveness on the project, never by its complexity.</div>
+
+  <div class="principles">
+    <div class="pr"><div class="t">Effectiveness over complexity</div><div class="d">Two teams moved equally? The simpler one wins.</div></div>
+    <div class="pr"><div class="t">Evidence over claims</div><div class="d">Builders believed +20%, measured −19% (METR). Shown beats told.</div></div>
+    <div class="pr"><div class="t">Appropriate autonomy</div><div class="d">Human as approver — "no human anywhere" is not a top score.</div></div>
+    <div class="pr"><div class="t">A real gate, not theater</div><div class="d">Shows why · reject/edit incorporated · at the consequential action.</div></div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div><div class="when">5:00 PM · together</div>
+      <h2>Brief &amp; calibrate</h2>
+      <p>Read the anchors board. Agree what a <b>0, 3 and 5</b> look like on each step of the card. Split into <b>2 crews — one per floor</b>.</p>
+      <div class="tail">Same rubric all evening — teams have had it since registration.</div>
+    </div>
+    <div class="step">
+      <div class="num">2</div><div class="when">5–7:30 PM · your floor</div>
+      <h2>Mentor laps</h2>
+      <p>Visit tables, unblock, challenge. <b>No scores yet</b> — teams are meant to iterate on what you say. Watch who iterates.</p>
+      <div class="tail">Progression is signal: a team that moved hard since kickoff is showing the behavior we reward.</div>
+    </div>
+    <div class="step s3">
+      <div class="num">3</div><div class="when">~7:30 PM · scoring lap</div>
+      <h2>Score the floor card</h2>
+      <p>Same visit everywhere: <b>~10 min, five checks in order</b> — the pain · the mapping · the agent · the gate · the proof. Score before the next table, no table-talk.</p>
+      <div class="tail">First: is the pain point real? Is it mapped to the right surface? Only then the details.</div>
+    </div>
+    <div class="step">
+      <div class="num">4</div><div class="when">~8:00 PM · floor closes</div>
+      <h2>Rank &amp; advance</h2>
+      <p><b>Rank within your floor — never across.</b> Top 4 per floor advance: 8 finalists. Hand each 2–3 written notes worth fixing before the pitch.</p>
+      <div class="tail">Floor scores are banked for the five surface awards — every team stays in play.</div>
+    </div>
+    <div class="step">
+      <div class="num">5</div><div class="when">~8:15 PM · cafe stage</div>
+      <h2>Pitch &amp; pick</h2>
+      <p>All judges see all 8. <b>Fresh scores</b> on the pitch card. Ties break on Trustworthy Autonomy. Pick <b>~3 winners</b> — and list every entry ready to offer a customer.</p>
+      <div class="tail">Winners go to the 99x expert panel, then to the customer as a real offering.</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="lab">The five surfaces</div>
+    <span class="chip c1">Pace</span><span class="chip c2">Quality</span><span class="chip c3">Value</span>
+    <span class="chip c4">Partnership</span><span class="chip c5">Happiness</span>
+    <div class="right">Qualifying bar to advance: <b>genuinely agentic · ran on the real project · surface declared</b></div>
+  </div>
+</body></html>

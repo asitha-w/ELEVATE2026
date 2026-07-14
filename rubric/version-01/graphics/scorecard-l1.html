@@ -1,0 +1,105 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0}
+  body{background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:40px 90px 22px}
+  .top{display:flex;justify-content:space-between;align-items:flex-end}
+  .kicker{color:#7a4fc0;font-size:15px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  .kicker::before{content:"✦ ";letter-spacing:0}
+  h1{font-size:42px;font-weight:800;letter-spacing:-.01em;margin-top:10px}
+  h1 .em{color:#7a4fc0}
+  .who{color:#6d6779;font-size:17.5px;text-align:right;line-height:1.45}
+  .who b{color:#241f2d}
+  .idrow{display:flex;gap:12px;margin-top:18px;align-items:center}
+  .idbox{border:1.5px solid #d9d4e4;border-radius:10px;padding:10px 16px;color:#6d6779;font-size:16px}
+  .idbox .line{display:inline-block;border-bottom:1.5px solid #9a92ab;width:150px;margin-left:8px}
+  .chip{font-size:14px;font-weight:700;padding:5px 13px;border-radius:999px;border:2px solid}
+  .c1{color:#4f7d2c;border-color:#4f7d2c}.c2{color:#1f8a7d;border-color:#1f8a7d}.c3{color:#a8811c;border-color:#a8811c}
+  .c4{color:#c04f7c;border-color:#c04f7c}.c5{color:#2f6fb8;border-color:#2f6fb8}
+  .qual{margin-left:auto;color:#4a4453;font-size:15.5px;border:2px solid #241f2d;border-radius:10px;padding:10px 16px}
+  .qual b{color:#241f2d}
+  .grid{margin-top:18px;border:2px solid #241f2d;border-radius:14px;overflow:hidden;flex:1;min-height:0;
+        display:grid;grid-template-columns:64px 330px 118px 1fr 1fr 1fr;grid-template-rows:auto repeat(5,1fr)}
+  .hd{background:#241f2d;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center}
+  .hd.n{justify-content:center}
+  .snum{border-bottom:1.5px solid #d9d4e4;display:flex;align-items:center;justify-content:center}
+  .snum span{width:38px;height:38px;border-radius:50%;background:#7a4fc0;color:#fff;font-size:19px;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .axis{border-bottom:1.5px solid #d9d4e4;padding:12px 18px 12px 4px;display:flex;flex-direction:column;justify-content:center}
+  .axis .t{font-size:21px;font-weight:800}
+  .axis .q{font-size:14.5px;color:#6d6779;margin-top:3px;line-height:1.3;font-style:italic}
+  .score{border-bottom:1.5px solid #d9d4e4;display:flex;align-items:center;justify-content:center;gap:6px}
+  .dot{width:14px;height:14px;border-radius:50%;border:2px solid #9a92ab}
+  .cell{border-bottom:1.5px solid #d9d4e4;border-left:1.5px solid #eceaf2;padding:12px 18px;display:flex;flex-direction:column;justify-content:center}
+  .cell .d{font-size:14.5px;color:#4a4453;line-height:1.4}
+  .cell .d b{color:#241f2d}
+  .nb{border-bottom:none!important}
+  .foot{display:flex;gap:16px;margin-top:14px;align-items:center}
+  .tot{border:2px solid #7a4fc0;border-radius:12px;padding:13px 24px;font-size:19px;font-weight:800;color:#7a4fc0}
+  .note{flex:1;border:1.5px solid #d9d4e4;border-radius:12px;padding:13px 20px;color:#6d6779;font-size:16px}
+  .note .line{display:inline-block;border-bottom:1.5px solid #9a92ab;width:60%;margin-left:10px}
+  .adv{color:#4a4453;font-size:15px;max-width:400px;line-height:1.4}
+  .adv b{color:#241f2d}
+</style></head><body>
+  <div class="top">
+    <div>
+      <div class="kicker">Elevate 2026 · Level 1 · floor round</div>
+      <h1>Floor Scorecard — <span class="em">five steps, in order</span></h1>
+    </div>
+    <div class="who">Roving expert crew · final lap scores · ~10 min per table<br><b>Start at the pain. Only then the details.</b></div>
+  </div>
+
+  <div class="idrow">
+    <div class="idbox">Team<span class="line"></span></div>
+    <div class="idbox">Stage owned<span class="line" style="width:100px"></span></div>
+    <span class="chip c1">Pace</span><span class="chip c2">Quality</span><span class="chip c3">Value</span><span class="chip c4">Partnership</span><span class="chip c5">Happiness</span>
+    <div class="qual">Qualifying to advance: <b>agentic ☐ · ran on real project ☐ · surface declared ☐</b></div>
+  </div>
+
+  <div class="grid">
+    <div class="hd"></div><div class="hd">Step</div><div class="hd n">Score</div>
+    <div class="hd">0–1 · a claim</div><div class="hd">2–3 · a demonstration</div><div class="hd">4–5 · a measurement</div>
+
+    <div class="snum"><span>1</span></div>
+    <div class="axis"><div class="t">The Pain</div><div class="q">Is this a pain point worth elevating?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Invented for the demo, or trivial — nobody would pay to remove it</div></div>
+    <div class="cell"><div class="d">Real but peripheral; the team can name who feels it</div></div>
+    <div class="cell"><div class="d"><b>Real, recurring, costly — the project's actual bottleneck</b>; team can say what it costs today</div></div>
+
+    <div class="snum"><span>2</span></div>
+    <div class="axis"><div class="t">The Mapping</div><div class="q">Pain → declared surface → measure: does the chain hold?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Pain and declared surface don't match; no measure named</div></div>
+    <div class="cell"><div class="d">Right surface, fuzzy measure</div></div>
+    <div class="cell"><div class="d"><b>Clean chain with a defined before/after measure</b> — a real elevation path</div></div>
+
+    <div class="snum"><span>3</span></div>
+    <div class="axis"><div class="t">The Agent</div><div class="q">What role does the human play?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Human is the <b>operator</b> — prompt chain, human drives every step</div></div>
+    <div class="cell"><div class="d">Agent runs multi-step work but needs babysitting</div></div>
+    <div class="cell"><div class="d">Human is the <b>approver</b>; 5 = autonomy deliberately matched to the stage's risk</div></div>
+
+    <div class="snum"><span>4</span></div>
+    <div class="axis"><div class="t">The Gate</div><div class="q">Where does the human decide — show it firing</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">No gate, or a confirm-button the team can't explain</div></div>
+    <div class="cell"><div class="d">Gate at a sensible point; human sees what the agent proposes</div></div>
+    <div class="cell"><div class="d">Shows <b>why</b> (evidence, diff) · reject/edit incorporated · at the consequential action</div></div>
+
+    <div class="snum nb"><span>5</span></div>
+    <div class="axis nb"><div class="t">The Proof</div><div class="q">Did the declared surface actually move?</div></div>
+    <div class="score nb"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell nb"><div class="d">Slideware, mock data, or movement merely asserted</div></div>
+    <div class="cell nb"><div class="d">Rough run on the real project; movement plausible, warts visible</div></div>
+    <div class="cell nb"><div class="d"><b>Measured movement on the declared surface</b>; repeated runs, candid on failures &amp; cost</div></div>
+  </div>
+
+  <div class="foot">
+    <div class="tot">Total / 25</div>
+    <div class="note">One-line note to the team:<span class="line"></span></div>
+    <div class="adv"><b>Rank within your floor, never across.</b> Top 4 per floor advance · scores banked for the five surface awards.</div>
+  </div>
+</body></html>
