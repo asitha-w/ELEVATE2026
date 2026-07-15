@@ -1,6 +1,9 @@
 # ELEVATE 2026 — Plan Update · 16 Jul 2026
 
-**Event: Fri 7 Aug · 5–9 PM · 99x, 65 Walukarama Road, Colombo · ~27 teams / 167 people**
+**Event: Fri 7 Aug · 5–9 PM · 99x, 65 Walukarama Road, Colombo**
+**Team composition Draft 1: 29 teams × 3 builders = 87 on the floors · 26-person AI
+bench staffs the expert crews · whole company (~254 registered across 61 project
+rows) joins at 8 PM — see the Teams tab.**
 Everything below is live at **https://asitha-w.github.io/ELEVATE2026/** (offline copy: `ELEVATE2026-pack.html`).
 
 ## Where we are on the runway
@@ -37,8 +40,8 @@ Everything below is live at **https://asitha-w.github.io/ELEVATE2026/** (offline
 1. **Times & venues** for 20 / 24 / 31 Jul — invites finalize the same day.
 2. **Panelist names** for ramp-up 2 (three seats: engineering / delivery / leadership).
 3. **Judges confirmed + prep slot** in 3–6 Aug week.
-4. **Scoring-lap math** (flagged risk): 13–14 tables × ~10 min ≈ 2¼ h per crew — start
-   the lap earlier than 7:30, or sub-split each crew with a calibration huddle.
+4. **Scoring-lap plan:** 15+14 tables; AI-bench crews sub-split into pairs → ~5 tables
+   per pair ≈ 50 min (7:15 → 8:05) — confirm the crews and the calibration huddle.
 5. **Awards mechanics:** winners ranked or equal · can a finalist also take a pillar
    award · teams-per-floor split & table numbering.
 6. **Pillar declaration point:** registration milestone was dropped — teams should

@@ -70,6 +70,23 @@
   .sess figure{margin:0}
   .sess figure img{border-radius:12px}
 
+  /* team composition */
+  .draftchip{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+      color:#a8811c;border:2px solid #a8811c;border-radius:999px;padding:5px 16px;margin-left:14px;vertical-align:6px}
+  table.tc{border-collapse:collapse;width:100%;max-width:1100px;margin:20px 0;font-size:15px}
+  table.tc th{background:#241f2d;color:#fff;text-align:left;padding:10px 16px;font-size:12.5px;
+      font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  table.tc td{border-bottom:1.5px solid #eceaf2;padding:10px 16px;color:#4a4453}
+  table.tc td b{color:#241f2d}
+  table.tc td.r{text-align:right;font-weight:700;color:#241f2d}
+  .teamlist{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0;max-width:1150px}
+  .tchip{font-size:14px;font-weight:700;padding:7px 16px;border-radius:999px;border:2px solid #d9d4e4;color:#4a4453}
+  .tchip.ai{border-color:#7a4fc0;color:#7a4fc0}
+  .stat{display:flex;gap:18px;flex-wrap:wrap;margin:26px 0}
+  .stat .s{border:2px solid #241f2d;border-radius:14px;padding:16px 26px;min-width:170px}
+  .stat .s .v{font-size:34px;font-weight:800;color:#7a4fc0}
+  .stat .s .l{font-size:13.5px;color:#6d6779;margin-top:2px}
+
   /* marketing */
   .mkt{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin:30px 0 10px}
   .mcard{border:2px solid #eceaf2;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
@@ -92,6 +109,7 @@
     <a href="#pack" data-tab="pack" class="on">The Pack</a>
     <a href="#calendar" data-tab="calendar">Event Calendar</a>
     <a href="#sessions" data-tab="sessions">Sessions</a>
+    <a href="#composition" data-tab="composition">Team Composition</a>
     <a href="#marketing" data-tab="marketing">Marketing</a>
   </div>
 </div></header>
@@ -275,7 +293,76 @@
 
 </div>
 
-<!-- ========== TAB 4 · MARKETING ========== -->
+<!-- ========== TAB 4 · TEAM COMPOSITION ========== -->
+<div class="tab" id="tab-composition" hidden>
+
+<section>
+  <h2><span class="n">👥</span>Team composition<span class="draftchip">Draft 1 · 16 Jul</span></h2>
+  <p class="lead">How 61 project rows (254 people) become the teams on the floor. Person-level
+     rosters stay internal — this draft shows teams and pool sizes.</p>
+
+  <div class="note"><b>The rules:</b> AI teams are set aside — they already build AI, so they staff
+     the expert crews &amp; mentor bench · a project with <b>4+ members stands alone</b> · smaller
+     projects <b>combine by domain</b> · every team — standalone or domain — <b>fields exactly 3
+     builders</b>; the rest of the project joins at ~8 PM for pitches, awards and dinner.</div>
+
+  <div class="stat">
+    <div class="s"><div class="v">29</div><div class="l">teams — 20 standalone + 9 domain</div></div>
+    <div class="s"><div class="v">87</div><div class="l">builders on the floors (3 × 29)</div></div>
+    <div class="s"><div class="v">26</div><div class="l">AI bench — expert crews &amp; mentors</div></div>
+    <div class="s"><div class="v">15 + 14</div><div class="l">tables on floors 1 &amp; 5</div></div>
+    <div class="s"><div class="v">~50 min</div><div class="l">scoring lap (crews in pairs, ~5 tables each)</div></div>
+  </div>
+
+  <h2 style="font-size:22px;margin-top:34px">The AI bench — 26 people</h2>
+  <p class="lead">Set aside from competition; they rove as the expert crews (one per floor,
+     sub-split into pairs for the scoring lap) and run mentor laps all evening.</p>
+  <div class="teamlist">
+    <span class="tchip ai">Agentic AI Platform · 8</span><span class="tchip ai">SuperOffice AI · 7</span>
+    <span class="tchip ai">THEPrep-AI · 3</span><span class="tchip ai">AI Hub · 2</span>
+    <span class="tchip ai">Cantor AI · 2</span><span class="tchip ai">Gture Bridgeston AI · 2</span>
+    <span class="tchip ai">Pengefix-AI · 1</span><span class="tchip ai">Sharefox-AI · 1</span>
+  </div>
+
+  <h2 style="font-size:22px;margin-top:34px">Standalone teams — 20</h2>
+  <p class="lead">Projects with 4+ members; each picks its 3 builders. BUS Research joins the BUS
+     pool; Solwr OMS-Retail joins the Solwr OMS pool.</p>
+  <div class="teamlist">
+    <span class="tchip">Compello Process</span><span class="tchip">Adra Balancer</span>
+    <span class="tchip">NRC</span><span class="tchip">BUS</span><span class="tchip">Adra Task Manager</span>
+    <span class="tchip">Amili Send</span><span class="tchip">Hatteland</span><span class="tchip">Adra Platform</span>
+    <span class="tchip">Adra Matcher</span><span class="tchip">Parkly</span><span class="tchip">SuperOffice QA</span>
+    <span class="tchip">SuperOffice Dev</span><span class="tchip">UpNorway</span><span class="tchip">Raintree</span>
+    <span class="tchip">Solwr OMS</span><span class="tchip">CarCare</span><span class="tchip">Amili EDI</span>
+    <span class="tchip">Adra Journal Entry</span><span class="tchip">My1min</span><span class="tchip">BagID</span>
+  </div>
+
+  <h2 style="font-size:22px;margin-top:34px">Combined domain teams — 9</h2>
+  <p class="lead">Sub-4 projects merged by domain; each domain team fields 3 and picks
+     <b>one member project</b> as its real target on day one (the qualifying bar says
+     "ran on the real project").</p>
+  <table class="tc">
+    <tr><th>Domain team</th><th>Combined from</th><th style="text-align:right">Pool</th></tr>
+    <tr><td><b>Amili Collections &amp; Payments</b></td><td>Amili ARM · Pay · AutoCollect</td><td class="r">6</td></tr>
+    <tr><td><b>Amili Customer Experience</b></td><td>Amili MyPage · Customer Portal</td><td class="r">5</td></tr>
+    <tr><td><b>Finance &amp; Accounting</b></td><td>Cantor · Kimaa · Flowyser</td><td class="r">5</td></tr>
+    <tr><td><b>Data Platforms</b></td><td>Arktika · Amili Data Platform · Gture-Ditio</td><td class="r">5</td></tr>
+    <tr><td><b>Society &amp; Welfare</b></td><td>Friskus · SosialT · No Isolation · VardaCare · Gov Digitalization</td><td class="r">8</td></tr>
+    <tr><td><b>Built Environment</b></td><td>Boligmappa-Tilde · AreaSim</td><td class="r">5</td></tr>
+    <tr><td><b>Incrementi</b></td><td>Envo · Sebastian AS</td><td class="r">4</td></tr>
+    <tr><td><b>Products &amp; IoT</b></td><td>Plaato · Grunt · Norwegian SubSea · Kahoot</td><td class="r">6</td></tr>
+    <tr><td><b>Enablement</b></td><td>BA · UX · QA Development · Internal Projects</td><td class="r">6</td></tr>
+  </table>
+
+  <div class="note"><b>Open for Draft 2:</b> do the five <i>customer-AI</i> rows (THEPrep-AI, Cantor AI,
+     Bridgeston AI, Pengefix-AI, Sharefox-AI) compete instead of benching (29 → ~31 teams)? ·
+     builder names per team — collected at the leads briefing (20 Jul) ·
+     source doc: <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/event/team-composition.md">team-composition.md</a></div>
+</section>
+
+</div>
+
+<!-- ========== TAB 5 · MARKETING ========== -->
 <div class="tab" id="tab-marketing" hidden>
 
 <section>
@@ -377,7 +464,7 @@
 
 <script>
 (function(){
-  var tabs = ["pack","calendar","sessions","marketing"];
+  var tabs = ["pack","calendar","sessions","composition","marketing"];
   function show(name){
     tabs.forEach(function(t){
       document.getElementById("tab-"+t).hidden = (t !== name);
