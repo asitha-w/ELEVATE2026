@@ -32,11 +32,9 @@ Five color-coded columns, each with three blocks:
 | **Greater Value** — outcomes clients feel | Effort burns on toil while the customer's KPI stands still | Agent absorbs the toil; effort shifts to what the customer pays for | **A named customer KPI, before/after**; % effort moved from toil to new capability |
 | **Developer Happiness** — engaged, fulfilled teams | Toil, cognitive overload, dread work nobody wants to own | Agent takes the toil; humans keep the judgment and the interesting work | **Before/after team survey + time reclaimed**; "would you keep it on Monday?" |
 
-Footer band — **the universal 0–5 scale** (same reading on every step, both scorecards):
-
-| 0–1 | 2–3 | 4–5 |
-|---|---|---|
-| **A claim** — told, not shown | **A demonstration** — shown working on the real project, roughly | **A measurement** — proven, repeatable, honest about its limits |
+*(The universal 0–5 scale — claim / demonstration / measurement — was originally a
+footer band on this board; removed 15 Jul as misplaced under the pillars. It lives
+on both scorecards, where scoring actually happens.)*
 
 ## Board 2 — Judge's guide: "Five steps from the floor to the podium."
 

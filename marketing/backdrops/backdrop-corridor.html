@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:7680px;height:4320px;overflow:hidden}
+  body{width:1920px;height:1080px;overflow:hidden;transform:scale(4);transform-origin:0 0;
+       font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;color:#fff;position:relative}
+
+  body{background:radial-gradient(1600px 900px at 50% 56%,#241a44 0%,#150f26 55%,#0c0817 100%)}
+  svg.tunnel{position:absolute;inset:0}
+  .vpglow{position:absolute;left:50%;top:600px;width:520px;height:340px;transform:translate(-50%,-50%);
+         background:radial-gradient(ellipse,rgba(190,160,255,.55) 0%,rgba(122,92,214,.18) 45%,transparent 70%)}
+  .star{position:absolute;left:50%;top:600px;width:74px;height:74px;transform:translate(-50%,-50%);
+       background:linear-gradient(180deg,#fff,#a988ec);
+       clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);
+       filter:drop-shadow(0 0 30px rgba(190,160,255,.95))}
+  .logo{position:absolute;left:50%;top:74px;transform:translateX(-50%);width:640px}
+  .logo img{width:100%}
+  .tag{position:absolute;left:50%;top:308px;transform:translateX(-50%);font-size:24px;font-weight:800;
+      letter-spacing:.5em;text-transform:uppercase;color:#cbb8f2;text-indent:.5em;white-space:nowrap;
+      text-shadow:0 2px 22px rgba(12,8,23,.9)}
+  .robot{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:330px}
+  .robot img{width:100%;display:block;filter:drop-shadow(0 0 60px rgba(122,92,214,.5))}
+  .date{position:absolute;left:50%;bottom:36px;transform:translateX(-50%);font-size:21px;font-weight:800;
+       letter-spacing:.42em;text-transform:uppercase;color:#9a7ad6;text-indent:.42em;white-space:nowrap}
+  .datebg{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:1000px;height:110px;
+       background:linear-gradient(180deg,transparent,rgba(12,8,23,.85) 55%)}
+</style></head><body>
+  <svg class="tunnel" viewBox="0 0 1920 1080">
+<polygon points="2253,996 1496,1557 424,1557 -333,996 -333,204 424,-357 1496,-357 2253,204" fill="none" stroke="#8f6fe0" stroke-width="2.2" opacity="0.16"/>
+<polygon points="1958,906 1373,1338 547,1338 -38,906 -38,294 547,-138 1373,-138 1958,294" fill="none" stroke="#8f6fe0" stroke-width="2.5" opacity="0.24"/>
+<polygon points="1727,835 1278,1167 642,1167 193,835 193,365 642,33 1278,33 1727,365" fill="none" stroke="#8f6fe0" stroke-width="2.8" opacity="0.33"/>
+<polygon points="1551,781 1205,1038 715,1038 369,781 369,419 715,162 1205,162 1551,419" fill="none" stroke="#8f6fe0" stroke-width="3.0" opacity="0.42"/>
+<polygon points="1413,739 1148,935 772,935 507,739 507,461 772,265 1148,265 1413,461" fill="none" stroke="#8f6fe0" stroke-width="3.3" opacity="0.50"/>
+<polygon points="1306,706 1104,856 816,856 614,706 614,494 816,344 1104,344 1306,494" fill="none" stroke="#8f6fe0" stroke-width="3.6" opacity="0.59"/>
+<polygon points="1223,681 1069,795 851,795 697,681 697,519 851,405 1069,405 1223,519" fill="none" stroke="#8f6fe0" stroke-width="3.9" opacity="0.67"/>
+<polygon points="1159,661 1042,747 878,747 761,661 761,539 878,453 1042,453 1159,539" fill="none" stroke="#8f6fe0" stroke-width="4.2" opacity="0.76"/>
+<polygon points="1108,645 1021,709 899,709 812,645 812,555 899,491 1021,491 1108,555" fill="none" stroke="#8f6fe0" stroke-width="4.4" opacity="0.84"/>
+<polygon points="1071,634 1006,682 914,682 849,634 849,566 914,518 1006,518 1071,566" fill="none" stroke="#8f6fe0" stroke-width="4.7" opacity="0.93"/>
+<line x1="1071" y1="634" x2="2253" y2="996" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="1006" y1="682" x2="1496" y2="1557" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="914" y1="682" x2="424" y2="1557" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="849" y1="634" x2="-333" y2="996" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="849" y1="566" x2="-333" y2="204" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="914" y1="518" x2="424" y2="-357" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="1006" y1="518" x2="1496" y2="-357" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+<line x1="1071" y1="566" x2="2253" y2="204" stroke="#8f6fe0" stroke-width="1.6" opacity=".22"/>
+  </svg>
+  <div class="vpglow"></div><div class="star"></div>
+  <div class="logo"><img src="../logos/elevate-logo-white-purple.png"></div>
+  <div class="tag">Elevate your project</div>
+  <div class="robot"><img src="../logos/elevate-robot.png"></div>
+  <div class="datebg"></div>
+  <div class="date">Fri 7 Aug 2026 · 5–9 PM · 99x Colombo</div>
+</body></html>

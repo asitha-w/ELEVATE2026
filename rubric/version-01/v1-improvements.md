@@ -74,3 +74,17 @@ delivery, senior leadership — discussing projects/challenges already seen.
 **Invites v2:** flyer robot extracted as a transparent cutout + four-point
 NorthStar + five-arc "5 waves of AI tooling" motif on every card; v1 set parked in
 `marketing/invites/v1/` for revert.
+
+## 8. Anchors board: 0–5 scale strip removed (Asitha, 15 Jul) — ✅ APPLIED 15 Jul
+
+The universal 0–5 scale band sat under the four pillar columns on the anchors
+board and read as misplaced — it describes *scoring*, not *what teams elevate*.
+Removed from `judge-anchors`; the scale already lives on both scorecards where
+scoring happens. Pillar columns get the freed height.
+
+## 9. Three stage backdrops added (Asitha, 15 Jul) — ✅ APPLIED 15 Jul
+
+`marketing/backdrops/`: **The Corridor** (2001-style tunnel), **The Decision**
+(split tagline typography + gate line), **The NorthStar** (minimal line art).
+7680×4320 (16:9) — covers print up to ~6 m wide at stage viewing distance; size
+guidance in `marketing/backdrops/backdrops.md`.
