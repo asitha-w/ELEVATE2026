@@ -20,24 +20,42 @@ lines) is kept internally — this public draft carries team names and pool size
 AI Hub · Cantor AI · Gture Bridgeston AI · Pengefix-AI · Sharefox-AI
 → 2 expert crews (one per floor, sub-split into pairs for the scoring lap) + mentors.
 
-**Standalone teams (20):** Compello Process · Adra Balancer · NRC · BUS · Adra Task
-Manager · Amili Send · Hatteland · Adra Platform · Adra Matcher · Parkly ·
-SuperOffice QA · SuperOffice Dev · UpNorway · Raintree · Solwr OMS · CarCare ·
-Amili EDI · Adra Journal Entry · My1min · BagID
+**The participating teams — all 29** (every team fields 3 builders):
 
-**Domain teams (9):**
+| # | Team | Type | Combined from | Pool |
+|---|---|---|---|---|
+| 1 | Compello Process | Standalone | — | 23 |
+| 2 | Adra Balancer | Standalone | — | 15 |
+| 3 | NRC | Standalone | — | 14 |
+| 4 | BUS | Standalone | — (+ BUS Research) | 14 |
+| 5 | Adra Task Manager | Standalone | — | 10 |
+| 6 | Amili Send | Standalone | — | 9 |
+| 7 | Hatteland | Standalone | — | 9 |
+| 8 | Adra Platform | Standalone | — | 9 |
+| 9 | Adra Matcher | Standalone | — | 9 |
+| 10 | Parkly | Standalone | — | 8 |
+| 11 | SuperOffice QA | Standalone | — | 8 |
+| 12 | SuperOffice Dev | Standalone | — | 7 |
+| 13 | UpNorway | Standalone | — | 7 |
+| 14 | Raintree Inc. | Standalone | — | 7 |
+| 15 | Solwr OMS | Standalone | — (+ OMS-Retail) | 7 |
+| 16 | CarCare | Standalone | — | 6 |
+| 17 | Amili EDI | Standalone | — | 4 |
+| 18 | Adra Journal Entry | Standalone | — | 4 |
+| 19 | My1min | Standalone | — | 4 |
+| 20 | BagID | Standalone | — | 4 |
+| 21 | Amili Collections & Payments | **Domain combined** | Amili ARM · Pay · AutoCollect | 6 |
+| 22 | Amili Customer Experience | **Domain combined** | Amili MyPage · Customer Portal | 5 |
+| 23 | Finance & Accounting | **Domain combined** | Cantor · Kimaa · Flowyser | 5 |
+| 24 | Data Platforms | **Domain combined** | Arktika · Amili Data Platform · Gture-Ditio | 5 |
+| 25 | Society & Welfare | **Domain combined** | Friskus · SosialT · No Isolation · VardaCare · Gov Digitalization | 8 |
+| 26 | Built Environment | **Domain combined** | Boligmappa-Tilde · AreaSim | 5 |
+| 27 | Incrementi | **Domain combined** | Envo · Sebastian AS | 4 |
+| 28 | Products & IoT | **Domain combined** | Plaato · Grunt · Norwegian SubSea · Kahoot | 6 |
+| 29 | Enablement | **Domain combined** | BA · UX · QA Development · Internal Projects | 6 |
 
-| Domain team | Combined from | Pool |
-|---|---|---|
-| Amili Collections & Payments | Amili ARM · Pay · AutoCollect | 6 |
-| Amili Customer Experience | Amili MyPage · Customer Portal | 5 |
-| Finance & Accounting | Cantor · Kimaa · Flowyser | 5 |
-| Data Platforms | Arktika · Amili Data Platform · Gture-Ditio | 5 |
-| Society & Welfare | Friskus · SosialT · No Isolation · VardaCare · Gov Digitalization | 8 |
-| Built Environment | Boligmappa-Tilde · AreaSim | 5 |
-| Incrementi | Envo · Sebastian AS | 4 |
-| Products & IoT | Plaato · Grunt · Norwegian SubSea · Kahoot | 6 |
-| Enablement | BA · UX · QA Development · Internal Projects | 6 |
+Each domain team picks **one member project** as its real target on day one
+(qualifying bar: "ran on the real project").
 
 ## What the numbers mean for the evening
 
