@@ -61,3 +61,16 @@ prep 3–6 Aug worded as rubric walkthrough + context-pack handover) · **Sessio
 invitation) · **Marketing** (flyer, logo set, all four invite cards, downloadable).
 Building graphic redrawn as a 2D building elevation with the address
 **99x · 65 Walukarama Road, Colombo**.
+
+## 7. Session agendas detailed + invite design v2 (Asitha, 15 Jul) — ✅ APPLIED 15 Jul
+
+**Ramp-up 1** structured in thirds: 1/3 NorthStar plug + **Gartner agentic-AI
+maturity roadmap** (maturity = matched autonomy, not an autonomy race) · 2/3 live
+**Xianix** example (xianix.ai, 99x-owned) · 3/3 SWOT + the popular agent-platform
+landscape (Copilot Studio, Bedrock AgentCore, Vertex AI Agent Builder, OpenAI,
+Agentforce; LangGraph, Claude Agent SDK, CrewAI, AutoGen, LlamaIndex, Pydantic AI).
+**Ramp-up 2 panel** seats defined: engineering (shipped agentic solutions),
+delivery, senior leadership — discussing projects/challenges already seen.
+**Invites v2:** flyer robot extracted as a transparent cutout + four-point
+NorthStar + five-arc "5 waves of AI tooling" motif on every card; v1 set parked in
+`marketing/invites/v1/` for revert.
