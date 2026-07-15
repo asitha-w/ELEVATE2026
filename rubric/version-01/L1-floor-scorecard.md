@@ -4,7 +4,7 @@
 **Who:** 2 expert crews — Crew A on floor 1, Crew B on floor 5. Visit every team on
 your floor.
 **Output:** top 4 per floor advance (4+4 = 8 finalists). Scores banked for the five
-surface awards.
+pillar awards.
 
 ## Visit protocol
 
@@ -22,7 +22,7 @@ surface awards.
 
 ## Qualifying bar (pass/fail — see README)
 
-☐ Genuinely agentic ☐ Ran on the real project ☐ Surface declared
+☐ Genuinely agentic ☐ Ran on the real project ☐ Pillar declared
 
 A team missing a check is still scored but flagged; a flagged team cannot advance.
 
@@ -42,15 +42,15 @@ The 0–5 scale reads the same on every step: **0–1 a claim** (told, not shown
 | 4–5 | Real, recurring, costly — the project's actual bottleneck; team can say what it costs today |
 
 ### Step 2 — The Mapping
-*Pain → declared surface → measure: does the chain hold?*
+*Pain → declared pillar → measure: does the chain hold?*
 
 | Score | Anchor |
 |---|---|
-| 0–1 | Pain and declared surface don't match; no measure named |
-| 2–3 | Right surface, fuzzy measure |
+| 0–1 | Pain and declared pillar don't match; no measure named |
+| 2–3 | Right pillar, fuzzy measure |
 | 4–5 | Clean chain with a defined before/after measure — a real elevation path |
 
-Teams declaring 2 surfaces are scored on the **stronger** chain — declaring wide
+Teams declaring 2 pillars are scored on the **stronger** chain — declaring wide
 splits your evidence; it never doubles your score.
 
 ### Step 3 — The Agent
@@ -75,13 +75,13 @@ risk genuinely permits it.
 | 4–5 | Shows **why** (evidence, diff) · reject/edit incorporated · at the consequential action |
 
 ### Step 5 — The Proof
-*Did the declared surface actually move?*
+*Did the declared pillar actually move?*
 
 | Score | Anchor |
 |---|---|
 | 0–1 | Slideware, mock data, or movement merely asserted |
 | 2–3 | Rough run on the real project; movement plausible, warts visible |
-| 4–5 | Measured movement on the declared surface; repeated runs, candid on failures & cost |
+| 4–5 | Measured movement on the declared pillar; repeated runs, candid on failures & cost |
 
 ## Why five equal steps (design note)
 
@@ -95,8 +95,8 @@ event's agentic thesis at 10 of 25.
 See `graphics/scorecard-l1.png` (print A4 landscape, one card per team per judge).
 One-line note field feeds the 2–3 written notes handed to each finalist.
 
-## Appendix — per-surface measurement menu
+## Appendix — per-pillar measurement menu
 
-See `anchors-graphic.md` / `graphics/judge-anchors.png`: per surface — what the
+See `anchors-graphic.md` / `graphics/judge-anchors.png`: per pillar — what the
 pain looks like, the elevation path, and the proof that counts. Grounded in DORA
 2025, DX Core 4, SPACE, METR, MIT/NANDA (see `research-grounding.md`).

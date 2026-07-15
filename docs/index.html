@@ -8,15 +8,18 @@
   body{background:#fff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;line-height:1.55}
   a{color:#7a4fc0}
   .wrap{max-width:1840px;margin:0 auto;padding:0 clamp(16px,2vw,40px)}
-  header{padding:64px 0 40px;border-bottom:2px solid #eceaf2}
-  .kicker{color:#7a4fc0;font-size:14px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  header{padding:44px 0 0;border-bottom:2px solid #eceaf2}
+  .logo{width:min(340px,60vw);display:block}
+  .kicker{color:#7a4fc0;font-size:14px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;margin-top:22px}
   .kicker::before{content:"✦ ";letter-spacing:0}
   h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.01em;margin-top:12px}
   h1 .em{color:#7a4fc0}
   .sub{color:#6d6779;font-size:19px;margin-top:10px;max-width:1100px}
-  nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-  nav a{font-size:14.5px;font-weight:700;text-decoration:none;border:2px solid #d9d4e4;border-radius:999px;padding:8px 18px;color:#4a4453}
-  nav a:hover{border-color:#7a4fc0;color:#7a4fc0}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:30px}
+  .tabs a{font-size:15.5px;font-weight:800;text-decoration:none;color:#6d6779;padding:12px 26px;border-radius:12px 12px 0 0;
+          border:2px solid transparent;border-bottom:none}
+  .tabs a:hover{color:#7a4fc0}
+  .tabs a.on{color:#7a4fc0;border-color:#eceaf2;background:#faf8fe}
   section{padding:52px 0 8px}
   h2{font-size:28px;font-weight:800}
   h2 .n{display:inline-flex;width:36px;height:36px;border-radius:50%;background:#7a4fc0;color:#fff;font-size:17px;
@@ -28,34 +31,75 @@
   figure a:hover img{border-color:#7a4fc0}
   figcaption{font-size:14px;color:#8d86a0;margin-top:10px}
   figcaption b{color:#4a4453}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
   .chips{display:inline-flex;gap:8px;flex-wrap:wrap;vertical-align:middle}
   .chip{font-size:13.5px;font-weight:700;padding:4px 13px;border-radius:999px;border:2px solid}
   .c1{color:#4f7d2c;border-color:#4f7d2c}.c2{color:#1f8a7d;border-color:#1f8a7d}.c3{color:#a8811c;border-color:#a8811c}
-  .c4{color:#c04f7c;border-color:#c04f7c}.c5{color:#2f6fb8;border-color:#2f6fb8}
+  .c5{color:#2f6fb8;border-color:#2f6fb8}
   .note{border:2px solid #241f2d;border-radius:12px;padding:16px 22px;margin:26px 0;font-size:15.5px;color:#4a4453}
   .note b{color:#241f2d}
   footer{margin-top:56px;padding:30px 0 44px;border-top:2px solid #eceaf2;color:#8d86a0;font-size:14px}
   footer a{color:#7a4fc0}
+
+  /* calendar */
+  .cal{position:relative;margin:34px 0 20px;padding-left:34px;max-width:1100px}
+  .cal::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:3px;background:#e3dcf2;border-radius:2px}
+  .mile{position:relative;padding:0 0 34px}
+  .mile::before{content:"";position:absolute;left:-32px;top:6px;width:17px;height:17px;border-radius:50%;
+                background:#fff;border:4px solid #7a4fc0}
+  .mile.done::before{background:#7a4fc0}
+  .mile.big::before{border-color:#241f2d;background:#7a4fc0;box-shadow:0 0 0 4px #ede6f9}
+  .mile .date{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;font-weight:800;letter-spacing:.08em;
+              color:#7a4fc0;text-transform:uppercase}
+  .mile .date .done-tag{color:#4f7d2c;margin-left:10px;letter-spacing:.02em}
+  .mile h3{font-size:21px;font-weight:800;margin-top:2px}
+  .mile p{color:#6d6779;font-size:15.5px;margin-top:4px;max-width:900px}
+  .mile p b{color:#241f2d}
+  .mile.big{border:2px solid #7a4fc0;border-radius:14px;padding:18px 24px 20px;background:#faf8fe;margin-left:-8px}
+  .mile.big::before{left:-40px}
+
+  /* sessions */
+  .sess{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:start;margin:30px 0 46px;
+        border:2px solid #eceaf2;border-radius:16px;padding:28px 30px}
+  @media(max-width:980px){.sess{grid-template-columns:1fr}}
+  .sess h3{font-size:24px;font-weight:800}
+  .sess .when{display:inline-block;margin-top:8px;font-size:13.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+              color:#7a4fc0;border:2px solid #7a4fc0;border-radius:999px;padding:5px 14px}
+  .sess ul{margin:16px 0 0 18px;color:#4a4453;font-size:15.5px}
+  .sess li{margin:7px 0}
+  .sess li b{color:#241f2d}
+  .sess figure{margin:0}
+  .sess figure img{border-radius:12px}
+
+  /* marketing */
+  .mkt{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin:30px 0 10px}
+  .mcard{border:2px solid #eceaf2;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .mcard .img{background:#f6f3fb;padding:18px;display:flex;align-items:center;justify-content:center}
+  .mcard .img.dark{background:#181226}
+  .mcard img{max-width:100%;height:auto;display:block}
+  .mcard .cap{padding:14px 18px;font-size:14px;color:#6d6779;border-top:2px solid #eceaf2}
+  .mcard .cap b{color:#241f2d;display:block;font-size:15px}
+  .mcard .cap a{font-weight:700}
 </style></head><body>
 
 <header><div class="wrap">
-  <div class="kicker">Elevate 2026 · 99x agentic hackathon · Fri 7 Aug · 5–9 PM · rubric v01 (draft)</div>
+  <img class="logo" src="assets/logo-black-purple.png" alt="ELEVATE 2026">
+  <div class="kicker">99x agentic hackathon · Fri 7 Aug · 5–9 PM · 99x, 65 Walukarama Road, Colombo · rubric v01 (draft)</div>
   <h1>Score the elevation, <span class="em">not the agent</span>.</h1>
   <p class="sub">The judging &amp; event pack — how the evening runs, how teams are scored, and what
      to have ready at your table. An agentic solution is measured by its effectiveness on the
      project, never by the complexity of the agent.</p>
-  <nav>
-    <a href="#evening">The evening</a>
-    <a href="#judges">For judges</a>
-    <a href="#scorecards">Scorecards</a>
-    <a href="#teams">For teams</a>
-    <a href="#rubric">Full rubric &amp; sources</a>
-  </nav>
+  <div class="tabs">
+    <a href="#pack" data-tab="pack" class="on">The Pack</a>
+    <a href="#calendar" data-tab="calendar">Event Calendar</a>
+    <a href="#sessions" data-tab="sessions">Sessions</a>
+    <a href="#marketing" data-tab="marketing">Marketing</a>
+  </div>
 </div></header>
 
 <div class="wrap">
+
+<!-- ========== TAB 1 · THE PACK ========== -->
+<div class="tab" id="tab-pack">
 
 <section id="evening">
   <h2><span class="n">1</span>One building, one evening</h2>
@@ -63,18 +107,18 @@
      Dinner on floor 6 &amp; cafe. Everything converges on the <b>cafe stage</b>: 8 finalists pitch,
      ~3 winners — and the best entries go to the 99x expert panel, then to the customer as a real offering.</p>
   <figure><a href="assets/building-plan.png"><img src="assets/building-plan.png" alt="Building plan and evening timeline"></a>
-  <figcaption><b>Event map.</b> Click for full size · timeline is the proposed schedule, to be confirmed.</figcaption></figure>
+  <figcaption><b>Event map.</b> 99x · 65 Walukarama Road, Colombo · click for full size · timeline is the proposed schedule, to be confirmed.</figcaption></figure>
 </section>
 
 <section id="judges">
   <h2><span class="n">2</span>For judges — the guide and the anchors</h2>
-  <p class="lead">Five steps from the floor to the podium, and the anchors board: the five surfaces
-     <span class="chips"><span class="chip c1">Pace</span><span class="chip c2">Quality</span><span class="chip c3">Value</span><span class="chip c4">Partnership</span><span class="chip c5">Happiness</span></span>
+  <p class="lead">Five steps from the floor to the podium, and the anchors board: the NorthStar's four pillars
+     <span class="chips"><span class="chip c1">Pace</span><span class="chip c2">Quality</span><span class="chip c3">Value</span><span class="chip c5">Happiness</span></span>
      — what the pain looks like, the elevation path, and the proof that counts.</p>
   <figure><a href="assets/judge-guide.png"><img src="assets/judge-guide.png" alt="Judge's guide — five steps"></a>
   <figcaption><b>Judge's guide.</b> Brief &amp; calibrate → mentor laps → scoring lap → rank &amp; advance → pitch &amp; pick.</figcaption></figure>
-  <figure><a href="assets/judge-anchors.png"><img src="assets/judge-anchors.png" alt="Anchors — five surfaces and elevation paths"></a>
-  <figcaption><b>The anchors.</b> Judging starts at the pain: is it real, is it mapped to the right surface, did that surface move?</figcaption></figure>
+  <figure><a href="assets/judge-anchors.png"><img src="assets/judge-anchors.png" alt="Anchors — the NorthStar four pillars and elevation paths"></a>
+  <figcaption><b>The anchors.</b> Judging starts at the pain: is it real, is it mapped to the right pillar, did that pillar move?</figcaption></figure>
 </section>
 
 <section id="scorecards">
@@ -85,9 +129,9 @@
   <figure><a href="assets/scorecard-l1.png"><img src="assets/scorecard-l1.png" alt="Level 1 floor scorecard"></a>
   <figcaption><b>Floor scorecard.</b> Print A4 landscape — one per team per judge.</figcaption></figure>
   <figure><a href="assets/scorecard-l2.png"><img src="assets/scorecard-l2.png" alt="Level 2 pitch scorecard"></a>
-  <figcaption><b>Pitch scorecard.</b> All six judges see all 8 finalists; ties break on the stress test.</figcaption></figure>
+  <figcaption><b>Pitch scorecard.</b> All judges see all 8 finalists; ties break on the stress test.</figcaption></figure>
   <div class="note"><b>Qualifying bar to advance:</b> genuinely agentic (a prompt chain is not an agent) ·
-     ran on the real project (rough is fine, mock is not) · surface declared (scored there only).</div>
+     ran on the real project (rough is fine, mock is not) · pillar declared (scored there only).</div>
 </section>
 
 <section id="teams">
@@ -97,7 +141,7 @@
   <figure><a href="assets/team-area.png"><img src="assets/team-area.png" alt="Team pod layout"></a>
     <figcaption><b>The team pod.</b> One laptop as the demo screen, gate on screen, plate facing the walkway.</figcaption></figure>
   <figure><a href="assets/team-nameplate.png"><img src="assets/team-nameplate.png" alt="Team name plate template"></a>
-    <figcaption><b>The name plate.</b> Printed per team: team · project &amp; customer · stage · declared surfaces · floor &amp; table.</figcaption></figure>
+    <figcaption><b>The name plate.</b> Printed per team: team · project &amp; customer · stage · declared pillars · floor &amp; table.</figcaption></figure>
 </section>
 
 <section id="rubric">
@@ -111,9 +155,162 @@
     <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/L2-pitch-scorecard.md">L2 pitch scorecard</a> ·
     <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/anchors-graphic.md">Anchors</a> ·
     <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/event-layout.md">Event layout</a> ·
-    <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/research-grounding.md">Research grounding</a>
+    <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/research-grounding.md">Research grounding</a> ·
+    <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/v1-improvements.md">v1 improvements log</a>
   </p>
 </section>
+
+</div>
+
+<!-- ========== TAB 2 · EVENT CALENDAR ========== -->
+<div class="tab" id="tab-calendar" hidden>
+
+<section>
+  <h2><span class="n">📅</span>The runway to event day</h2>
+  <p class="lead">Every milestone between now and <b>Friday 7 August</b>. On-site events happen at
+     <b>99x · 65 Walukarama Road, Colombo</b>.</p>
+
+  <div class="cal">
+    <div class="mile done">
+      <div class="date">Fri 10 Jul <span class="done-tag">✓ done</span></div>
+      <h3>Introductory email</h3>
+      <p>The launch flyer goes out — <i>"Elevate your project. Agents deliver. You decide."</i></p>
+    </div>
+    <div class="mile">
+      <div class="date">Mon 20 Jul</div>
+      <h3>Briefing for team leads</h3>
+      <p>The format and the evening's flow, the <b>NorthStar pillars</b> teams can elevate,
+         how the two-level judging works, and what to prepare before ramp-up.</p>
+    </div>
+    <div class="mile">
+      <div class="date">Fri 24 Jul</div>
+      <h3>Ramp-up Session 1 — from idea to a running start</h3>
+      <p>Steering discussions · keynote · hands-on: <b>setting up an agent on Xianix</b> · SWOT your
+         project for an agentic play. ~1.5 hours — details on the <a href="#sessions">Sessions</a> tab.</p>
+    </div>
+    <div class="mile">
+      <div class="date">Fri 31 Jul</div>
+      <h3>Ramp-up Session 2 — the Panel Discussion</h3>
+      <p>One week out: panel with the expert crews, <b>Xianix-focused walkthroughs</b> of worked
+         examples, and what judges look for on the floor — details on the <a href="#sessions">Sessions</a> tab.</p>
+    </div>
+    <div class="mile">
+      <div class="date">Mon 3 – Thu 6 Aug</div>
+      <h3>Judges' preparation week</h3>
+      <p><b>Rubric walkthrough and calibration</b> with every judge, and handover of the judging
+         context pack — the guide, the anchors and both scorecards — so every crew walks the floor
+         reading teams the same way.</p>
+    </div>
+    <div class="mile big">
+      <div class="date">Fri 7 Aug · 5–9 PM</div>
+      <h3>ELEVATE 2026 — Event Day</h3>
+      <p>Two working floors, expert crews roving from the start · 8 finalists pitch to the whole
+         company at the cafe podium · ~3 winners + four pillar awards · dinner on floor 6 &amp; cafe.</p>
+    </div>
+  </div>
+
+  <figure><a href="assets/building-plan.png"><img src="assets/building-plan.png" alt="Event day — building plan"></a>
+  <figcaption><b>Event day at a glance.</b> The building, floor by floor, and the evening timeline.</figcaption></figure>
+</section>
+
+</div>
+
+<!-- ========== TAB 3 · SESSIONS ========== -->
+<div class="tab" id="tab-sessions" hidden>
+
+<section>
+  <h2><span class="n">🎓</span>The ramp-up sessions</h2>
+  <p class="lead">Two sessions carry every team from idea to event-ready. Invitations below are
+     shareable as-is — full-size cards for all four events (including the leads briefing and event
+     day) live on the <a href="#marketing">Marketing</a> tab.</p>
+
+  <div class="sess">
+    <div>
+      <h3>Ramp-up Session 1 — from idea to a running start</h3>
+      <span class="when">Fri 24 Jul · ~1.5h · time &amp; venue TBC</span>
+      <ul>
+        <li><b>Steering discussions</b>, LX-meeting style — what "elevating a pillar" means on <i>your</i> project</li>
+        <li><b>Keynote</b> — the event thesis: agents deliver, you decide</li>
+        <li><b>Hands-on:</b> setting up an agent on Xianix</li>
+        <li><b>SWOT</b> — where your project is strong or weak for an agentic play</li>
+      </ul>
+    </div>
+    <figure><a href="assets/invite-rampup-1.png"><img src="assets/invite-rampup-1.png" alt="Invitation — Ramp-up Session 1"></a></figure>
+  </div>
+
+  <div class="sess">
+    <div>
+      <h3>Ramp-up Session 2 — the Panel Discussion</h3>
+      <span class="when">Fri 31 Jul · time &amp; venue TBC</span>
+      <ul>
+        <li><b>Panel discussion</b> with the expert crews — bring your hardest questions</li>
+        <li><b>Xianix-focused walkthroughs</b> of worked examples</li>
+        <li><b>What the judges look for</b> on the floor: the five checks, in order</li>
+      </ul>
+    </div>
+    <figure><a href="assets/invite-rampup-2.png"><img src="assets/invite-rampup-2.png" alt="Invitation — Ramp-up Session 2, the Panel Discussion"></a></figure>
+  </div>
+
+  <div class="note"><b>Before the sessions:</b> the team-leads briefing (Mon 20 Jul) covers format,
+     expectations and the NorthStar pillars — its invitation is on the <a href="#marketing">Marketing</a> tab.</div>
+</section>
+
+</div>
+
+<!-- ========== TAB 4 · MARKETING ========== -->
+<div class="tab" id="tab-marketing" hidden>
+
+<section>
+  <h2><span class="n">📣</span>Marketing material</h2>
+  <p class="lead">Everything shareable in one place — the launch flyer, the four invitation cards and
+     the official logo set. Web-sized previews below; <b>print-quality originals</b> are linked under each card
+     (from <a href="https://github.com/asitha-w/ELEVATE2026/tree/main/marketing">marketing/</a> in the repo).</p>
+
+  <div class="mkt">
+    <div class="mcard">
+      <div class="img dark"><img src="assets/flyer-launch.jpg" alt="Launch flyer"></div>
+      <div class="cap"><b>Launch flyer — "Stay tuned"</b> Sent with the introductory email, 10 Jul.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/flyer/elevate-flyer-launch.png">print original</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img dark"><img src="assets/invite-leads-briefing.png" alt="Invitation — briefing for team leads"></div>
+      <div class="cap"><b>Invitation — Briefing for team leads</b> Mon 20 Jul.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/invites/invite-leads-briefing.png">print original</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img dark"><img src="assets/invite-rampup-1.png" alt="Invitation — Ramp-up Session 1"></div>
+      <div class="cap"><b>Invitation — Ramp-up Session 1</b> Fri 24 Jul.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/invites/invite-rampup-1.png">print original</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img dark"><img src="assets/invite-rampup-2.png" alt="Invitation — Ramp-up Session 2 panel discussion"></div>
+      <div class="cap"><b>Invitation — Ramp-up 2, the Panel Discussion</b> Fri 31 Jul.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/invites/invite-rampup-2.png">print original</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img dark"><img src="assets/invite-event-day.png" alt="Invitation — event day"></div>
+      <div class="cap"><b>Invitation — Event Day</b> Fri 7 Aug · 5–9 PM · 99x, 65 Walukarama Road, Colombo.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/invites/invite-event-day.png">print original</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img"><img src="assets/logo-colour.png" alt="ELEVATE 2026 logo — colour"></div>
+      <div class="cap"><b>Logo — Colour</b> For light backgrounds.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/logos/elevate-logo-colour.png">original</a> ·
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/logos/elevate-logo-black.png">full black</a> ·
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/logos/elevate-logo-black-purple.png">black + purple</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img dark"><img src="assets/logo-white-purple.png" alt="ELEVATE 2026 logo — white and purple"></div>
+      <div class="cap"><b>Logo — White + Purple</b> For dark backgrounds (used on the invite cards).
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/logos/elevate-logo-white-purple.png">original</a></div>
+    </div>
+  </div>
+
+  <div class="note"><b>The tagline is official:</b> "Agents deliver. You decide." — as printed on the
+     launch flyer, the invite cards and every team's name plate.</div>
+</section>
+
+</div>
 
 </div>
 
@@ -121,4 +318,29 @@
   ELEVATE 2026 · rubric version 01 (draft for discussion) · built by the organizing team ·
   <a href="https://github.com/asitha-w/ELEVATE2026">github.com/asitha-w/ELEVATE2026</a>
 </div></footer>
+
+<script>
+(function(){
+  var tabs = ["pack","calendar","sessions","marketing"];
+  function show(name){
+    tabs.forEach(function(t){
+      document.getElementById("tab-"+t).hidden = (t !== name);
+      var link = document.querySelector('.tabs a[data-tab="'+t+'"]');
+      link.classList.toggle("on", t === name);
+    });
+  }
+  function route(){
+    var h = location.hash.replace("#","");
+    if (tabs.indexOf(h) >= 0){ show(h); window.scrollTo(0,0); return; }
+    var el = h && document.getElementById(h);
+    if (el){
+      var tab = el.closest(".tab");
+      if (tab) show(tab.id.replace("tab-",""));
+      el.scrollIntoView();
+    } else show("pack");
+  }
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
 </body></html>

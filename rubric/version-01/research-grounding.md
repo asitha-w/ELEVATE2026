@@ -4,12 +4,12 @@ Fresh research pass, 14 Jul 2026. Three sweeps: (A) measuring AI's effect on
 delivery, (B) agent autonomy & human-oversight frameworks, (C) agentic maturity
 models & judging practice. Every rubric axis traces to at least one source here.
 
-## A. Measuring effectiveness (grounds "effectiveness over complexity" + the surface metrics)
+## A. Measuring effectiveness (grounds "effectiveness over complexity" + the pillar metrics)
 
 | Source | Key finding we use |
 |---|---|
 | **DORA State of AI-assisted Software Development 2025** — https://dora.dev/dora-report-2025/ | ~90% of devs use AI; AI adoption lifts throughput but still hurts stability. "AI is an amplifier" — magnifies strong foundations and dysfunction alike. → score downstream outcomes, not tool sophistication. |
-| **DORA AI Capabilities Model** — https://dora.dev/ai/capabilities-model/report/ | 7 capabilities that amplify AI benefit, incl. working in small batches, user-centric focus, AI-accessible internal data. → grounding for Partnership/Quality anchors. |
+| **DORA AI Capabilities Model** — https://dora.dev/ai/capabilities-model/report/ | 7 capabilities that amplify AI benefit, incl. working in small batches, user-centric focus, AI-accessible internal data. → grounding for the Quality anchors and the customer-in-the-loop thread now inside The Offering. |
 | **SPACE framework** (Forsgren, Storey et al., 2021) — https://queue.acm.org/detail.cfm?id=3454124 | Productivity is multidimensional; surveys are first-class measurements. → legitimizes the Dev Happiness before/after survey. |
 | **DX Core 4** (2024) — https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/ | Speed / Effectiveness / Quality / Impact with primary metrics; maps ~1:1 onto Pace, Dev Happiness, Quality, Value. |
 | **DX AI Measurement Framework** (2025) — https://getdx.com/blog/introducing-the-ai-measurement-framework/ | Measure AI via utilization → impact → cost; impact read through delivery outcomes, never AI usage stats. |

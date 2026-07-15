@@ -34,3 +34,30 @@ Two layers, both belong to the axis:
   break?
 
 Add 3–4 canonical edge probes to the L2 card's Q&A prompts (see below).
+
+## 4. NorthStar update: Partnership removed — four pillars (corporate, 15 Jul) — ✅ APPLIED 15 Jul
+
+Corporate NorthStar defines **four pillars: Pace, Quality, Value, Happiness** —
+Partnership is dropped as a pillar. Applied everywhere (mds, all graphics, site,
+pack): anchors board becomes four columns, nameplate/scorecards carry four chips,
+"5 surface awards" → "4 pillar awards", and the working term changes from
+*surface* to **pillar** under the NorthStar name. Partnership's substance (customer
+trust, human gate) already lives in L1 "The Gate" and L2 "The Offering" — the
+rubric loses nothing.
+
+## 5. Official marketing kit adopted (15 Jul) — ✅ APPLIED 15 Jul
+
+Marketing shared the logo set (Colour / Full black / B&P / W&P) and the launch
+flyer. The flyer confirms **"Agents deliver. You decide."** as the official tagline
+(nameplate note updated). Logos used on the site header and invite cards; marketing
+material collected under `marketing/`.
+
+## 6. Site restructured into four tabs (15 Jul) — ✅ APPLIED 15 Jul
+
+`docs/index.html` becomes: **The Pack** (rubric & event graphics) · **Event
+Calendar** (runway from the action plan; registration milestone removed; judges'
+prep 3–6 Aug worded as rubric walkthrough + context-pack handover) · **Sessions**
+(ramp-up 1 · 24 Jul, ramp-up 2 = the panel discussion · 31 Jul, each with its
+invitation) · **Marketing** (flyer, logo set, all four invite cards, downloadable).
+Building graphic redrawn as a 2D building elevation with the address
+**99x · 65 Walukarama Road, Colombo**.

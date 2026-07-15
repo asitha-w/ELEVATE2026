@@ -6,7 +6,7 @@ of the real customer with a straight face.
 safe here (unlike the floor round, which ranks within a floor).
 **Output:** ~3 winners; the panel also lists every entry recommended to the 99x
 expert panel → customer as a real offering (the list can exceed 3).
-**Format:** fresh scores — floor scores do NOT carry into L2 (they feed the surface
+**Format:** fresh scores — floor scores do NOT carry into L2 (they feed the pillar
 awards only). 5 min pitch + 2 Q&A.
 
 The floor round already proved the agent is real. The pitch round asks a harder
@@ -21,7 +21,7 @@ The universal scale applies: **0–1 a claim** · **2–3 a demonstration** ·
 **4–5 a measurement**.
 
 ### Step 1 — The Number
-*One honest before/after on the declared surface.*
+*One honest before/after on the declared pillar.*
 
 **What it measures:** whether the elevation is real or felt. Builders cannot feel
 their own speedup — in the METR randomized trial, experienced developers *believed*
@@ -120,5 +120,5 @@ need to change to run this?"
    thesis), then panel vote.
 3. Select ~3 winners; separately list every entry recommended to the 99x expert
    panel as a customer offering (can exceed 3).
-4. Award the five surface prizes from banked floor scores (Best Pace / Quality /
-   Value / Partnership / Dev Happiness).
+4. Award the four pillar prizes from banked floor scores (Best Pace / Quality /
+   Value / Dev Happiness).

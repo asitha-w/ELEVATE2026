@@ -8,7 +8,7 @@
 complexity of the agent.**
 
 A single well-placed agent that removes a real bottleneck beats a five-agent
-orchestration that moves nothing. If two teams moved their surface equally, the
+orchestration that moves nothing. If two teams moved their pillar equally, the
 *simpler* solution wins. This is what the industry evidence says separates the ~5%
 of AI initiatives that produce measurable value from the rest (see
 `research-grounding.md`: DORA 2025, MIT/NANDA 2025, Gartner 2025, McKinsey 2025,
@@ -38,7 +38,7 @@ Anthropic "Building Effective Agents").
 - **Cafe (ground floor) = the podium** — kickoff, the 8-team pitch round, awards.
 - **Dinner** on floor 6 + cafe from ~7:45 PM. Sodas on both working floors + cafe.
 - Judges ID teams by the **printed name plate** on each table (team · project &
-  customer · stage owned · declared surfaces · floor & table).
+  customer · stage owned · declared pillars · floor & table).
 - Proposed timeline: 5:00 kickoff (cafe) → 5:15 build + mentor laps → ~7:30 scoring
   lap → ~8:00 finalists announced + dinner → ~8:15 pitches → ~8:50 awards.
 
@@ -50,10 +50,10 @@ Anthropic "Building Effective Agents").
 | What it proves | **The team found a real pain and the agent moved it** | **The solution is an offering a customer would pay for** |
 | Selects | Top 4 per floor → 8 finalists | ~3 winners → 99x expert panel → customer |
 | Scorecard | `L1-floor-scorecard.md` — **five steps in order** × 0–5, /25 | `L2-pitch-scorecard.md` — 4 steps × 0–5, /20 |
-| Also feeds | The 5 surface awards (banked floor scores) | Winner list + customer-offering list |
+| Also feeds | The 4 pillar awards (banked floor scores) | Winner list + customer-offering list |
 
 **L1 judging order matters:** Step 1 asks if the team identified an *effective pain
-point*; Step 2 whether it's correctly *mapped to the declared surface* with a real
+point*; Step 2 whether it's correctly *mapped to the declared pillar* with a real
 measure; only then the details — the agent (3), the gate (4), the proof (5).
 Pain + mapping + proof = 15 of 25 points: effectiveness is structurally the
 majority, no weighting multiplier needed.
@@ -65,12 +65,17 @@ majority, no weighting multiplier needed.
       workflow-vs-agent test; Gartner "agent washing").
 - [ ] **Ran on the real project** — at least one rough, warts-visible run of the
       core loop. Mock data or slideware does not qualify.
-- [ ] **Surface declared** — 1–2 of the five surfaces declared up front; evidence is
-      scored on the declared surface(s) only.
+- [ ] **Pillar declared** — 1–2 of the four pillars declared up front; evidence is
+      scored on the declared pillar(s) only.
 
-## The five surfaces (unchanged)
+## The NorthStar — four pillars
 
-Pace · Quality · Value · Partnership · Dev Happiness — per-surface pains, elevation
+The pillar set carries the corporate NorthStar name. v01 originally listed five
+elevation surfaces; **Partnership was removed in the NorthStar update (15 Jul)** —
+its substance (customer trust, the human gate) lives on inside L1 "The Gate" and
+L2 "The Offering".
+
+Pace · Quality · Value · Happiness — per-pillar pains, elevation
 paths, and proofs in `anchors-graphic.md` and the `judge-anchors` graphic.
 
 ## Files in this version
@@ -79,7 +84,7 @@ paths, and proofs in `anchors-graphic.md` and the `judge-anchors` graphic.
 |---|---|
 | `L1-floor-scorecard.md` / `graphics/scorecard-l1.png` | Floor round scorecard — five steps in order |
 | `L2-pitch-scorecard.md` / `graphics/scorecard-l2.png` | Pitch round scorecard |
-| `anchors-graphic.md` / `graphics/judge-anchors.png` | The five surfaces + elevation paths + 0–5 scale |
+| `anchors-graphic.md` / `graphics/judge-anchors.png` | The four pillars + elevation paths + 0–5 scale |
 | `graphics/judge-guide.png` | Judge's guide — five steps from floor to podium |
 | `event-layout.md` / `graphics/building-plan.png` | Building map + evening timeline |
 | `graphics/team-area.png` | The team pod — how a work area is set up |
@@ -92,8 +97,8 @@ Source HTML next to each PNG; render via headless Chrome at `--window-size=3840,
 ## Open questions for v02
 
 - Do the ~3 winners rank (1st/2nd/3rd) or stand equal?
-- Surface awards: computed from which L1 step — The Proof, or total?
-- Can a finalist also win a surface award?
+- Pillar awards: computed from which L1 step — The Proof, or total?
+- Can a finalist also win a pillar award?
 - Exact team count per floor (27 teams → 13/14 split?) and table numbering.
 - Scoring lap timing: is 13–14 tables × ~10 min per crew feasible in one lap, or
   does the scoring lap need to start earlier / crews sub-split?

@@ -4,38 +4,63 @@
   html{width:3840px;height:2160px;overflow:hidden}
   body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0;
        background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
-       display:flex;flex-direction:column;padding:48px 90px 26px}
+       display:flex;flex-direction:column;padding:44px 90px 24px}
   .kicker{color:#7a4fc0;font-size:16px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
   .kicker::before{content:"✦ ";letter-spacing:0}
-  h1{font-size:50px;font-weight:800;letter-spacing:-.01em;margin-top:12px}
+  h1{font-size:48px;font-weight:800;letter-spacing:-.01em;margin-top:10px}
   h1 .em{color:#7a4fc0}
-  .sub{color:#6d6779;font-size:21px;margin-top:8px}
-  .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:44px;margin-top:26px;flex:1;min-height:0}
-  .bldg{display:flex;flex-direction:column;gap:10px;min-height:0}
-  .fl{border:2px solid #d9d4e4;border-radius:12px;padding:14px 22px;display:flex;align-items:center;gap:20px;flex:1}
-  .fl .no{width:64px;font-size:26px;font-weight:800;color:#9a92ab;flex-shrink:0}
-  .fl .t{font-size:21px;font-weight:800}
-  .fl .d{font-size:15.5px;color:#4a4453;line-height:1.35;margin-top:2px}
+  .sub{color:#6d6779;font-size:20px;margin-top:8px}
+  .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:44px;margin-top:22px;flex:1;min-height:0}
+
+  /* ---- the building ---- */
+  .site{display:flex;flex-direction:column;min-height:0}
+  .roof{height:34px;margin:0 26px;background:#241f2d;border-radius:10px 10px 0 0;
+        display:flex;align-items:center;justify-content:center;color:#fff;
+        font-size:13px;font-weight:800;letter-spacing:.26em;text-transform:uppercase}
+  .shell{flex:1;min-height:0;border:5px solid #241f2d;border-bottom:none;background:#fbfafd;
+         display:flex;flex-direction:column;overflow:hidden}
+  .fl{display:flex;align-items:center;gap:18px;padding:10px 24px;flex:1;position:relative;border-top:4px solid #241f2d}
+  .fl:first-child{border-top:none}
+  .fl .win{display:flex;flex-direction:column;gap:5px;flex-shrink:0}
+  .fl .win i{display:block;width:26px;height:9px;background:#e3dcf2;border:1.5px solid #b9b0cc;border-radius:2px}
+  .fl .no{width:56px;font-size:25px;font-weight:800;color:#9a92ab;flex-shrink:0;text-align:center}
+  .fl .t{font-size:20px;font-weight:800}
+  .fl .d{font-size:14.5px;color:#4a4453;line-height:1.3;margin-top:1px}
   .fl .d b{color:#241f2d}
-  .fl .tag{margin-left:auto;flex-shrink:0;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
-           padding:6px 14px;border-radius:999px;border:2px solid}
-  .work{border-color:#7a4fc0;background:#faf8fe}
+  .fl .tag{margin-left:auto;flex-shrink:0;font-size:12.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+           padding:5px 13px;border-radius:999px;border:2px solid;background:#fff}
+  .work{background:#f6f1fd}
   .work .no{color:#7a4fc0}
   .work .tag{color:#7a4fc0;border-color:#7a4fc0}
+  .work .win i{background:#d9c9f2;border-color:#7a4fc0}
+  .dine{background:#fdf9ef}
+  .dine .no{color:#a8811c}
   .dine .tag{color:#a8811c;border-color:#a8811c}
-  .dine{border-color:#a8811c}
-  .cafe{border-color:#1f8a7d;background:#f7fcfb}
+  .quiet{flex:.55;background:repeating-linear-gradient(135deg,#fbfafd 0 16px,#f4f1f9 16px 32px)}
+  .quiet .t{font-size:15.5px;font-weight:700;color:#8d86a0}
+  .cafe{background:#f2faf8;flex:1.15}
+  .cafe .no{color:#1f8a7d}
   .cafe .tag{color:#1f8a7d;border-color:#1f8a7d}
-  .quiet{opacity:.55;flex:.6}
-  .quiet .t{font-size:17px;font-weight:700;color:#6d6779}
-  .tl{border:2px solid #241f2d;border-radius:14px;padding:20px 26px;display:flex;flex-direction:column;min-height:0}
+  .cafe .win i{background:#bfe6df;border-color:#1f8a7d}
+  .door{position:absolute;right:88px;bottom:0;width:52px;height:40px;border:3px solid #1f8a7d;border-bottom:none;
+        border-radius:10px 10px 0 0;background:#fff;display:flex;align-items:flex-end;justify-content:center;
+        font-size:9.5px;font-weight:800;letter-spacing:.12em;color:#1f8a7d;padding-bottom:3px}
+  .ground{height:12px;background:#241f2d;border-radius:3px;margin:0 -14px}
+  .addr{display:flex;align-items:center;gap:10px;margin-top:10px;color:#4a4453;font-size:15.5px}
+  .addr .pin{width:22px;height:22px;border-radius:50% 50% 50% 0;background:#7a4fc0;transform:rotate(-45deg);flex-shrink:0;
+             display:flex;align-items:center;justify-content:center}
+  .addr .pin i{width:8px;height:8px;border-radius:50%;background:#fff;transform:rotate(45deg)}
+  .addr b{color:#241f2d}
+
+  /* ---- the timeline ---- */
+  .tl{border:2px solid #241f2d;border-radius:14px;padding:18px 26px;display:flex;flex-direction:column;min-height:0}
   .tl .h{font-size:14px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#7a4fc0;margin-bottom:12px}
   .ev{display:flex;gap:16px;flex:1;align-items:flex-start}
   .ev .tm{width:74px;flex-shrink:0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;font-weight:800;color:#7a4fc0}
-  .ev .body .t{font-size:17.5px;font-weight:700}
+  .ev .body .t{font-size:17px;font-weight:700}
   .ev .body .w{font-size:14px;color:#6d6779;margin-top:1px}
   .ev + .ev{margin-top:4px;padding-top:10px;border-top:1.5px dashed #d9d4e4}
-  .foot{margin-top:18px;display:flex;align-items:center;gap:12px;color:#6d6779;font-size:15.5px}
+  .foot{margin-top:14px;display:flex;align-items:center;gap:12px;color:#6d6779;font-size:15px}
   .foot b{color:#241f2d}
 </style></head><body>
   <div class="kicker">Elevate 2026 · Event map · one building, one evening · 5–9 PM</div>
@@ -43,31 +68,41 @@
   <div class="sub">Each working floor gets its own roving expert crew — rank within your floor, never across. Everything converges on the cafe stage.</div>
 
   <div class="wrap">
-    <div class="bldg">
-      <div class="fl dine">
-        <div class="no">6</div>
-        <div><div class="t">Dinner</div><div class="d">Serving from <b>~7:45 PM</b> — grab a plate; finalists are announced at the cafe</div></div>
-        <div class="tag">Dinner</div>
+    <div class="site">
+      <div class="roof">99x · ELEVATE 2026</div>
+      <div class="shell">
+        <div class="fl dine">
+          <div class="win"><i></i><i></i></div>
+          <div class="no">6</div>
+          <div><div class="t">Dinner</div><div class="d">Serving from <b>~7:45 PM</b> — grab a plate; finalists are announced at the cafe</div></div>
+          <div class="tag">Dinner</div>
+        </div>
+        <div class="fl work">
+          <div class="win"><i></i><i></i></div>
+          <div class="no">5</div>
+          <div><div class="t">Working Floor B</div><div class="d"><b>Teams settle &amp; build 5:00–7:30</b> · Expert Crew B roves from the start · sodas stocked</div></div>
+          <div class="tag">Teams + Crew B</div>
+        </div>
+        <div class="fl quiet">
+          <div class="no">2–4</div>
+          <div><div class="t">Quiet floors — not in play tonight</div></div>
+        </div>
+        <div class="fl work">
+          <div class="win"><i></i><i></i></div>
+          <div class="no">1</div>
+          <div><div class="t">Working Floor A</div><div class="d"><b>Teams settle &amp; build 5:00–7:30</b> · Expert Crew A roves from the start · sodas stocked</div></div>
+          <div class="tag">Teams + Crew A</div>
+        </div>
+        <div class="fl cafe">
+          <div class="win"><i></i><i></i></div>
+          <div class="no">G</div>
+          <div><div class="t">Cafe — the Podium</div><div class="d"><b>Kickoff 5:00 · pitches ~8:15 · awards ~8:50</b> · dinner service &amp; sodas here too</div></div>
+          <div class="tag">The stage</div>
+          <div class="door">ENTER</div>
+        </div>
       </div>
-      <div class="fl work">
-        <div class="no">5</div>
-        <div><div class="t">Working Floor B</div><div class="d"><b>Teams settle &amp; build 5:00–7:30</b> · Expert Crew B roves from the start · sodas stocked</div></div>
-        <div class="tag">Teams + Crew B</div>
-      </div>
-      <div class="fl quiet">
-        <div class="no">2–4</div>
-        <div><div class="t">Quiet floors — not in play tonight</div></div>
-      </div>
-      <div class="fl work">
-        <div class="no">1</div>
-        <div><div class="t">Working Floor A</div><div class="d"><b>Teams settle &amp; build 5:00–7:30</b> · Expert Crew A roves from the start · sodas stocked</div></div>
-        <div class="tag">Teams + Crew A</div>
-      </div>
-      <div class="fl cafe">
-        <div class="no">G</div>
-        <div><div class="t">Cafe — the Podium</div><div class="d"><b>Kickoff 5:00 · pitches ~8:15 · awards ~8:50</b> · dinner service &amp; sodas here too</div></div>
-        <div class="tag">The stage</div>
-      </div>
+      <div class="ground"></div>
+      <div class="addr"><span class="pin"><i></i></span><span><b>99x · 65 Walukarama Road, Colombo</b> — Fri 7 Aug 2026 · 5–9 PM</span></div>
     </div>
 
     <div class="tl">
@@ -77,9 +112,9 @@
       <div class="ev"><div class="tm">7:30</div><div class="body"><div class="t">Scoring lap</div><div class="w">~10 min per table · five checks in order · floor card</div></div></div>
       <div class="ev"><div class="tm">8:00</div><div class="body"><div class="t">8 finalists announced · dinner opens</div><div class="w">top 4 per floor · floor 6 &amp; cafe · finalists get written notes</div></div></div>
       <div class="ev"><div class="tm">8:15</div><div class="body"><div class="t">Pitches on the cafe stage</div><div class="w">5 min + 2 Q&amp;A · whole company watching</div></div></div>
-      <div class="ev"><div class="tm">8:50</div><div class="body"><div class="t">Awards</div><div class="w">~3 winners + 5 surface awards → 99x expert panel → customer</div></div></div>
+      <div class="ev"><div class="tm">8:50</div><div class="body"><div class="t">Awards</div><div class="w">~3 winners + four pillar awards → 99x expert panel → customer</div></div></div>
     </div>
   </div>
 
-  <div class="foot"><b>Find a team:</b> every table carries a printed name plate — team, project, stage owned, declared surfaces. Judges ID teams by the plate.</div>
+  <div class="foot"><b>Find a team:</b> every table carries a printed name plate — team, project, stage owned, declared pillars. Judges ID teams by the plate.</div>
 </body></html>
