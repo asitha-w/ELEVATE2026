@@ -1,26 +1,28 @@
 # ELEVATE 2026
 
 99x agentic-AI hackathon — judging rubric & event pack.
-**Event: Fri 7 Aug 2026 · 5–9 PM · 99x, 65 Walukarama Road, Colombo.**
+**Event: Fri 7 Aug 2026 · 5–9 PM · 99x, 349 Colombo Main Rd, Colombo 00300 — one floor, one round, Judges' Pick 8.**
 
 - 🌐 **Site:** https://asitha-w.github.io/ELEVATE2026/ — four tabs:
   **The Pack** (rubric & event graphics) · **Event Calendar** (runway to event day) ·
   **Sessions** (ramp-up 1 & 2 with invitations) · **Marketing** (flyer, invites, logos)
 - 📄 **Single-file pack:** [`ELEVATE2026-pack.html`](ELEVATE2026-pack.html) (all graphics embedded — download & open anywhere)
-- 📁 **Current rubric:** [`rubric/version-01/`](rubric/version-01/) — see its [README](rubric/version-01/README.md)
+- 📁 **Current rubric:** [`rubric/version-02/`](rubric/version-02/) — see its [README](rubric/version-02/README.md)
 - 📅 **Calendar & sessions source:** [`event/calendar-and-sessions.md`](event/calendar-and-sessions.md)
 - 📣 **Marketing kit:** [`marketing/`](marketing/) — logos, launch flyer, invitation cards (print originals)
 
-**The NorthStar — four pillars** (Partnership retired 15 Jul): Pace · Quality · Value · Happiness.
+**The NorthStar — four pillars, word for word from `99x North Star - V1.1.pdf` (corporate-final):**
+Higher Pace · Better Quality · Extended Value · A Team That Thrives.
 Official tagline: *"Agents deliver. You decide."*
 
 ## Versioning
 
 The rubric is versioned by directory: `rubric/version-01/`, `rubric/version-02/`, …
 Each version is self-contained (markdown sources + `graphics/` with HTML + rendered
-PNG). **v01 is the current draft** — being tuned with the organizing team; tag
-`v01` marks its first published state; running changes in
-[`v1-improvements.md`](rubric/version-01/v1-improvements.md).
+PNG). **v02 is the current draft** ([`rubric/version-02/`](rubric/version-02/) — one
+floor at the new venue, single six-step round, Judges' Pick 8 + knowledge sharing;
+decided 16 Jul). v01 stays as reference; its graphics boards are being redrawn for
+v02.
 
 Every graphic has a markdown source of truth — edit the md, then the HTML, then
 re-render (headless Chrome, `--window-size=3840,2160`; invites `2400,3000`):

@@ -1,8 +1,10 @@
 # ELEVATE 2026 — Event Calendar & Sessions · source of truth
 
 Editable source for the **Event Calendar** and **Sessions** tabs on the site, and
-for the four invitation cards in `marketing/invites/`. Venue for on-site events:
-**99x · 65 Walukarama Road, Colombo**.
+for the four invitation cards in `marketing/invites/`. Venue for runway sessions:
+**99x · 65 Walukarama Road, Colombo**. **Event day (7 Aug) moved to
+99x · 349 Colombo Main Rd, Colombo 00300** (16 Jul decision — one floor hosts the
+whole event; event-day invite card needs a reissue).
 
 ## The runway (from the ELEVATE 2026 Action Plan)
 
@@ -65,7 +67,7 @@ Four invite cards, dark brand style (flyer look), logo + tagline, one per event:
 | `invite-leads-briefing` | Briefing for team leads | Mon 20 Jul · time & venue TBC |
 | `invite-rampup-1` | Ramp-up Session 1 | Fri 24 Jul · ~1.5h · time & venue TBC |
 | `invite-rampup-2` | Ramp-up Session 2 — Panel Discussion | Fri 31 Jul · time & venue TBC |
-| `invite-event-day` | ELEVATE 2026 — Event Day | Fri 7 Aug · 5–9 PM · 99x, 65 Walukarama Road, Colombo |
+| `invite-event-day` | ELEVATE 2026 — Event Day | Fri 7 Aug · 5–9 PM · 99x, 349 Colombo Main Rd, Colombo 00300 — **reissue pending** (rendered card still shows old venue) |
 
 Each card: HTML source next to rendered PNG (portrait 2400×3000, headless Chrome).
 

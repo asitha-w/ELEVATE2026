@@ -59,11 +59,11 @@ Each domain team picks **one member project** as its real target on day one
 
 ## What the numbers mean for the evening
 
-- **15 + 14 tables** across floors 1 & 5 — at the format's design point
+- **29 tables on one floor** (349 Colombo Main Rd, format v02) in five route blocks of ~6
 - **~127 core people** on the night (87 builders + 26 AI bench + judges + organizers);
   whole company joins at 8 PM — catering plans for the full crowd
-- **Scoring lap works**: crews sub-split into pairs, ~5 tables per pair ≈ 50 minutes
-  (7:15 → 8:05; pitches 8:15 — the proposed timeline holds)
+- **Scoring lap works**: five judge pairs, ~6 tables per pair × ~10 min ≈ 60 minutes
+  (7:00 → 8:00; Judges' Pick announced 8:15, knowledge sharing 8:20 — the timeline holds)
 
 ## Open points for Draft 2
 
