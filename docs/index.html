@@ -9,8 +9,11 @@
   a{color:#B48EAD}
   .wrap{max-width:1840px;margin:0 auto;padding:0 clamp(16px,2vw,40px)}
   header{padding:44px 0 0;border-bottom:2px solid #434C5E}
-  .logo{width:min(340px,60vw);display:block}
-  .kicker{color:#B48EAD;font-size:14px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;margin-top:22px}
+  .head-row{display:flex;align-items:flex-start;justify-content:space-between;gap:44px}
+  .head-text{min-width:0}
+  .logo{width:min(280px,26vw);display:block;flex:none;margin-top:14px;opacity:.94}
+  @media(max-width:820px){.head-row{flex-direction:column-reverse;gap:18px}.logo{width:min(240px,58vw);margin-top:0}}
+  .kicker{color:#B48EAD;font-size:14px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
   .kicker::before{content:"✦ ";letter-spacing:0}
   h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.01em;margin-top:12px}
   h1 .em{color:#B48EAD}
@@ -121,13 +124,17 @@
 </style></head><body>
 
 <header><div class="wrap">
-  <img class="logo" src="assets/logo-white-purple.png" alt="ELEVATE 2026">
-  <div class="kicker">99x agentic hackathon · Fri 7 Aug · 5–9 PM · 99x, 349 Colombo Main Rd, Colombo 00300 · rubric v02 (draft)</div>
-  <h1>Score the elevation, <span class="em">not the agent</span>.</h1>
-  <p class="sub">The ELEVATE 2026 hub — how the night runs and how teams are scored, the metric your
-     team baselines and drives in the two weeks before, the sessions on the runway, and everything
-     shareable. One principle throughout: an agentic solution is measured by its effectiveness on
-     the project, never by the complexity of the agent.</p>
+  <div class="head-row">
+    <div class="head-text">
+      <div class="kicker">99x agentic hackathon · Fri 7 Aug · 5–9 PM · 99x, 349 Colombo Main Rd, Colombo 00300 · rubric v02 (draft)</div>
+      <h1>Score the elevation, <span class="em">not the agent</span>.</h1>
+      <p class="sub">The ELEVATE 2026 hub — how the night runs and how teams are scored, the metric your
+         team baselines and drives in the two weeks before, the sessions on the runway, and everything
+         shareable. One principle throughout: an agentic solution is measured by its effectiveness on
+         the project, never by the complexity of the agent.</p>
+    </div>
+    <img class="logo" src="assets/logo-header-nord.png" alt="ELEVATE 2026">
+  </div>
   <div class="tabs">
     <a href="#pack" data-tab="pack" class="on">Judging &amp; Format</a>
     <a href="#guide" data-tab="guide">Team Guide</a>
