@@ -87,6 +87,28 @@
   .stat .s .v{font-size:34px;font-weight:800;color:#7a4fc0}
   .stat .s .l{font-size:13.5px;color:#6d6779;margin-top:2px}
 
+  /* team guide */
+  .bigline{border:2.5px solid #7a4fc0;background:#faf8fe;border-radius:14px;padding:22px 28px;margin:28px 0;
+      font-size:clamp(19px,2.6vw,26px);font-weight:800;letter-spacing:-.01em;max-width:1100px}
+  .bigline .em{color:#7a4fc0}
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin:28px 0 10px}
+  .pcard{border:2.5px solid;border-radius:14px;padding:20px 22px;display:flex;flex-direction:column}
+  .pcard h3{font-size:19px;font-weight:800;color:#241f2d}
+  .pcard .fam{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+  .pcard ul{margin:12px 0 0 16px;font-size:14.5px;color:#4a4453;flex:1}
+  .pcard li{margin:7px 0}
+  .pcard li b{color:#241f2d}
+  .pcard .dir{font-weight:800}
+  .pcard .tip{margin-top:14px;font-size:13.5px;color:#8d86a0;border-top:1.5px solid #eceaf2;padding-top:10px}
+  .pcard .tip b{color:#4a4453}
+  .pg1{border-color:#4f7d2c}.pg1 .fam,.pg1 .dir{color:#4f7d2c}
+  .pg2{border-color:#1f8a7d}.pg2 .fam,.pg2 .dir{color:#1f8a7d}
+  .pg3{border-color:#a8811c}.pg3 .fam,.pg3 .dir{color:#a8811c}
+  .pg5{border-color:#2f6fb8}.pg5 .fam,.pg5 .dir{color:#2f6fb8}
+  .refs{margin:18px 0 0;max-width:1100px;font-size:15px;color:#4a4453}
+  .refs li{margin:9px 0 9px 18px}
+  .refs li b{color:#241f2d}
+
   /* marketing */
   .mkt{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin:30px 0 10px}
   .mcard{border:2px solid #eceaf2;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
@@ -102,11 +124,13 @@
   <img class="logo" src="assets/logo-black-purple.png" alt="ELEVATE 2026">
   <div class="kicker">99x agentic hackathon · Fri 7 Aug · 5–9 PM · 99x, 65 Walukarama Road, Colombo · rubric v01 (draft)</div>
   <h1>Score the elevation, <span class="em">not the agent</span>.</h1>
-  <p class="sub">The judging &amp; event pack — how the evening runs, how teams are scored, and what
-     to have ready at your table. An agentic solution is measured by its effectiveness on the
-     project, never by the complexity of the agent.</p>
+  <p class="sub">The ELEVATE 2026 hub — how the night runs and how teams are scored, the metric your
+     team baselines and drives in the two weeks before, the sessions on the runway, and everything
+     shareable. One principle throughout: an agentic solution is measured by its effectiveness on
+     the project, never by the complexity of the agent.</p>
   <div class="tabs">
-    <a href="#pack" data-tab="pack" class="on">The Pack</a>
+    <a href="#pack" data-tab="pack" class="on">Judging &amp; Format</a>
+    <a href="#guide" data-tab="guide">Team Guide</a>
     <a href="#calendar" data-tab="calendar">Event Calendar</a>
     <a href="#sessions" data-tab="sessions">Sessions</a>
     <a href="#composition" data-tab="composition">Team Composition</a>
@@ -116,7 +140,7 @@
 
 <div class="wrap">
 
-<!-- ========== TAB 1 · THE PACK ========== -->
+<!-- ========== TAB 1 · JUDGING & FORMAT ========== -->
 <div class="tab" id="tab-pack">
 
 <section id="evening">
@@ -155,7 +179,8 @@
 <section id="teams">
   <h2><span class="n">4</span>For teams — your table is your stage</h2>
   <p class="lead">Judges walk the floor, read the plate, and say <b>"run it now."</b> Set the pod up so
-     that's a 30-second ask — and keep the name plate facing the walkway: it's how judges ID your team.</p>
+     that's a 30-second ask — and keep the name plate facing the walkway: it's how judges ID your team.
+     Your metric, your baseline and the two-week runway live on the <a href="#guide">Team Guide</a> tab.</p>
   <figure><a href="assets/team-area.png"><img src="assets/team-area.png" alt="Team pod layout"></a>
     <figcaption><b>The team pod.</b> One laptop as the demo screen, gate on screen, plate facing the walkway.</figcaption></figure>
   <figure><a href="assets/team-nameplate.png"><img src="assets/team-nameplate.png" alt="Team name plate template"></a>
@@ -180,7 +205,193 @@
 
 </div>
 
-<!-- ========== TAB 2 · EVENT CALENDAR ========== -->
+<!-- ========== TAB 2 · TEAM GUIDE ========== -->
+<div class="tab" id="tab-guide" hidden>
+
+<section id="onemetric">
+  <h2><span class="n">🎯</span>One team, one metric</h2>
+  <p class="lead">The judges score the <b>elevation, not the agent</b> — and an elevation is a number
+     that moved. A number can only move against a <b>baseline taken before the agent touched
+     anything</b>. That's what the two weeks between ramp-up and event day are for: they are your
+     <b>measurement window</b>, not just build time.</p>
+  <div class="bigline">Pick <span class="em">one metric</span>. Baseline it in week one.
+     Drive it in week two. Bring <span class="em">both numbers</span> to your table.</div>
+  <p class="lead">Your metric belongs to the pillar you declared
+     <span class="chips"><span class="chip c1">Pace</span><span class="chip c2">Quality</span><span class="chip c3">Value</span><span class="chip c5">Happiness</span></span>
+     — the menu below gives you proven, modern metric families for each. DORA is the backbone, but
+     anything honestly measurable counts: DX Core 4, SPACE, DevEx, customer KPIs, AI-resolution
+     metrics — sources at the <a href="#refs">end of this tab</a>.</p>
+</section>
+
+<section id="runway">
+  <h2><span class="n">🛫</span>The two-week runway</h2>
+  <p class="lead">Same calendar as the event — seen from your side of the table.</p>
+  <div class="cal">
+    <div class="mile">
+      <div class="date">Mon 20 Jul</div>
+      <h3>Leads briefing — leave with a candidate metric</h3>
+      <p>You declare your <b>1–2 pillars</b>. Before you leave the room, know which metric
+         you'd measure — the menu below is your shortlist.</p>
+    </div>
+    <div class="mile">
+      <div class="date">Fri 24 Jul</div>
+      <h3>Ramp-up 1 — metric locked</h3>
+      <p>Metric and direction declared. <b>Start the baseline the same day</b> — measure the pain
+         as it is today, before any agent exists.</p>
+    </div>
+    <div class="mile">
+      <div class="date">Wk of 27 Jul</div>
+      <h3>Baseline week — collect the "before" number</h3>
+      <p>On the <b>real project</b>: time 3–6 real runs of the slow task, pull last month's tickets
+         or PRs, run the 3-question team pulse. Write the number down with the date and the method.</p>
+    </div>
+    <div class="mile">
+      <div class="date">Wk of 3 Aug</div>
+      <h3>Drive week — build agentically, measure the same way</h3>
+      <p>The agent goes to work on the metric. Measure with <b>exactly the same method</b> as the
+         baseline — a delta measured two different ways is not a delta.</p>
+    </div>
+    <div class="mile big">
+      <div class="date">Fri 7 Aug</div>
+      <h3>Event day — both numbers at the table</h3>
+      <p>Baseline · after (measured, or honestly projected — see below) · one sentence on how you
+         measured. That's the fifth check on the floor scorecard, ready before the judge asks.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2><span class="n">📐</span>The metric menu — grouped to the NorthStar</h2>
+  <p class="lead">One <b>driver metric</b> per team, from your declared pillar's column. Arrows show
+     the direction that counts: <b>↓ drive it down</b>, <b>↑ drive it up</b>.</p>
+
+  <div class="menu">
+    <div class="pcard pg1">
+      <h3>Pace</h3>
+      <div class="fam">DORA throughput · DX Core 4 speed</div>
+      <ul>
+        <li><b>Lead time for a real task</b> <span class="dir">↓</span> — time it before vs. with the agent, 3–6 real runs</li>
+        <li><b>Task cycle time</b> (idea → in production) <span class="dir">↓</span></li>
+        <li><b>Deployment frequency</b> <span class="dir">↑</span></li>
+        <li><b>Review / hand-off wait time</b> <span class="dir">↓</span></li>
+        <li><b>Perceived rate of delivery</b> <span class="dir">↑</span> (DX Core 4 pulse)</li>
+      </ul>
+      <div class="tip"><b>Two-week trick:</b> don't wait for org-level stats — stopwatch the actual
+        slow task this week, then again with the agent next week.</div>
+    </div>
+    <div class="pcard pg2">
+      <h3>Quality</h3>
+      <div class="fam">DORA stability · rework thinking</div>
+      <ul>
+        <li><b>Rework rate</b> <span class="dir">↓</span> — DORA's newest key metric</li>
+        <li><b>Change failure rate</b> <span class="dir">↓</span></li>
+        <li><b>Defects caught at the gate</b> <span class="dir">↑</span> / escaped defects <span class="dir">↓</span></li>
+        <li><b>Failed-deployment recovery time</b> <span class="dir">↓</span></li>
+        <li><b>Flaky-test rate</b> <span class="dir">↓</span></li>
+      </ul>
+      <div class="tip"><b>Two-week trick:</b> a monthly CFR won't move in ten days — count events
+        instead: <i>"the gate caught 9 of 11 defects before merge."</i></div>
+    </div>
+    <div class="pcard pg3">
+      <h3>Value</h3>
+      <div class="fam">Customer KPIs · product (HEART) · AI resolution</div>
+      <ul>
+        <li><b>The KPI your customer already tracks</b> <span class="dir">↑</span></li>
+        <li><b>Ticket first-response / resolution time</b> <span class="dir">↓</span></li>
+        <li><b>Resolution rate</b> <span class="dir">↑</span> — share handled end-to-end by the agent, human at the gate</li>
+        <li><b>% effort moved from toil to billable work</b> <span class="dir">↑</span></li>
+        <li><b>Cost per run / per transaction</b> <span class="dir">↓</span></li>
+      </ul>
+      <div class="tip"><b>Two-week trick:</b> pick the number the customer would put on their own
+        dashboard — that's the one that survives the pitch.</div>
+    </div>
+    <div class="pcard pg5">
+      <h3>Happiness</h3>
+      <div class="fam">SPACE · DevEx · DX Core 4 effectiveness</div>
+      <ul>
+        <li><b>Time reclaimed from toil</b>, per person per week <span class="dir">↑</span></li>
+        <li><b>3-question team pulse</b> (mini-DXI: friction · flow · cognitive load) <span class="dir">↑</span></li>
+        <li><b>Interrupt &amp; on-call load</b> <span class="dir">↓</span></li>
+        <li><b>"Would you keep it on Monday?"</b> <span class="dir">↑</span></li>
+      </ul>
+      <div class="tip"><b>Two-week trick:</b> run the same 3 questions with the same people in week
+        one and on 6 Aug — change either and the delta means nothing.</div>
+    </div>
+  </div>
+
+  <div class="note"><b>Driver + guardrail.</b> DORA 2025's headline: AI lifts throughput but hurts
+     stability — teams shipping ~20% more saw change failures rise ~30%. So declare <b>one driver
+     metric you move</b> and <b>one guardrail you promise not to break</b>: Pace teams guard quality,
+     Quality teams guard pace, Value and Happiness teams guard both. Judges love a team that knows
+     what it's <i>not</i> allowed to sacrifice.</div>
+
+  <div class="note"><b>What a good metric looks like:</b> measurable in ≤2 weeks at task scale ·
+     lives on the real project, not a mock · your agent plausibly moves it · baseline taken
+     <b>before</b> the agent · direction declared. <b>Not metrics:</b> tokens spent, prompts written,
+     number of agents, lines of code generated — that's the machinery, and the machinery is never
+     the score.</div>
+</section>
+
+<section id="proofladder">
+  <h2><span class="n">📊</span>No customer deployment? Projected is fine — no metric is not</h2>
+  <p class="lead">Two weeks is short. Some teams won't get the agent in front of a customer by 7 Aug
+     — <b>that costs you nothing if your metric thinking is complete</b>. The floor scorecard's
+     universal scale is <i>claim → demonstration → measurement</i>; here's how your proof lands on it:</p>
+  <table class="tc">
+    <tr><th>Proof level</th><th>What it looks like at the table</th><th>Where it lands</th></tr>
+    <tr><td><b>Measured</b></td><td>Baseline + after-number, same method, on the real project.
+        <i>"Release task: 4.5 h manual → 40 min with the agent, timed over 6 runs."</i></td>
+        <td class="r">top of the scale</td></tr>
+    <tr><td><b>Projected</b></td><td>Honest baseline + a working pilot shown live + the projection
+        math. <i>"First-response baseline 4.1 h; the agent drafts in 6 min — projected ~70% cut,
+        here's the pilot."</i></td>
+        <td class="r">demonstration — strong</td></tr>
+    <tr><td><b>Claimed</b></td><td>No baseline, no number, adjectives only.
+        <i>"It makes us much faster."</i></td>
+        <td class="r">where teams lose</td></tr>
+  </table>
+  <p class="lead">The rule in one line: <b>the metric and the baseline are mandatory; the
+     after-number may be measured or projected — but a projection without a shown pilot and visible
+     math is just a claim wearing a suit.</b></p>
+</section>
+
+<section id="attable">
+  <h2><span class="n">🪧</span>At your table on the night</h2>
+  <p class="lead">The name plate carries your declared pillars — put the <b>metric, direction and
+     baseline</b> right under them. Have ready: the <b>before</b> number · the <b>after or projected</b>
+     number · <b>one sentence on the method</b> · at most <b>one chart</b>. When a judge says
+     <i>"run it now,"</i> the metric story should take 30 seconds and the demo the rest.</p>
+</section>
+
+<section id="refs">
+  <h2><span class="n">📚</span>Where the metrics come from</h2>
+  <p class="lead">Every family on the menu traces to a published framework — the same evidence base
+     as the <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/research-grounding.md">rubric's research grounding</a>.</p>
+  <ul class="refs">
+    <li><b>DORA — State of AI-assisted Software Development 2025</b> · throughput vs. stability, "AI is an amplifier" ·
+        <a href="https://dora.dev/dora-report-2025/">dora.dev/dora-report-2025</a></li>
+    <li><b>DORA four keys + rework rate</b> · lead time, deploy frequency, CFR, recovery time ·
+        <a href="https://dora.dev/guides/dora-metrics-four-keys/">dora.dev/guides/dora-metrics-four-keys</a></li>
+    <li><b>DORA AI Capabilities Model</b> · the 7 capabilities that amplify AI benefit ·
+        <a href="https://dora.dev/ai/capabilities-model/report/">dora.dev/ai/capabilities-model</a></li>
+    <li><b>DX Core 4</b> · speed · effectiveness · quality · impact — unifies DORA, SPACE &amp; DevEx ·
+        <a href="https://getdx.com/dx-core-4/">getdx.com/dx-core-4</a></li>
+    <li><b>SPACE framework</b> · satisfaction, performance, activity, communication, efficiency ·
+        <a href="https://queue.acm.org/detail.cfm?id=3454124">ACM Queue — The SPACE of Developer Productivity</a></li>
+    <li><b>DevEx framework</b> · feedback loops · cognitive load · flow state ·
+        <a href="https://queue.acm.org/detail.cfm?id=3595878">ACM Queue — DevEx: What Actually Drives Productivity</a></li>
+    <li><b>DX AI Measurement Framework</b> · utilization → impact → ROI of AI-assisted engineering ·
+        <a href="https://getdx.com/blog/ai-measurement-framework-guide/">getdx.com — AI measurement framework</a></li>
+    <li><b>Google HEART</b> · happiness, engagement, adoption, retention, task success — for product/Value metrics ·
+        <a href="https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/">research.google — HEART (CHI 2010)</a></li>
+    <li><b>METR RCT 2025</b> · why perceived speed-up ≠ measured speed-up (+20% felt, −19% real) ·
+        <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">metr.org — developer study</a></li>
+  </ul>
+</section>
+
+</div>
+
+<!-- ========== TAB 3 · EVENT CALENDAR ========== -->
 <div class="tab" id="tab-calendar" hidden>
 
 <section>
@@ -234,7 +445,7 @@
 
 </div>
 
-<!-- ========== TAB 3 · SESSIONS ========== -->
+<!-- ========== TAB 4 · SESSIONS ========== -->
 <div class="tab" id="tab-sessions" hidden>
 
 <section>
@@ -293,7 +504,7 @@
 
 </div>
 
-<!-- ========== TAB 4 · TEAM COMPOSITION ========== -->
+<!-- ========== TAB 5 · TEAM COMPOSITION ========== -->
 <div class="tab" id="tab-composition" hidden>
 
 <section>
@@ -370,7 +581,7 @@
 
 </div>
 
-<!-- ========== TAB 5 · MARKETING ========== -->
+<!-- ========== TAB 6 · MARKETING ========== -->
 <div class="tab" id="tab-marketing" hidden>
 
 <section>
@@ -472,7 +683,7 @@
 
 <script>
 (function(){
-  var tabs = ["pack","calendar","sessions","composition","marketing"];
+  var tabs = ["pack","guide","calendar","sessions","composition","marketing"];
   function show(name){
     tabs.forEach(function(t){
       document.getElementById("tab-"+t).hidden = (t !== name);
