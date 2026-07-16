@@ -1,0 +1,113 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0}
+  body{background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:36px 90px 20px}
+  .top{display:flex;justify-content:space-between;align-items:flex-end}
+  .kicker{color:#7a4fc0;font-size:15px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  .kicker::before{content:"✦ ";letter-spacing:0}
+  h1{font-size:38px;font-weight:800;letter-spacing:-.01em;margin-top:8px}
+  h1 .em{color:#7a4fc0}
+  .who{color:#6d6779;font-size:16.5px;text-align:right;line-height:1.45}
+  .who b{color:#241f2d}
+  .idrow{display:flex;gap:10px;margin-top:14px;align-items:center}
+  .idbox{border:1.5px solid #d9d4e4;border-radius:10px;padding:8px 14px;color:#6d6779;font-size:15px}
+  .idbox .line{display:inline-block;border-bottom:1.5px solid #9a92ab;width:130px;margin-left:8px}
+  .chip{font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px;border:2px solid;white-space:nowrap}
+  .c1{color:#4f7d2c;border-color:#4f7d2c}.c2{color:#1f8a7d;border-color:#1f8a7d}.c3{color:#a8811c;border-color:#a8811c}
+  .c5{color:#2f6fb8;border-color:#2f6fb8}
+  .qual{margin-left:auto;color:#4a4453;font-size:14px;border:2px solid #241f2d;border-radius:10px;padding:8px 14px}
+  .qual b{color:#241f2d}
+  .grid{margin-top:14px;border:2px solid #241f2d;border-radius:14px;overflow:hidden;flex:1;min-height:0;
+        display:grid;grid-template-columns:56px 320px 112px 1fr 1fr 1fr;grid-template-rows:auto repeat(6,1fr)}
+  .hd{background:#241f2d;color:#fff;padding:8px 16px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center}
+  .hd.n{justify-content:center}
+  .snum{border-bottom:1.5px solid #d9d4e4;display:flex;align-items:center;justify-content:center}
+  .snum span{width:34px;height:34px;border-radius:50%;background:#7a4fc0;color:#fff;font-size:17px;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .snum.v span{background:#a8811c}
+  .axis{border-bottom:1.5px solid #d9d4e4;padding:8px 16px 8px 4px;display:flex;flex-direction:column;justify-content:center}
+  .axis .t{font-size:19px;font-weight:800}
+  .axis .q{font-size:13px;color:#6d6779;margin-top:2px;line-height:1.25;font-style:italic}
+  .score{border-bottom:1.5px solid #d9d4e4;display:flex;align-items:center;justify-content:center;gap:5px}
+  .dot{width:13px;height:13px;border-radius:50%;border:2px solid #9a92ab}
+  .cell{border-bottom:1.5px solid #d9d4e4;border-left:1.5px solid #eceaf2;padding:8px 16px;display:flex;flex-direction:column;justify-content:center}
+  .cell .d{font-size:13.5px;color:#4a4453;line-height:1.35}
+  .cell .d b{color:#241f2d}
+  .nb{border-bottom:none!important}
+  .foot{display:flex;gap:14px;margin-top:12px;align-items:center}
+  .tot{border:2px solid #7a4fc0;border-radius:12px;padding:11px 22px;font-size:18px;font-weight:800;color:#7a4fc0}
+  .note{flex:1;border:1.5px solid #d9d4e4;border-radius:12px;padding:11px 18px;color:#6d6779;font-size:15px}
+  .note .line{display:inline-block;border-bottom:1.5px solid #9a92ab;width:55%;margin-left:10px}
+  .adv{color:#4a4453;font-size:14px;max-width:430px;line-height:1.4}
+  .adv b{color:#241f2d}
+</style></head><body>
+  <div class="top">
+    <div>
+      <div class="kicker">Elevate 2026 · The floor round · one card, one lap</div>
+      <h1>Floor Scorecard — <span class="em">six steps, in order</span></h1>
+    </div>
+    <div class="who">Judge pairs · scoring lap 7–8 PM · ~10 min per station<br><b>Start at the pain. End at the offering.</b></div>
+  </div>
+
+  <div class="idrow">
+    <div class="idbox">Team<span class="line"></span></div>
+    <div class="idbox">Stage owned<span class="line" style="width:90px"></span></div>
+    <span class="chip c1">Higher Pace</span><span class="chip c2">Better Quality</span><span class="chip c3">Extended Value</span><span class="chip c5">A Team That Thrives</span>
+    <div class="qual">Qualifying to be picked: <b>agentic ☐ · ran on real project ☐ · pillar declared ☐</b></div>
+  </div>
+
+  <div class="grid">
+    <div class="hd"></div><div class="hd">Step</div><div class="hd n">Score</div>
+    <div class="hd">0–1 · a claim</div><div class="hd">2–3 · a demonstration</div><div class="hd">4–5 · a measurement</div>
+
+    <div class="snum"><span>1</span></div>
+    <div class="axis"><div class="t">The Pain</div><div class="q">Is this a pain point worth elevating?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Invented for the demo, or trivial — nobody would pay to remove it</div></div>
+    <div class="cell"><div class="d">Real but peripheral; the team can name who feels it</div></div>
+    <div class="cell"><div class="d"><b>Real, recurring, costly — the project's actual bottleneck</b>; team can say what it costs today</div></div>
+
+    <div class="snum"><span>2</span></div>
+    <div class="axis"><div class="t">The Mapping</div><div class="q">Pain → declared pillar → measure: does the chain hold?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Pain and declared pillar don't match; no measure named</div></div>
+    <div class="cell"><div class="d">Right pillar, fuzzy measure</div></div>
+    <div class="cell"><div class="d"><b>Clean chain with a defined before/after measure</b> — a real elevation path</div></div>
+
+    <div class="snum"><span>3</span></div>
+    <div class="axis"><div class="t">The Agent</div><div class="q">What role does the human play?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Human is the <b>operator</b> — prompt chain, human drives every step</div></div>
+    <div class="cell"><div class="d">Agent runs multi-step work but needs babysitting</div></div>
+    <div class="cell"><div class="d">Human is the <b>approver</b>; 5 = autonomy deliberately matched to the stage's risk</div></div>
+
+    <div class="snum"><span>4</span></div>
+    <div class="axis"><div class="t">The Gate</div><div class="q">Where does the human decide — show it firing</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">No gate, or a confirm-button the team can't explain</div></div>
+    <div class="cell"><div class="d">Gate at a sensible point; human sees what the agent proposes</div></div>
+    <div class="cell"><div class="d">Shows <b>why</b> (evidence, diff) · reject/edit incorporated · at the consequential action</div></div>
+
+    <div class="snum"><span>5</span></div>
+    <div class="axis"><div class="t">The Proof</div><div class="q">Did the declared pillar actually move?</div></div>
+    <div class="score"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell"><div class="d">Slideware, mock data, or movement merely asserted</div></div>
+    <div class="cell"><div class="d">Rough run on the real project; movement plausible, warts visible — projected with visible math lands here</div></div>
+    <div class="cell"><div class="d"><b>Measured movement on the declared pillar</b>; repeated runs, candid on failures &amp; cost</div></div>
+
+    <div class="snum nb v"><span>6</span></div>
+    <div class="axis nb"><div class="t">The Offering</div><div class="q">Extended Value: is this real beyond the demo?</div></div>
+    <div class="score nb"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="cell nb"><div class="d">No named user, no workflow, no cost story</div></div>
+    <div class="cell nb"><div class="d">Named user &amp; workflow; rough cost-to-run; honest gap list</div></div>
+    <div class="cell nb"><div class="d"><b>Named user + workflow + unit economics + transferable pattern</b> — 99x could scope the offering from this visit</div></div>
+  </div>
+
+  <div class="foot">
+    <div class="tot">Total / 30</div>
+    <div class="note">One-line note to the team:<span class="line"></span></div>
+    <div class="adv"><b>Rank within your route, never across.</b> Each pair shortlists 2 → the panel of ten picks the <b>Judges' Pick 8</b>.</div>
+  </div>
+</body></html>

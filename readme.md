@@ -29,10 +29,14 @@ re-render (headless Chrome, `--window-size=3840,2160`; invites `2400,3000`):
 
 | Graphic | Markdown source |
 |---|---|
-| `rubric/version-01/graphics/judge-guide.png`, `judge-anchors.png` | `rubric/version-01/anchors-graphic.md` |
-| `rubric/version-01/graphics/scorecard-l1.png` | `rubric/version-01/L1-floor-scorecard.md` |
-| `rubric/version-01/graphics/scorecard-l2.png` | `rubric/version-01/L2-pitch-scorecard.md` |
-| `rubric/version-01/graphics/building-plan.png`, `team-area.png`, `team-nameplate.png` | `rubric/version-01/event-layout.md` |
+| `rubric/version-02/graphics/judge-guide.png`, `judge-anchors.png` | `rubric/version-01/anchors-graphic.md` + `rubric/version-02/README.md` |
+| `rubric/version-02/graphics/floor-scorecard.png` | `rubric/version-02/floor-scorecard.md` |
+| `rubric/version-02/graphics/team-area.png`, `team-nameplate.png` | `rubric/version-02/event-layout.md` |
 | `marketing/invites/invite-*.png` (4 cards) | `event/calendar-and-sessions.md` |
+
+v02 has no building-plan board — the one-floor venue needs no floor map; the
+timeline lives on the site and in `rubric/version-02/event-layout.md`. v01's
+boards (incl. the L2 pitch card) remain in `rubric/version-01/graphics/` as
+reference only.
 
 Research citations for every scoring axis: [`research-grounding.md`](rubric/version-01/research-grounding.md).

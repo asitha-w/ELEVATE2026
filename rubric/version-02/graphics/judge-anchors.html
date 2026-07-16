@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0}
+  body{background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:48px 90px 26px}
+  .kicker{color:#7a4fc0;font-size:17px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  .kicker::before{content:"✦ ";letter-spacing:0}
+  h1{font-size:52px;font-weight:800;letter-spacing:-.01em;margin-top:14px}
+  h1 .em{color:#7a4fc0}
+  .sub{color:#6d6779;font-size:22px;margin-top:10px}
+  .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:26px;flex:1;min-height:0}
+  .col{border:2px solid;border-radius:14px;background:#fff;display:flex;flex-direction:column;overflow:hidden}
+  .col .head{padding:16px 20px 14px;color:#fff}
+  .col .head .t{font-size:23px;font-weight:800;line-height:1.1}
+  .col .head .s{font-size:14px;margin-top:3px;opacity:.9}
+  .blkk{padding:14px 22px;flex:1;display:flex;flex-direction:column;justify-content:center}
+  .blkk + .blkk{border-top:1.5px dashed #d9d4e4}
+  .blkk .lab{font-size:13.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:5px}
+  .blkk p{font-size:17px;color:#4a4453;line-height:1.5}
+  .blkk p b{color:#241f2d}
+  .k1{border-color:#4f7d2c}.k1 .head{background:#4f7d2c}.k1 .lab{color:#4f7d2c}
+  .k2{border-color:#1f8a7d}.k2 .head{background:#1f8a7d}.k2 .lab{color:#1f8a7d}
+  .k3{border-color:#a8811c}.k3 .head{background:#a8811c}.k3 .lab{color:#a8811c}
+  .k5{border-color:#2f6fb8}.k5 .head{background:#2f6fb8}.k5 .lab{color:#2f6fb8}
+</style></head><body>
+  <div class="kicker">Elevate 2026 · The NorthStar (V1.1, word for word) — what teams elevate &amp; how it's proven</div>
+  <h1>Four pillars. <span class="em">One elevation path each.</span></h1>
+  <div class="sub">Teams declare 1–2 pillars at registration. Judging starts at the pain: is it real, is it mapped to the right pillar, and did that pillar move?</div>
+
+  <div class="cols">
+    <div class="col k1">
+      <div class="head"><div class="t">Higher Pace</div><div class="s">ship faster, every bolt</div></div>
+      <div class="blkk"><div class="lab">The pain looks like</div><p>Long lead times, waiting on hand-offs, "that takes a sprint"</p></div>
+      <div class="blkk"><div class="lab">The elevation path</div><p>Agent owns the slow step end-to-end; humans decide at the gate</p></div>
+      <div class="blkk"><div class="lab">Proof that counts</div><p><b>Time a real task before vs. with the agent</b> — lead time / throughput delta</p></div>
+    </div>
+    <div class="col k2">
+      <div class="head"><div class="t">Better Quality</div><div class="s">an outcome of AI-elevated practices</div></div>
+      <div class="blkk"><div class="lab">The pain looks like</div><p>Rework, escaped defects, flaky releases, "almost right" output</p></div>
+      <div class="blkk"><div class="lab">The elevation path</div><p>Agent tests, reviews or gates every change before it lands</p></div>
+      <div class="blkk"><div class="lab">Proof that counts</div><p><b>Rework / change-failure rate down</b>; defects caught at the gate, shown</p></div>
+    </div>
+    <div class="col k3">
+      <div class="head"><div class="t">Extended Value</div><div class="s">new upside that AI-DLC unlocks</div></div>
+      <div class="blkk"><div class="lab">The pain looks like</div><p>Effort burns on toil while the customer's KPI stands still</p></div>
+      <div class="blkk"><div class="lab">The elevation path</div><p>Agent absorbs the toil; effort shifts to what the customer pays for</p></div>
+      <div class="blkk"><div class="lab">Proof that counts</div><p><b>A named customer KPI, before/after</b>; % effort moved from toil to new capability</p></div>
+    </div>
+    <div class="col k5">
+      <div class="head"><div class="t">A Team That Thrives</div><div class="s">an enjoyable journey for everyone</div></div>
+      <div class="blkk"><div class="lab">The pain looks like</div><p>Toil, cognitive overload, dread work nobody wants to own</p></div>
+      <div class="blkk"><div class="lab">The elevation path</div><p>Agent takes the toil; humans keep the judgment and the interesting work</p></div>
+      <div class="blkk"><div class="lab">Proof that counts</div><p><b>Before/after team survey + time reclaimed</b>; "would you keep it on Monday?"</p></div>
+    </div>
+  </div>
+
+</body></html>

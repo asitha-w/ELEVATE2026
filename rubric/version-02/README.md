@@ -103,11 +103,12 @@ the common frame.
 | `../version-01/anchors-graphic.md` | Per-pillar pains/paths/proofs — content carries over; **pillar names to be updated to V1.1 wording** |
 | `../version-01/research-grounding.md` | Unchanged — every axis still traces to the same sources |
 
-**Graphics debt (to regenerate for v02):** `building-plan` (new address, one-floor
-elevation), `scorecard-l1` → single six-step card, `scorecard-l2` retired,
-`judge-guide` (five pairs / Judges' Pick flow), `judge-anchors` + `team-nameplate`
-(V1.1 pillar names; plate drops the floor field). Same print spec: white bg,
-3840×2160, HTML source + headless Chrome.
+**Graphics (`graphics/`, rendered 16 Jul):** `floor-scorecard` (six steps, /30),
+`judge-guide` (five pairs → Judges' Pick flow), `judge-anchors` + `team-nameplate` +
+`team-area` (V1.1 pillar names; plate has route·table + metric line). The L2 pitch
+card and the building-plan board are retired — no floor map needed on one floor.
+Same print spec: white bg, 3840×2160, HTML source + headless Chrome.
+**Still pending:** event-day invite card reissue (old venue).
 
 ## Open questions for v02
 

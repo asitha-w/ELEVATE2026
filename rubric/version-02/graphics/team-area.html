@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:3840px;height:2160px;overflow:hidden}
+  body{width:1920px;height:1044px;overflow:hidden;transform:scale(2);transform-origin:0 0;
+       background:#ffffff;color:#241f2d;font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;
+       display:flex;flex-direction:column;padding:48px 90px 26px}
+  .kicker{color:#7a4fc0;font-size:16px;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+  .kicker::before{content:"✦ ";letter-spacing:0}
+  h1{font-size:50px;font-weight:800;letter-spacing:-.01em;margin-top:12px}
+  h1 .em{color:#7a4fc0}
+  .sub{color:#6d6779;font-size:21px;margin-top:8px}
+  .wrap{display:grid;grid-template-columns:1.55fr 1fr;gap:44px;margin-top:24px;flex:1;min-height:0}
+  .pod{position:relative;border:2px solid #d9d4e4;border-radius:14px;background:#fbfafd}
+  .walk{position:absolute;left:0;right:0;bottom:0;height:84px;background:repeating-linear-gradient(135deg,#f1eef7 0 14px,#faf8fe 14px 28px);
+        border-top:2px dashed #c9c2d8;display:flex;align-items:center;justify-content:center;
+        color:#8d86a0;font-size:14px;font-weight:800;letter-spacing:.3em;text-transform:uppercase}
+  .table{position:absolute;left:16%;top:18%;width:52%;height:44%;background:#fff;border:3px solid #9a92ab;border-radius:18px}
+  .chair{position:absolute;width:44px;height:44px;border-radius:50%;border:3px solid #c9c2d8;background:#fff}
+  .lap{position:absolute;width:64px;height:42px;border:2.5px solid #6d6779;border-radius:5px;background:#f1eef7}
+  .lap.demo{border-color:#7a4fc0;background:#ede6f9;box-shadow:0 0 0 3px #d9c9f2}
+  .plate{position:absolute;left:34%;bottom:84px;width:32%;height:52px;background:#7a4fc0;border-radius:8px 8px 0 0;
+        display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:800;letter-spacing:.12em}
+  .soda{position:absolute;left:4%;top:16%;width:8%;height:22%;border:2px dashed #a8811c;border-radius:10px;
+        display:flex;align-items:center;justify-content:center;text-align:center;color:#a8811c;font-size:12.5px;font-weight:800;line-height:1.3;padding:6px}
+  .pow{position:absolute;left:4%;top:44%;width:8%;height:16%;border:2px dashed #1f8a7d;border-radius:10px;
+        display:flex;align-items:center;justify-content:center;text-align:center;color:#1f8a7d;font-size:12.5px;font-weight:800;line-height:1.3;padding:6px}
+  .call{position:absolute;font-size:14.5px;color:#4a4453;line-height:1.35;max-width:250px}
+  .call b{color:#7a4fc0}
+  .side{display:flex;flex-direction:column;gap:14px;min-height:0}
+  .box{border:2px solid #241f2d;border-radius:14px;padding:16px 22px}
+  .box .h{font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#7a4fc0;margin-bottom:8px}
+  .box p{font-size:15px;color:#4a4453;line-height:1.45}
+  .box p b{color:#241f2d}
+  .q{display:flex;gap:12px;align-items:flex-start;margin-top:6px}
+  .q .n{width:25px;height:25px;border-radius:50%;background:#7a4fc0;color:#fff;font-size:13.5px;font-weight:800;
+       display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .q p{font-size:14px;color:#4a4453;line-height:1.35}
+  .q p b{color:#241f2d}
+</style></head><body>
+  <div class="kicker">Elevate 2026 · The team pod · one floor — 349 Colombo Main Rd</div>
+  <h1>Your table is <span class="em">your stage</span>.</h1>
+  <div class="sub">Judges walk the floor, read the plate, and say "run it now" — set the pod up so that's a 30-second ask, not a scramble.</div>
+
+  <div class="wrap">
+    <div class="pod">
+      <div class="table"></div>
+      <div class="chair" style="left:22%;top:9%"></div>
+      <div class="chair" style="left:40%;top:9%"></div>
+      <div class="chair" style="left:58%;top:9%"></div>
+      <div class="chair" style="left:22%;top:56%"></div>
+      <div class="chair" style="left:40%;top:56%"></div>
+      <div class="chair" style="left:58%;top:56%"></div>
+      <div class="lap" style="left:24%;top:26%"></div>
+      <div class="lap" style="left:42%;top:26%"></div>
+      <div class="lap demo" style="left:60%;top:26%"></div>
+      <div class="lap" style="left:33%;top:44%"></div>
+      <div class="lap" style="left:51%;top:44%"></div>
+      <div class="soda">SODAS<br>&amp; WATER</div>
+      <div class="pow">POWER<br>STRIP</div>
+      <div class="plate">TEAM NAME PLATE — FACES THE WALKWAY</div>
+      <div class="walk">Judges' walkway</div>
+      <div class="call" style="right:6%;top:22%;max-width:220px"><b>One laptop is the demo screen.</b> Any judge, any lap: "run it now" — no projector needed.</div>
+    </div>
+
+    <div class="side">
+      <div class="box">
+        <div class="h">The plate is your ID</div>
+        <p>Judges identify teams <b>only by the printed name plate</b>: team · project &amp; customer · stage owned · declared pillars · metric &amp; baseline · route &amp; table. Keep it facing the walkway all evening.</p>
+      </div>
+      <div class="box" style="flex:1">
+        <div class="h">The 10-minute visit — be ready for these, in order</div>
+        <div class="q"><div class="n">1</div><p><b>What's the pain?</b> Real, recurring, costly — what does it cost today?</p></div>
+        <div class="q"><div class="n">2</div><p><b>Which pillar, which measure?</b> Pain → declared pillar → before/after.</p></div>
+        <div class="q"><div class="n">3</div><p><b>Show the agent working.</b> On your real project, warts fine.</p></div>
+        <div class="q"><div class="n">4</div><p><b>Show the gate firing.</b> Where does the human decide, and why there?</p></div>
+        <div class="q"><div class="n">5</div><p><b>Show the pillar moved.</b> Measured, or projected with visible math.</p></div>
+        <div class="q"><div class="n">6</div><p><b>Who runs this on Monday?</b> Named user · workflow · what one run costs vs. is worth.</p></div>
+      </div>
+      <div class="box">
+        <div class="h">Pod checklist</div>
+        <p>Plate visible ☐ · demo laptop ready ☐ · gate on screen ☐ · before/after number written down ☐ · power ☐</p>
+      </div>
+    </div>
+  </div>
+</body></html>
