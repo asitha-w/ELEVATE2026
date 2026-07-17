@@ -18,7 +18,13 @@
   h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.01em;margin-top:12px}
   h1 .em{color:#E38E65}
   .sub{color:#B3AFC8;font-size:19px;margin-top:10px;max-width:1100px}
-  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:30px}
+  .tabgroups{display:flex;gap:40px;flex-wrap:wrap;margin-top:30px;align-items:flex-end}
+  .tglab{font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin:0 0 8px 6px}
+  .tglab.pub{color:#E38E65}
+  .tglab.org{color:#8AA9E5}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .tabs.orgt a:hover{color:#8AA9E5}
+  .tabs.orgt a.on{color:#8AA9E5;border-color:#2E2B4B;background:#1A1738}
   .tabs a{font-size:15.5px;font-weight:800;text-decoration:none;color:#B3AFC8;padding:12px 26px;border-radius:12px 12px 0 0;
           border:2px solid transparent;border-bottom:none}
   .tabs a:hover{color:#E38E65}
@@ -112,33 +118,42 @@
   .refs li{margin:9px 0 9px 18px}
   .refs li b{color:#F0EEE9}
 
-  /* how to elevate (team guide education block, from the AI-DLC breakfast seminar) */
+  /* how to elevate (team guide education block) */
   .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:18px;margin:26px 0 8px}
   .fstep{border:2px solid #2E2B4B;border-radius:14px;padding:18px 20px;background:#1A1738}
   .fstep .fn{font-size:30px;font-weight:800;color:#E38E65;line-height:1}
   .fstep h3{font-size:17.5px;font-weight:800;margin-top:8px}
   .fstep p{font-size:14px;color:#B3AFC8;margin-top:6px}
   .fstep p b{color:#D9D6CF}
-  .waves{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:14px;margin:26px 0 6px;align-items:end}
-  .wave{border:2px solid #2E2B4B;border-radius:12px;padding:14px 16px}
-  .wave .wk{font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#E38E65}
-  .wave h4{font-size:16px;font-weight:800;color:#F0EEE9;margin-top:3px}
-  .wave .ex{font-size:13px;color:#938FB0;font-style:italic;margin:6px 0 10px}
-  .wave .bar{border-radius:3px;background:#4A4B52}
-  .wave.hot .bar{background:#E38E65}
-  .wavecap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 4px;max-width:1100px}
+  .stair{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;align-items:end;margin:32px 0 4px;max-width:1500px}
+  .sw{display:flex;flex-direction:column;justify-content:flex-end}
+  .sw .wk{font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#E38E65}
+  .sw h4{font-size:16.5px;font-weight:800;color:#F0EEE9;margin-top:3px}
+  .sw .ex{font-size:13px;color:#938FB0;font-style:italic;margin-top:6px}
+  .sw .step{margin-top:14px;border-radius:10px 10px 0 0;background:#403C4A}
+  .sw.hot .step{background:#E38E65}
+  .ybh{align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+       color:#0D0C24;background:#E38E65;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+  .brkline{position:absolute;left:60%;bottom:0;width:2.5px;height:130px;background:#E05252;border-radius:2px}
+  .brkline::before{content:"✕";position:absolute;top:-24px;left:-6px;color:#E05252;font-weight:800;font-size:15px}
+  @media(max-width:980px){.stair{grid-template-columns:1fr 1fr;align-items:stretch}
+    .sw .step{height:8px !important}.brkline{display:none}.ybh{margin-top:8px}}
+  .wavecap{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin:12px 0 4px;max-width:1500px}
   .wavecap div{font-size:13.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
   .wavecap .low{color:#938FB0}
   .wavecap .high{color:#E38E65}
   .wavecap .broke{color:#E05252;text-transform:none;letter-spacing:0;font-weight:700;margin-top:4px}
-  .tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:20px;margin:26px 0 8px}
-  .tcard{border-radius:16px;padding:22px 24px 24px}
-  .tcard h3{font-size:22px;font-weight:800}
-  .tcard .one{font-weight:700;margin-top:6px;font-size:15px}
-  .tcard ul{margin:14px 0 0 17px;font-size:14.5px;line-height:1.5}
-  .t1{background:#FFFDF6;color:#0D0C24}.t1 h3{color:#0D0C24}
-  .t2{background:#FEF1E9;color:#0D0C24}.t2 h3{color:#E38E65}
-  .t3{background:#1A1738;border:2px solid #2E2B4B;color:#F0EEE9}.t3 h3{color:#E38E65}
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px;margin:28px 0 8px}
+  .plc{border:2.5px solid;border-radius:16px;padding:24px 28px;background:#1A1738}
+  .plc h3{font-size:24px;font-weight:800}
+  .plc .nsl{font-size:17px;font-weight:700;font-style:italic;color:#F0EEE9;margin-top:6px}
+  .plc .pp{font-size:14.5px;color:#B3AFC8;margin-top:12px;line-height:1.55}
+  .plc .pp b{color:#D9D6CF}
+  .plc .mlink{margin-top:12px;font-size:13.5px;font-weight:700}
+  .pl1{border-color:#A9CB7F}.pl1 h3{color:#A9CB7F}.pl1 .mlink a{color:#A9CB7F}
+  .pl2{border-color:#83C5BC}.pl2 h3{color:#83C5BC}.pl2 .mlink a{color:#83C5BC}
+  .pl3{border-color:#EFC569}.pl3 h3{color:#EFC569}.pl3 .mlink a{color:#EFC569}
+  .pl5{border-color:#8AA9E5}.pl5 h3{color:#8AA9E5}.pl5 .mlink a{color:#8AA9E5}
   .stages{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin:24px 0 8px}
   .stage{border:2px solid #2E2B4B;border-radius:12px;padding:14px 18px}
   .stage h4{font-size:15px;font-weight:800;color:#F0EEE9}
@@ -169,13 +184,19 @@
     </div>
     <img class="logo" src="assets/logo-header-deck.png" alt="ELEVATE 2026">
   </div>
-  <div class="tabs">
-    <a href="#pack" data-tab="pack" class="on">Judging &amp; Format</a>
-    <a href="#guide" data-tab="guide">Team Guide</a>
-    <a href="#calendar" data-tab="calendar">Event Calendar</a>
-    <a href="#sessions" data-tab="sessions">Sessions</a>
-    <a href="#composition" data-tab="composition">Team Composition</a>
-    <a href="#marketing" data-tab="marketing">Marketing</a>
+  <div class="tabgroups">
+    <div class="tgroup"><div class="tglab pub">For everyone</div>
+      <div class="tabs">
+        <a href="#guide" data-tab="guide">Team Guide</a>
+        <a href="#calendar" data-tab="calendar">Event Calendar</a>
+        <a href="#sessions" data-tab="sessions">Sessions</a>
+      </div></div>
+    <div class="tgroup"><div class="tglab org">Organisers</div>
+      <div class="tabs orgt">
+        <a href="#pack" data-tab="pack" class="on">Judging &amp; Format</a>
+        <a href="#composition" data-tab="composition">Team Composition</a>
+        <a href="#marketing" data-tab="marketing">Marketing</a>
+      </div></div>
   </div>
 </div></header>
 
@@ -260,41 +281,43 @@
 
 <section id="elevatepath">
   <h2><span class="n">🧭</span>"So what do I actually do to ELEVATE?"</h2>
-  <p class="lead">Four moves, in order — straight from the <b>AI-DLC breakfast seminar</b>. You can't
-     pick a solution before you know where you stand and which pillar you're aiming at.</p>
+  <p class="lead">Four moves, in order. You can't pick a solution before you know where you stand
+     and which pillar you're aiming at.</p>
 
   <div class="flow">
     <div class="fstep"><div class="fn">1</div><h3>Find your level</h3>
       <p>Locate your team on the <b>5 waves of AI tooling</b> below. Be honest — most of us work at
          waves 1–3 today.</p></div>
     <div class="fstep"><div class="fn">2</div><h3>Find your surface</h3>
-      <p>Walk your project's lifecycle, find the pain that costs the most, and map it to <b>1–2
-         NorthStar pillars</b>. That's your declared pillar.</p></div>
-    <div class="fstep"><div class="fn">3</div><h3>Find the agentic way</h3>
-      <p>Split the work across <b>humans, copilots and autopilots</b>, steal an agent idea from the
-         stage menu, put a <b>human gate</b> in front of production.</p></div>
+      <p>Walk your project's lifecycle, find the pain that costs the most, and declare the <b>1–2
+         NorthStar pillars</b> it lives under.</p></div>
+    <div class="fstep"><div class="fn">3</div><h3>Pick your agent play</h3>
+      <p>Steal a <b>proven agent pattern</b> from the stage menu and put a <b>human decision gate</b>
+         in front of production.</p></div>
     <div class="fstep"><div class="fn">4</div><h3>Run the metric</h3>
       <p>Baseline in week one, drive in week two, bring <b>both numbers</b> to the table — the rest
          of <a href="#onemetric">this tab</a> is exactly that.</p></div>
   </div>
 
   <h2 style="margin-top:44px"><span class="n">1</span>Find your level — the 5 waves of AI tooling</h2>
-  <p class="lead">We've moved from copy/paste prompts to open enterprise platforms in five short years.
-     Waves 1–3 made <b>one developer</b> faster; the promise of a fully automated SDLC broke; the real
-     gain is waves 4–5 — <b>lifecycle automation by a hybrid team</b>. The hackathon asks you to build
-     one level up from where you work today: a <b>wave-4 build</b> — an agent that owns a lifecycle
+  <p class="lead">We've moved from copy/paste prompts to open enterprise platforms in five short
+     years. Waves 1–3 made <b>one developer</b> faster — and the promise of a fully automated SDLC
+     broke. The real elevation is waves 4–5: <b>lifecycle automation by a hybrid team</b>. Build
+     <b>one level up from where you work today</b>: a wave-4 build — an agent that owns a lifecycle
      stage, with a human at the gate.</p>
-  <div class="waves">
-    <div class="wave"><div class="wk">Wave 01</div><h4>Conversational AI</h4>
-      <div class="ex">ChatGPT, copy/paste</div><div class="bar" style="height:6px"></div></div>
-    <div class="wave"><div class="wk">Wave 02</div><h4>AI-Native Editors</h4>
-      <div class="ex">Cursor, Windsurf, Antigravity</div><div class="bar" style="height:14px"></div></div>
-    <div class="wave"><div class="wk">Wave 03</div><h4>CLI Coding Agents</h4>
-      <div class="ex">Claude Code, Copilot CLI</div><div class="bar" style="height:24px"></div></div>
-    <div class="wave hot"><div class="wk">Wave 04</div><h4>Autonomous Lifecycle Agents</h4>
-      <div class="ex">GH Code Review, Google Code Assist</div><div class="bar" style="height:36px"></div></div>
-    <div class="wave hot"><div class="wk">Wave 05</div><h4>Custom Agent Workforces</h4>
-      <div class="ex">Build specialized agents for your enterprise</div><div class="bar" style="height:50px"></div></div>
+  <div class="stair">
+    <div class="sw"><div class="wk">Wave 01</div><h4>Conversational AI</h4>
+      <div class="ex">ChatGPT, copy/paste</div><div class="step" style="height:26px"></div></div>
+    <div class="sw"><div class="wk">Wave 02</div><h4>AI-Native Editors</h4>
+      <div class="ex">Cursor, Windsurf, Antigravity</div><div class="step" style="height:66px"></div></div>
+    <div class="sw"><div class="wk">Wave 03</div><h4>CLI Coding Agents</h4>
+      <div class="ex">Claude Code, Copilot CLI</div><div class="step" style="height:106px"></div></div>
+    <div class="sw hot"><div class="ybh">▼ you build here</div><div class="wk">Wave 04</div>
+      <h4>Autonomous Lifecycle Agents</h4>
+      <div class="ex">GH Code Review, Google Code Assist</div><div class="step" style="height:156px"></div></div>
+    <div class="sw hot"><div class="wk">Wave 05</div><h4>Custom Agent Workforces</h4>
+      <div class="ex">Build specialized agents for your enterprise</div><div class="step" style="height:206px"></div></div>
+    <div class="brkline"></div>
   </div>
   <div class="wavecap">
     <div class="low">Waves 1–3 · personal productivity — one developer
@@ -303,38 +326,35 @@
   </div>
 
   <h2 style="margin-top:44px"><span class="n">2</span>Find your surface — the four NorthStar pillars</h2>
-  <p class="lead">Word for word from North Star V1.1: <b>"Incorporate AI into the software development
-     lifecycle in a way that elevates project performance."</b> Your project's biggest pain maps to one
-     of four pillars — declare 1–2 and you'll be scored there only:</p>
-  <p class="lead">
-     <span class="chips"><span class="chip c1">Higher Pace</span></span> <i>ship faster, every bolt</i> ·
-     <span class="chips"><span class="chip c2">Better Quality</span></span> <i>an outcome of AI-elevated practices</i> ·
-     <span class="chips"><span class="chip c3">Extended Value</span></span> <i>new upside that AI-DLC unlocks</i> ·
-     <span class="chips"><span class="chip c5">A Team That Thrives</span></span> <i>an enjoyable journey for everyone</i></p>
+  <p class="lead">The NorthStar: <b>"Incorporate AI into the software development lifecycle in a way
+     that elevates project performance."</b> Your project's biggest pain lives under one of these
+     four pillars. Declare 1–2 on your name plate — you're scored there, and only there:</p>
+  <div class="pillars">
+    <div class="plc pl1"><h3>Higher Pace</h3><div class="nsl">"Ship faster, every bolt."</div>
+      <div class="pp"><b>Sounds like:</b> releases take days · reviews queue for hours ·
+         hand-offs stall between teams · the slow task everyone routes around.</div>
+      <div class="mlink"><a href="#menu">→ metrics for this pillar</a></div></div>
+    <div class="plc pl2"><h3>Better Quality</h3><div class="nsl">"An outcome of AI-elevated practices."</div>
+      <div class="pp"><b>Sounds like:</b> rework eats the sprint · defects escape to production ·
+         flaky tests nobody trusts · the same bug class returns every month.</div>
+      <div class="mlink"><a href="#menu">→ metrics for this pillar</a></div></div>
+    <div class="plc pl3"><h3>Extended Value</h3><div class="nsl">"New upside that AI-DLC unlocks."</div>
+      <div class="pp"><b>Sounds like:</b> toil the customer pays for · tickets resolve in days, not
+         minutes · a capability the project could never staff — until an agent could own it.</div>
+      <div class="mlink"><a href="#menu">→ metrics for this pillar</a></div></div>
+    <div class="plc pl5"><h3>A Team That Thrives</h3><div class="nsl">"An enjoyable journey for everyone."</div>
+      <div class="pp"><b>Sounds like:</b> interrupt load kills flow · on-call fatigue · repetitive
+         chores nobody should own · the work that makes good people tired.</div>
+      <div class="mlink"><a href="#menu">→ metrics for this pillar</a></div></div>
+  </div>
   <div class="note"><b>How to find the pain:</b> walk your project stage by stage — discovery ·
      construction · operation · adoption — and ask <i>"what recurs, what does it cost, who feels
      it?"</i> The pain you pick is scorecard step 1, and the pillar it maps to is step 2 — judges
      score the mapping before they ever look at your agent.</div>
 
-  <h2 style="margin-top:44px"><span class="n">3</span>Find the agentic way — the productivity triad</h2>
-  <p class="lead">Productivity comes from the tight fusion of <b>humans, copilots and autopilots inside
-     a single workflow</b>. Decide which parts of your solution each one owns:</p>
-  <div class="tri">
-    <div class="tcard t1"><h3>Humans</h3><div class="one">Build the right things.</div>
-      <ul><li>Align with user needs.</li><li>Align with product strategy.</li>
-          <li>Hold critical decision points.</li></ul></div>
-    <div class="tcard t2"><h3>Copilots</h3><div class="one">Assist humans interactively.</div>
-      <ul><li>Help us move faster.</li><li>Bring technical skill.</li>
-          <li>Bring domain knowledge.</li></ul></div>
-    <div class="tcard t3"><h3>Autopilots</h3><div class="one">Deliver work, uphold standards.</div>
-      <ul><li>Increase automation.</li><li>Enforce guardrails.</li>
-          <li>Keep the process consistent.</li></ul></div>
-  </div>
-  <div class="note"><b>The rule that never bends: no agent ships into production on its own.</b>
-     Your human decision gate is where "hold critical decision points" becomes real — and it's
-     scorecard step 4.</div>
-
-  <p class="lead"><b>Steal an agent idea</b> — where agents already show up across the lifecycle:</p>
+  <h2 style="margin-top:44px"><span class="n">3</span>Pick your agent play — proven at every stage</h2>
+  <p class="lead">You don't have to invent the pattern. Agents already earn their keep at every
+     lifecycle stage — steal a play and aim it at your pain:</p>
   <div class="stages">
     <div class="stage"><h4><span class="ar">›</span> Discovery</h4>
       <ul><li>Competition monitoring</li><li>Trend identification</li><li>UI prototyping</li></ul></div>
@@ -345,6 +365,9 @@
     <div class="stage"><h4><span class="ar">›</span> Adoption</h4>
       <ul><li>Feature adoption</li><li>Usability improver</li></ul></div>
   </div>
+  <div class="note"><b>The rule that never bends: no agent ships into production on its own.</b>
+     Decide where the human makes the call — that gate is scorecard step 4, so design it in from
+     day one.</div>
   <div class="note"><b>Tools on the table:</b> the open-source <b>Xianix stack</b> — a Xians gateway
      that routes events from your engineering systems (git, task board, CI/CD, production) to
      sub-agents loaded as <b>Claude Code plugins</b> (code review, test, docs, incident response —
