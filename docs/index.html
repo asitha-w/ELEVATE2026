@@ -66,6 +66,18 @@
   .mile.big{border:2px solid #E38E65;border-radius:14px;padding:18px 24px 20px;background:#1A1738;margin-left:-8px}
   .mile.big::before{left:-40px}
 
+  /* calendar - the three dates */
+  .bigcal{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin:30px 0 10px}
+  .bc{border:2px solid #2E2B4B;border-radius:16px;padding:26px 30px;background:#1A1738;display:flex;flex-direction:column}
+  .bc .date{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px;font-weight:800;letter-spacing:.08em;
+       color:#E38E65;text-transform:uppercase}
+  .bc h3{font-size:22px;font-weight:800;margin-top:6px}
+  .bc p{color:#B3AFC8;font-size:15px;margin-top:8px;flex:1}
+  .bc p b{color:#F0EEE9}
+  .bc .where{margin-top:16px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#938FB0}
+  .bc.hero{border-color:#E38E65;border-width:2.5px}
+  .bc.hero .where{color:#E38E65}
+
   /* sessions */
   .sess{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:start;margin:30px 0 46px;
         border:2px solid #2E2B4B;border-radius:16px;padding:28px 30px}
@@ -118,6 +130,31 @@
   .refs li{margin:9px 0 9px 18px}
   .refs li b{color:#F0EEE9}
 
+  /* judging tab mini-graphics */
+  .flowstrip{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:26px 0 8px}
+  .fs{border:2px solid #2E2B4B;border-radius:12px;padding:12px 16px;background:#1A1738;flex:1;min-width:158px}
+  .fs .t{font-size:11.5px;font-weight:800;letter-spacing:.1em;color:#E38E65;text-transform:uppercase}
+  .fs h4{font-size:15px;font-weight:800;color:#F0EEE9;margin-top:2px}
+  .fs p{font-size:12.5px;color:#938FB0;margin-top:4px}
+  .fa{align-self:center;color:#E38E65;font-weight:800;font-size:19px;flex:none}
+  @media(max-width:760px){.fa{display:none}}
+  .chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:26px 0 6px}
+  .ch{border:2px solid #2E2B4B;border-radius:12px;padding:10px 13px;text-align:center;flex:1;min-width:112px}
+  .ch .cn{font-size:10.5px;font-weight:800;letter-spacing:.14em;color:#938FB0;text-transform:uppercase}
+  .ch h4{font-size:15px;font-weight:800;color:#F0EEE9;margin-top:2px}
+  .ch .pts{font-size:11.5px;color:#938FB0;margin-top:3px}
+  .ch.ev{border-color:#E38E65}
+  .ch.ev .cn{color:#E38E65}
+  .tot{align-self:center;flex:none;font-size:19px;font-weight:800;color:#0D0C24;background:#E38E65;
+       border-radius:12px;padding:14px 16px}
+  .chainkey{font-size:13.5px;color:#938FB0;margin:6px 0 0}
+  .chainkey b{color:#E38E65}
+  .funnel{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:22px 0 8px}
+  .fu{border:2px solid #2E2B4B;border-radius:999px;padding:8px 18px;font-size:14px;font-weight:700;color:#D9D6CF}
+  .fu b{color:#F0EEE9}
+  .fu.hot{background:#E38E65;border-color:#E38E65;color:#0D0C24}
+  .fu.hot b{color:#0D0C24}
+
   /* how to elevate (team guide education block) */
   .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:18px;margin:26px 0 8px}
   .fstep{border:2px solid #2E2B4B;border-radius:14px;padding:18px 20px;background:#1A1738}
@@ -138,6 +175,21 @@
   .brkline::before{content:"✕";position:absolute;top:-24px;left:-6px;color:#E05252;font-weight:800;font-size:15px}
   @media(max-width:980px){.stair{grid-template-columns:1fr 1fr;align-items:stretch}
     .sw .step{height:8px !important}.brkline{display:none}.ybh{margin-top:8px}}
+  .shiftarc{position:absolute;left:50%;bottom:95px;width:14%;height:85px;pointer-events:none}
+  .shiftlab{position:absolute;left:40.8%;bottom:56px;width:18.4%;text-align:center;font-size:11.5px;
+       font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F0EEE9;pointer-events:none}
+  @media(max-width:980px){.shiftarc,.shiftlab{display:none}}
+  .shift{border:2px solid #2E2B4B;border-radius:14px;margin:26px 0 8px;max-width:1500px;overflow:hidden}
+  .shift .row{display:grid;grid-template-columns:1fr 1.25fr;border-top:1.5px solid #2E2B4B}
+  .shift .row:first-child{border-top:none}
+  .shift .row div{padding:11px 20px;font-size:14.5px}
+  .shift .row div:first-child{color:#938FB0;border-right:1.5px solid #2E2B4B}
+  .shift .row div:last-child{color:#D9D6CF}
+  .shift .row div:last-child b{color:#F0EEE9}
+  .shift .hd div{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:12px 20px}
+  .shift .hd div:first-child{color:#938FB0}
+  .shift .hd div:last-child{color:#E38E65}
+  @media(max-width:700px){.shift .row{grid-template-columns:1fr}.shift .row div:first-child{border-right:none;padding-bottom:2px}}
   .wavecap{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin:12px 0 4px;max-width:1500px}
   .wavecap div{font-size:13.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
   .wavecap .low{color:#938FB0}
@@ -185,9 +237,9 @@
   <div class="tabgroups">
     <div class="tgroup"><div class="tglab pub">For everyone</div>
       <div class="tabs">
-        <a href="#pack" data-tab="pack" class="on">Judging &amp; Format</a>
+        <a href="#calendar" data-tab="calendar" class="on">Event Calendar</a>
         <a href="#guide" data-tab="guide">Team Guide</a>
-        <a href="#calendar" data-tab="calendar">Event Calendar</a>
+        <a href="#pack" data-tab="pack">Judging &amp; Format</a>
         <a href="#sessions" data-tab="sessions">Sessions</a>
         <a href="#composition" data-tab="composition">Team Composition</a>
       </div></div>
@@ -220,21 +272,56 @@
   <p class="lead">One scoring lap, and the anchors board: the NorthStar's four pillars —
      <span class="chips"><span class="chip c1">Higher Pace</span><span class="chip c2">Better Quality</span><span class="chip c3">Extended Value</span><span class="chip c5">A Team That Thrives</span></span>
      — what the pain looks like, the elevation path, and the proof that counts.</p>
-  <p class="lead">The flow in five moves: <b>brief &amp; calibrate → mentor laps → scoring lap (your
-     route) → shortlist &amp; deliberate → announce &amp; share</b>. Judging starts at the pain: is it
-     real, is it mapped to the right pillar, did that pillar move? Both boards are on the
-     <a href="#printables">Marketing &amp; Printables</a> tab.</p>
+  <div class="flowstrip">
+    <div class="fs"><div class="t">5:00</div><h4>Brief &amp; calibrate</h4>
+      <p>Rubric walkthrough · pair up · take your route</p></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="t">5:15 – 7:00</div><h4>Mentor laps</h4>
+      <p>No scores — help teams sharpen the pain &amp; the proof</p></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="t">7:00 – 8:00</div><h4>Scoring lap</h4>
+      <p>Your route: ~6 tables × ~10 min, six steps in order</p></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="t">~7:45</div><h4>Shortlist &amp; deliberate</h4>
+      <p>Each pair picks 2 → panel of ten settles the 8 over dinner</p></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="t">8:15</div><h4>Announce &amp; share</h4>
+      <p>Judges' Pick 8 — and 2–3 written notes to every team</p></div>
+  </div>
+  <p class="lead">Judging starts at the pain: is it real, is it mapped to the right pillar, did that
+     pillar move? Both print boards are on the <a href="#printables">Marketing &amp; Printables</a> tab.</p>
 </section>
 
 <section id="scorecards">
-  <h2><span class="n">3</span>The scorecard — one card, six steps</h2>
-  <p class="lead">One floor scorecard, <b>six steps in order</b> — the pain · the mapping · the agent ·
-     the gate · the proof · <b>the offering</b> (0–5 each, /30). The offering step carries the old pitch
-     round's value questions onto the floor: a named Monday-morning user, the workflow it lands in, unit
-     economics, the honest gap list. Rank within your route, never across; each pair shortlists 2, the
-     panel of ten deliberates the 10 down to the <b>Judges' Pick 8</b>. Ties break on the gate.</p>
-  <p class="lead">The printable card (A4 landscape, one per team per judge) is on the
-     <a href="#printables">Marketing &amp; Printables</a> tab.</p>
+  <h2><span class="n">3</span>Scoring — six steps, in order</h2>
+  <p class="lead">One score per visit, <b>six steps in the order they're judged</b> — 0–5 each, out
+     of 30. The offering step asks the value questions right at the table: a named Monday-morning
+     user, the workflow it lands in, unit economics, the honest gap list.</p>
+  <div class="chain">
+    <div class="ch ev"><div class="cn">Step 1</div><h4>The pain</h4><div class="pts">0–5</div></div>
+    <div class="fa">→</div>
+    <div class="ch ev"><div class="cn">Step 2</div><h4>The mapping</h4><div class="pts">0–5</div></div>
+    <div class="fa">→</div>
+    <div class="ch"><div class="cn">Step 3</div><h4>The agent</h4><div class="pts">0–5</div></div>
+    <div class="fa">→</div>
+    <div class="ch"><div class="cn">Step 4</div><h4>The gate</h4><div class="pts">0–5</div></div>
+    <div class="fa">→</div>
+    <div class="ch ev"><div class="cn">Step 5</div><h4>The proof</h4><div class="pts">0–5</div></div>
+    <div class="fa">→</div>
+    <div class="ch ev"><div class="cn">Step 6</div><h4>The offering</h4><div class="pts">0–5</div></div>
+    <div class="tot">/30</div>
+  </div>
+  <p class="chainkey"><b>Orange steps = 20 of 30.</b> Pain, mapping, proof and offering carry the
+     majority — effectiveness and value outweigh the machinery by design.</p>
+  <div class="funnel">
+    <span class="fu"><b>29 teams</b> on the floor</span><span class="fa">→</span>
+    <span class="fu">each pair shortlists <b>2</b></span><span class="fa">→</span>
+    <span class="fu"><b>10</b> candidates at dinner</span><span class="fa">→</span>
+    <span class="fu hot"><b>Judges' Pick 8</b></span>
+  </div>
+  <p class="lead">Rank within your route, never across — the panel's dinner deliberation is where
+     routes reconcile. Ties break on the gate. The printable card (A4 landscape, one per team per
+     judge) is on the <a href="#printables">Marketing &amp; Printables</a> tab.</p>
   <div class="note"><b>Qualifying bar to be picked:</b> genuinely agentic (a prompt chain is not an agent) ·
      ran on the real project (rough is fine, mock is not) · pillar declared (scored there only).</div>
 </section>
@@ -308,12 +395,36 @@
     <div class="sw hot"><div class="wk">Wave 05</div><h4>Custom Agent Workforces</h4>
       <div class="ex">Build specialized agents for your enterprise</div><div class="step" style="height:206px"></div></div>
     <div class="brkline"></div>
+    <div class="shiftlab">the real shift</div>
+    <svg class="shiftarc" viewBox="0 0 100 112" preserveAspectRatio="none">
+      <defs><marker id="arh" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+        <path d="M0,0 L6,3.5 L0,7" fill="none" stroke="#E38E65" stroke-width="1.6"/></marker></defs>
+      <path d="M 3 80 C 42 80, 60 70, 76 48 C 84 37, 89 32, 92 27" fill="none" stroke="#E38E65"
+            stroke-width="2.6" stroke-linecap="round" marker-end="url(#arh)"/>
+    </svg>
   </div>
   <div class="wavecap">
     <div class="low">Waves 1–3 · personal productivity — one developer
       <div class="broke">✕ the broken promise: a fully automated SDLC</div></div>
     <div class="high">Waves 4–5 · lifecycle automation — hybrid team (humans + agents)</div>
   </div>
+
+  <div class="shift">
+    <div class="row hd"><div>Waves 1–3 · the tool</div><div>Wave 4 · the agent</div></div>
+    <div class="row"><div>You call the tool</div>
+      <div><b>The project calls the agent</b> — a PR opens, a ticket lands, a build breaks</div></div>
+    <div class="row"><div>Works while you watch</div>
+      <div>Works <b>around the clock</b>, whether you're there or not</div></div>
+    <div class="row"><div>Owns a task inside your session</div>
+      <div>Owns <b>a recurring job in the lifecycle</b>, end-to-end</div></div>
+    <div class="row"><div>You're the operator — you drive it</div>
+      <div>You're the <b>supervisor</b> — set the standard, hold the gate</div></div>
+    <div class="row"><div>The gain: one developer's speed</div>
+      <div>The gain: <b>the whole project's flow</b></div></div>
+  </div>
+  <div class="note"><b>Your wave-4 build, concretely:</b> take the thing you already do with a copilot
+     when someone remembers to ask — <b>wire it to the event that should trigger it</b>, give it the
+     job end-to-end, and put yourself at the gate.</div>
 
   <h2 style="margin-top:44px"><span class="n">2</span>Find your surface — the four NorthStar pillars</h2>
   <p class="lead">The NorthStar: <b>"Incorporate AI into the software development lifecycle in a way
@@ -556,51 +667,35 @@
 <div class="tab" id="tab-calendar" hidden>
 
 <section>
-  <h2><span class="n">📅</span>The runway to event day</h2>
-  <p class="lead">Every milestone between now and <b>Friday 7 August</b>. Runway sessions happen at
-     <b>99x · 65 Walukarama Road, Colombo</b>; <b>event day moves to 99x · 349 Colombo Main Rd, Colombo 00300</b>.</p>
+  <h2><span class="n">📅</span>Three dates that matter</h2>
+  <p class="lead">Two ramp-up sessions on the runway, then the night itself.</p>
 
-  <div class="cal">
-    <div class="mile done">
-      <div class="date">Fri 10 Jul <span class="done-tag">✓ done</span></div>
-      <h3>Introductory email</h3>
-      <p>The launch flyer goes out — <i>"Elevate your project. Agents deliver. You decide."</i></p>
-    </div>
-    <div class="mile">
-      <div class="date">Mon 20 Jul</div>
-      <h3>Briefing for team leads</h3>
-      <p>The format and the evening's flow, the <b>NorthStar pillars</b> teams can elevate,
-         how the single-round floor judging and the Judges' Pick work, and what to prepare before ramp-up.</p>
-    </div>
-    <div class="mile">
+  <div class="bigcal">
+    <div class="bc">
       <div class="date">Fri 24 Jul</div>
-      <h3>Ramp-up Session 1 — from idea to a running start</h3>
-      <p>In three parts: the <b>NorthStar &amp; agentic maturity</b> (Gartner's roadmap) · a live
-         <b>Xianix</b> example · SWOT + the platform landscape. ~1.5 hours — details on the
+      <h3>Ramp-up Session 1</h3>
+      <p>From idea to a running start — the <b>NorthStar &amp; agentic maturity</b>, a live
+         <b>Xianix</b> example, and SWOT on your own agent play. ~1.5 hours; details on the
          <a href="#sessions">Sessions</a> tab.</p>
+      <div class="where">99x · 65 Walukarama Road, Colombo</div>
     </div>
-    <div class="mile">
+    <div class="bc">
       <div class="date">Fri 31 Jul</div>
-      <h3>Ramp-up Session 2 — the Panel Discussion</h3>
-      <p>One week out: a panel of <b>engineering, delivery and senior leadership</b> on the agentic
-         projects and challenges we've already seen — details on the <a href="#sessions">Sessions</a> tab.</p>
+      <h3>Ramp-up Session 2 — the Panel</h3>
+      <p>One week out: <b>engineering, delivery and senior leadership</b> on the agentic projects
+         and challenges we've already seen. Bring your hardest questions — details on the
+         <a href="#sessions">Sessions</a> tab.</p>
+      <div class="where">99x · 65 Walukarama Road, Colombo</div>
     </div>
-    <div class="mile">
-      <div class="date">Mon 3 – Thu 6 Aug</div>
-      <h3>Judges' preparation week</h3>
-      <p><b>Rubric walkthrough and calibration</b> with all ten judges, and handover of the judging
-         context pack — the guide, the anchors and the six-step scorecard — so every pair walks the
-         floor reading teams the same way.</p>
-    </div>
-    <div class="mile big">
+    <div class="bc hero">
       <div class="date">Fri 7 Aug · 5–9 PM</div>
-      <h3>ELEVATE 2026 — Event Day · 349 Colombo Main Rd</h3>
+      <h3>ELEVATE 2026 — Event Day</h3>
       <p>One floor, all 29 teams in a single sitting · ten judges roam in five pairs, scoring lap
-         7:00–8:00 · <b>Judges' Pick 8</b> announced 8:15 · the eight share what they built with the
-         whole company · dinner on the same floor.</p>
+         7:00–8:00 · <b>Judges' Pick 8</b> announced 8:15 · the eight teach the whole company what
+         they built · dinner on the same floor.</p>
+      <div class="where">99x · 349 Colombo Main Rd, Colombo 00300</div>
     </div>
   </div>
-
 </section>
 
 </div>
@@ -895,7 +990,7 @@
       var tab = el.closest(".tab");
       if (tab) show(tab.id.replace("tab-",""));
       el.scrollIntoView();
-    } else show("pack");
+    } else show("calendar");
   }
   window.addEventListener("hashchange", route);
   route();
