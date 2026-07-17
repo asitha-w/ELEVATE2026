@@ -67,7 +67,8 @@
   .mile.big::before{left:-40px}
 
   /* purpose */
-  .eras{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:26px 0;align-items:end}
+  .eras{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:-128px 0 26px;align-items:end}
+  @media(max-width:1120px){.eras{margin:26px 0}}
   .era1{min-height:430px}
   .era2{min-height:560px}
   @media(max-width:1120px){.era1,.era2{min-height:0}}
@@ -245,8 +246,8 @@
 
 <section id="purposetop">
   <h2><span class="n">✦</span>Why ELEVATE exists</h2>
-  <p class="lead">One evening, 25+ teams, one purpose — and it starts with what our customers
-     are really asking for.</p>
+  <p class="lead" style="max-width:470px">One evening, 25+ teams, one purpose — and it starts
+     with what our customers are really asking for.</p>
 
   <div class="eras">
   <div class="era era1">
