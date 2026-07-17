@@ -54,13 +54,8 @@ html = sub(html, '"composition","marketing"', '"composition"', "js tabs array")
 
 # 3. neutralize references to the stripped tab
 html = sub(html, ''' Both print boards are on the <a href="#printables">Marketing &amp; Printables</a> tab.''', "", "judges boards ref")
-html = sub(html, '''A4 landscape, one per
-  team per judge; the print original is on the <a href="#printables">Marketing &amp; Printables</a> tab.''',
-    "A4 landscape, one per team per judge.", "scorecard ref")
-html = sub(html, ''' Invitations below are
-     shareable as-is — full-size cards for all four events (including the leads briefing and event
-     day) live on the <a href="#marketing">Marketing</a> tab.''',
-    " Invitations below are shareable as-is.", "sessions lead ref")
+html = sub(html, ''' The
+  print original is on the <a href="#printables">Marketing &amp; Printables</a> tab.''', "", "scorecard ref")
 html = sub(html, ''' — its invitation is on the <a href="#marketing">Marketing</a> tab''', "", "briefing note ref")
 
 # 4. public title + footer points at the org repo
