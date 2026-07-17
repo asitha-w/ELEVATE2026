@@ -66,6 +66,26 @@
   .mile.big{border:2px solid #E38E65;border-radius:14px;padding:18px 24px 20px;background:#1A1738;margin-left:-8px}
   .mile.big::before{left:-40px}
 
+  /* purpose */
+  .era{border:2px solid #2E2B4B;border-radius:16px;padding:32px 38px;margin:26px 0;max-width:1500px}
+  .era .k{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#938FB0}
+  .era h3{font-size:clamp(22px,2.6vw,30px);font-weight:800;margin-top:8px}
+  .era p{color:#B3AFC8;font-size:16px;margin-top:12px;max-width:1050px}
+  .era p b{color:#F0EEE9}
+  .era .words{margin-top:16px;font-size:13.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#6B6786}
+  .era2{background:#1A1738}
+  .era3{border-color:#E38E65}
+  .era3 .k{color:#E38E65}
+  .qshift{margin:40px 0;padding:8px 4px;display:flex;flex-direction:column;gap:26px;max-width:1500px}
+  .qshift .ql{display:block;font-size:12.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+  .qshift .then .ql{color:#6B6786}
+  .qshift .then .qt{font-size:clamp(20px,2.6vw,32px);font-weight:800;color:#6B6786;text-transform:uppercase;letter-spacing:.02em}
+  .qshift .now .ql{color:#E38E65}
+  .qshift .now .qt{font-size:clamp(26px,3.6vw,46px);font-weight:800;color:#F0EEE9;text-transform:uppercase;letter-spacing:.02em}
+  .qshift .now .qt .em{color:#E38E65}
+  .tagclose{margin:40px 0 10px;font-size:clamp(24px,3.2vw,40px);font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:#F0EEE9}
+  .tagclose .em{color:#E38E65}
+
   /* calendar - the three dates */
   .bigcal{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin:30px 0 10px}
   .bc{border:2px solid #2E2B4B;border-radius:16px;padding:26px 30px;background:#1A1738;display:flex;flex-direction:column}
@@ -193,7 +213,8 @@
   <div class="tabgroups">
     <div class="tgroup"><div class="tglab pub">For everyone</div>
       <div class="tabs">
-        <a href="#calendar" data-tab="calendar" class="on">Event Calendar</a>
+        <a href="#purpose" data-tab="purpose" class="on">Purpose</a>
+        <a href="#calendar" data-tab="calendar">Event Calendar</a>
         <a href="#guide" data-tab="guide">Team Guide</a>
         <a href="#pack" data-tab="pack">Evaluation</a>
         <a href="#sessions" data-tab="sessions">Sessions</a>
@@ -207,6 +228,56 @@
 </div></header>
 
 <div class="wrap">
+
+<!-- ========== TAB 0 · PURPOSE ========== -->
+<div class="tab" id="tab-purpose" hidden>
+
+<section id="purposetop">
+  <h2><span class="n">✦</span>Why ELEVATE exists</h2>
+  <p class="lead">One evening, 25+ teams, one purpose — and it starts with what our customers
+     are really asking for.</p>
+
+  <div class="era era1">
+    <div class="k">The ground we stood on</div>
+    <h3>We built software by selling effort.</h3>
+    <p>For twenty years, software was built by teams selling effort — backlogs, sprints, tickets.
+       Customers bought hours and trusted us to spend them well. <b>Effort was the measure of
+       value.</b></p>
+    <div class="words">Capacity · Tasks · Tickets · Hours</div>
+  </div>
+
+  <div class="qshift">
+    <div class="then"><span class="ql">Then, the customer asked</span>
+      <div class="qt">"How many people can you give us?"</div></div>
+    <div class="now"><span class="ql">Now, the customer asks</span>
+      <div class="qt">"Can you <span class="em">own the outcome</span>?"</div></div>
+  </div>
+
+  <div class="era era2">
+    <div class="k">The ground is moving</div>
+    <h3>Effort is no longer scarce — judgment is.</h3>
+    <p>Agents now write a growing share of the world's code — implementation is becoming something
+       you <b>direct</b>, not something you type. So customers stop asking for people who work on
+       tasks, and start looking for a partner who <b>takes responsibility for the product</b>:
+       the outcome, measured, owned.</p>
+    <div class="words">~Half of new code is AI-assisted · Contracts moving from hours to outcomes · Judgment at the gate</div>
+  </div>
+
+  <div class="era era3">
+    <div class="k">Our answer</div>
+    <h3>Elevate project performance.</h3>
+    <p><b>"Incorporate AI into the software development lifecycle in a way that elevates project
+       performance."</b> That's the NorthStar, and it has four pillars:
+       <span class="chips"><span class="chip c1">Higher Pace</span><span class="chip c2">Better Quality</span><span class="chip c3">Extended Value</span><span class="chip c5">A Team That Thrives</span></span></p>
+    <p>ELEVATE is the rehearsal. Every team gives an agent <b>one real job on one real project</b>,
+       holds the human gate, and proves the difference with a <b>measured number</b>. The strongest
+       of the night go to the 99x expert panel — then to customers as real offerings.</p>
+  </div>
+
+  <div class="tagclose">Agents deliver. <span class="em">You decide.</span></div>
+</section>
+
+</div>
 
 <!-- ========== TAB 1 · JUDGING & FORMAT ========== -->
 <div class="tab" id="tab-pack">
@@ -759,7 +830,7 @@
 
 <script>
 (function(){
-  var tabs = ["pack","guide","calendar","sessions","composition","marketing"];
+  var tabs = ["purpose","pack","guide","calendar","sessions","composition","marketing"];
   function show(name){
     tabs.forEach(function(t){
       document.getElementById("tab-"+t).hidden = (t !== name);
@@ -775,7 +846,7 @@
       var tab = el.closest(".tab");
       if (tab) show(tab.id.replace("tab-",""));
       el.scrollIntoView();
-    } else show("calendar");
+    } else show("purpose");
   }
   window.addEventListener("hashchange", route);
   route();
