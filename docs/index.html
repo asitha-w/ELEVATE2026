@@ -83,6 +83,11 @@
   .eq.now .ql{color:#E38E65}
   .eq.now .qt{font-size:clamp(26px,3.6vw,46px);font-weight:800;color:#F0EEE9;text-transform:uppercase;letter-spacing:.02em}
   .eq.now .qt .em{color:#E38E65}
+  .legs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:20px 0 6px}
+  .leg{border:1.5px solid #3A3656;border-radius:12px;padding:16px 20px}
+  .leg h4{font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#E38E65}
+  .leg p{font-size:14.5px;color:#B3AFC8;margin-top:8px}
+  .leg p b{color:#F0EEE9}
   .tagclose{margin:40px 0 10px;font-size:clamp(24px,3.2vw,40px);font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:#F0EEE9}
   .tagclose .em{color:#E38E65}
 
@@ -253,7 +258,7 @@
     <h3>Effort is no longer scarce — judgment is.</h3>
     <p>Agents now write a growing share of the world's code — implementation is becoming something
        you <b>direct</b>, not something you type. So customers stop asking for people who work on
-       tasks, and start looking for a partner who <b>takes responsibility for the product</b>:
+       tasks, and start looking for a <b style="color:#E38E65">partner</b> who <b>takes responsibility for the product</b>:
        the outcome, measured, owned.</p>
     <div class="words">~Half of new code is AI-assisted · Contracts moving from hours to outcomes · Judgment at the gate</div>
     <div class="eq now"><span class="ql">The customer now asks</span>
@@ -266,9 +271,21 @@
     <p><b>"Incorporate AI into the software development lifecycle in a way that elevates project
        performance."</b> That's the NorthStar, and it has four pillars:
        <span class="chips"><span class="chip c1">Higher Pace</span><span class="chip c2">Better Quality</span><span class="chip c3">Extended Value</span><span class="chip c5">A Team That Thrives</span></span></p>
-    <p>ELEVATE is the rehearsal. Every team gives an agent <b>one real job on one real project</b>,
-       holds the human gate, and proves the difference with a <b>measured number</b>. The strongest
-       of the night go to the 99x expert panel — then to customers as real offerings.</p>
+    <div class="legs">
+      <div class="leg"><h4>People</h4>
+        <p><b>Engineers who own outcomes</b> — understand the domain, hold the gate,
+           answer for the number.</p></div>
+      <div class="leg"><h4>Process</h4>
+        <p><b>An AI-first lifecycle (AI-DLC)</b> — development re-engineered so agents
+           deliver and humans decide.</p></div>
+      <div class="leg"><h4>Platform</h4>
+        <p><b>Governed agents at work</b> — deployed fast, guardrails and compliance built in,
+           like the Agent Control Plane we're building.</p></div>
+    </div>
+    <p>ELEVATE is the rehearsal of all three: every team gives an agent <b>one real job on one
+       real project</b>, holds the human gate, and proves the difference with a <b>measured
+       number</b>. The strongest of the night go to the 99x expert panel — then to customers as
+       real offerings.</p>
   </div>
 
   <div class="tagclose">Agents deliver. <span class="em">You decide.</span></div>
