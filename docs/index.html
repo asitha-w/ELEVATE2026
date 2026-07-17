@@ -412,9 +412,9 @@
 
   <h2 style="margin-top:44px"><span class="n">3</span>Pick your agent play</h2>
   <p class="lead">You don't have to invent the pattern — agents already earn their keep at every
-     lifecycle stage: review, testing, docs, incident response, adoption. Steal a proven play, aim
-     it at your pain, and put a <b>human decision gate</b> in front of production — that gate is
-     scorecard step 4.</p>
+     lifecycle stage, and the <a href="#refs">index at the end of this tab</a> lists the proven
+     plays. Steal one, aim it at your pain, and put a <b>human decision gate</b> in front of
+     production — that gate is scorecard step 4.</p>
 
 </section>
 
@@ -465,8 +465,9 @@
         <li><b>Failed-deployment recovery time</b> <span class="dir">↓</span></li>
         <li><b>Flaky-test rate</b> <span class="dir">↓</span></li>
       </ul>
-      <div class="tip"><b>Two-week trick:</b> a monthly CFR won't move in ten days — count events
-        instead: <i>"the gate caught 9 of 11 defects before merge."</i></div>
+      <div class="tip"><b>Two-week trick:</b> don't chase percentages that need months of data —
+        count what actually happened: <i>"our gate caught 9 of the 11 defects before they reached
+        the merge."</i></div>
     </div>
     <div class="pcard pg3">
       <h3>Extended Value</h3>
@@ -491,8 +492,9 @@
         <li><b>Interrupt &amp; on-call load</b> <span class="dir">↓</span></li>
         <li><b>"Would you keep it on Monday?"</b> <span class="dir">↑</span></li>
       </ul>
-      <div class="tip"><b>Two-week trick:</b> run the same 3 questions with the same people in week
-        one and on 6 Aug — change either and the delta means nothing.</div>
+      <div class="tip"><b>Two-week trick:</b> ask your team the same three questions twice — once
+        in week one, once the day before the event. Same questions, same people, both times —
+        that's what makes the two answers comparable.</div>
     </div>
   </div>
 
@@ -506,7 +508,8 @@
      lives on the real project, not a mock · your agent plausibly moves it · baseline taken
      <b>before</b> the agent · direction declared. <b>Not metrics:</b> tokens spent, prompts written,
      number of agents, lines of code generated — that's the machinery, and the machinery is never
-     the score.</div>
+     the score. <b>Pitch the growth, not the tool:</b> <i>"we elevated the team's happiness"</i>
+     beats <i>"we used the tools a lot"</i> every time.</div>
 </section>
 
 <section id="proofladder">
@@ -541,7 +544,18 @@
 </section>
 
 <section id="refs">
-  <h2><span class="n">📚</span>Where the metrics come from</h2>
+  <h2><span class="n">📚</span>The index</h2>
+  <p class="lead">Everything referenced above, parked in one place.</p>
+
+  <h3 style="font-size:20px;font-weight:800;margin-top:26px">Agent plays to steal, by lifecycle stage</h3>
+  <ul class="refs">
+    <li><b>Discovery</b> · competition monitoring · trend identification · UI prototyping</li>
+    <li><b>Construction</b> · analysis &amp; grooming · code review · test strategy &amp; testing · documentation</li>
+    <li><b>Operation</b> · bug watcher · cost optimizer · performance optimizer · incident response</li>
+    <li><b>Adoption</b> · feature adoption · usability improver</li>
+  </ul>
+
+  <h3 style="font-size:20px;font-weight:800;margin-top:32px">Where the metrics come from</h3>
   <p class="lead">Every family on the menu traces to a published framework — the same evidence base
      as the <a href="https://github.com/asitha-w/ELEVATE2026/blob/main/rubric/version-01/research-grounding.md">rubric's research grounding</a>.</p>
   <ul class="refs">
