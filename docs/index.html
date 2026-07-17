@@ -138,17 +138,6 @@
   .fs p{font-size:12.5px;color:#938FB0;margin-top:4px}
   .fa{align-self:center;color:#E38E65;font-weight:800;font-size:19px;flex:none}
   @media(max-width:760px){.fa{display:none}}
-  .chain{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:26px 0 6px}
-  .ch{border:2px solid #2E2B4B;border-radius:12px;padding:10px 13px;text-align:center;flex:1;min-width:112px}
-  .ch .cn{font-size:10.5px;font-weight:800;letter-spacing:.14em;color:#938FB0;text-transform:uppercase}
-  .ch h4{font-size:15px;font-weight:800;color:#F0EEE9;margin-top:2px}
-  .ch .pts{font-size:11.5px;color:#938FB0;margin-top:3px}
-  .ch.ev{border-color:#E38E65}
-  .ch.ev .cn{color:#E38E65}
-  .tot{align-self:center;flex:none;font-size:19px;font-weight:800;color:#0D0C24;background:#E38E65;
-       border-radius:12px;padding:14px 16px}
-  .chainkey{font-size:13.5px;color:#938FB0;margin:6px 0 0}
-  .chainkey b{color:#E38E65}
   .funnel{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:22px 0 8px}
   .fu{border:2px solid #2E2B4B;border-radius:999px;padding:8px 18px;font-size:14px;font-weight:700;color:#D9D6CF}
   .fu b{color:#F0EEE9}
@@ -175,21 +164,14 @@
   .brkline::before{content:"✕";position:absolute;top:-24px;left:-6px;color:#E05252;font-weight:800;font-size:15px}
   @media(max-width:980px){.stair{grid-template-columns:1fr 1fr;align-items:stretch}
     .sw .step{height:8px !important}.brkline{display:none}.ybh{margin-top:8px}}
-  .shiftarc{position:absolute;left:50%;bottom:95px;width:14%;height:85px;pointer-events:none}
-  .shiftlab{position:absolute;left:40.8%;bottom:56px;width:18.4%;text-align:center;font-size:11.5px;
-       font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F0EEE9;pointer-events:none}
-  @media(max-width:980px){.shiftarc,.shiftlab{display:none}}
-  .shift{border:2px solid #2E2B4B;border-radius:14px;margin:26px 0 8px;max-width:1500px;overflow:hidden}
-  .shift .row{display:grid;grid-template-columns:1fr 1.25fr;border-top:1.5px solid #2E2B4B}
-  .shift .row:first-child{border-top:none}
-  .shift .row div{padding:11px 20px;font-size:14.5px}
-  .shift .row div:first-child{color:#938FB0;border-right:1.5px solid #2E2B4B}
-  .shift .row div:last-child{color:#D9D6CF}
-  .shift .row div:last-child b{color:#F0EEE9}
-  .shift .hd div{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:12px 20px}
-  .shift .hd div:first-child{color:#938FB0}
-  .shift .hd div:last-child{color:#E38E65}
-  @media(max-width:700px){.shift .row{grid-template-columns:1fr}.shift .row div:first-child{border-right:none;padding-bottom:2px}}
+  .shiftwords{margin:40px 0 14px;display:flex;flex-direction:column;gap:18px}
+  .swrow{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+  .swrow .from{color:#6B6786;font-size:clamp(15px,1.8vw,22px)}
+  .swrow .arr{color:#E38E65;font-size:clamp(17px,2vw,24px)}
+  .swrow .to{color:#F0EEE9;font-size:clamp(17px,2.2vw,26px)}
+  .swrow .to .em{color:#E38E65}
+  .swrow.big .from{font-size:clamp(18px,2.4vw,30px)}
+  .swrow.big .arr,.swrow.big .to{font-size:clamp(20px,2.8vw,34px)}
   .wavecap{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin:12px 0 4px;max-width:1500px}
   .wavecap div{font-size:13.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
   .wavecap .low{color:#938FB0}
@@ -239,7 +221,7 @@
       <div class="tabs">
         <a href="#calendar" data-tab="calendar" class="on">Event Calendar</a>
         <a href="#guide" data-tab="guide">Team Guide</a>
-        <a href="#pack" data-tab="pack">Judging &amp; Format</a>
+        <a href="#pack" data-tab="pack">Evaluation</a>
         <a href="#sessions" data-tab="sessions">Sessions</a>
         <a href="#composition" data-tab="composition">Team Composition</a>
       </div></div>
@@ -255,20 +237,8 @@
 <!-- ========== TAB 1 · JUDGING & FORMAT ========== -->
 <div class="tab" id="tab-pack">
 
-<section id="evening">
-  <h2><span class="n">1</span>One floor, one evening, one round</h2>
-  <div class="note"><b>One floor, one round.</b> 349 Colombo Main Rd hosts all 29 teams (87 builders)
-     in a single sitting — <b>ten judges roam in five pairs and select the Judges' Pick 8</b>, who
-     close the night by teaching the whole company what they built.</div>
-  <p class="lead">Everyone builds on <b>one floor</b> — no room changes all evening. Five judge pairs
-     rove from 5 PM (mentor laps first, the scoring lap 7:00–8:00), the company joins at 8, the
-     <b>Judges' Pick 8</b> are announced at 8:15 and share their patterns from the stage end —
-     and the best entries go to the 99x expert panel, then to the customer as a real offering.
-     Timeline: <b>kickoff 5:00 · scoring lap 7:00–8:00 · dinner ~7:45 · picks 8:15 · sharing 8:20 · close ~8:55</b>.</p>
-</section>
-
 <section id="judges">
-  <h2><span class="n">2</span>For judges — the guide and the anchors</h2>
+  <h2><span class="n">1</span>For judges — the guide and the anchors</h2>
   <p class="lead">One scoring lap, and the anchors board: the NorthStar's four pillars —
      <span class="chips"><span class="chip c1">Higher Pace</span><span class="chip c2">Better Quality</span><span class="chip c3">Extended Value</span><span class="chip c5">A Team That Thrives</span></span>
      — what the pain looks like, the elevation path, and the proof that counts.</p>
@@ -293,26 +263,10 @@
 </section>
 
 <section id="scorecards">
-  <h2><span class="n">3</span>Scoring — six steps, in order</h2>
+  <h2><span class="n">2</span>Scoring — six steps, in order</h2>
   <p class="lead">One score per visit, <b>six steps in the order they're judged</b> — 0–5 each, out
      of 30. The offering step asks the value questions right at the table: a named Monday-morning
      user, the workflow it lands in, unit economics, the honest gap list.</p>
-  <div class="chain">
-    <div class="ch ev"><div class="cn">Step 1</div><h4>The pain</h4><div class="pts">0–5</div></div>
-    <div class="fa">→</div>
-    <div class="ch ev"><div class="cn">Step 2</div><h4>The mapping</h4><div class="pts">0–5</div></div>
-    <div class="fa">→</div>
-    <div class="ch"><div class="cn">Step 3</div><h4>The agent</h4><div class="pts">0–5</div></div>
-    <div class="fa">→</div>
-    <div class="ch"><div class="cn">Step 4</div><h4>The gate</h4><div class="pts">0–5</div></div>
-    <div class="fa">→</div>
-    <div class="ch ev"><div class="cn">Step 5</div><h4>The proof</h4><div class="pts">0–5</div></div>
-    <div class="fa">→</div>
-    <div class="ch ev"><div class="cn">Step 6</div><h4>The offering</h4><div class="pts">0–5</div></div>
-    <div class="tot">/30</div>
-  </div>
-  <p class="chainkey"><b>Orange steps = 20 of 30.</b> Pain, mapping, proof and offering carry the
-     majority — effectiveness and value outweigh the machinery by design.</p>
   <div class="funnel">
     <span class="fu"><b>29 teams</b> on the floor</span><span class="fa">→</span>
     <span class="fu">each pair shortlists <b>2</b></span><span class="fa">→</span>
@@ -374,13 +328,6 @@
     <div class="sw hot"><div class="wk">Wave 05</div><h4>Custom Agent Workforces</h4>
       <div class="ex">Build specialized agents for your enterprise</div><div class="step" style="height:206px"></div></div>
     <div class="brkline"></div>
-    <div class="shiftlab">the real shift</div>
-    <svg class="shiftarc" viewBox="0 0 100 112" preserveAspectRatio="none">
-      <defs><marker id="arh" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
-        <path d="M0,0 L6,3.5 L0,7" fill="none" stroke="#E38E65" stroke-width="1.6"/></marker></defs>
-      <path d="M 3 80 C 42 80, 58 72, 72 52 C 80 41, 84 37, 87 33" fill="none" stroke="#E38E65"
-            stroke-width="2.6" stroke-linecap="round" marker-end="url(#arh)"/>
-    </svg>
   </div>
   <div class="wavecap">
     <div class="low">Waves 1–3 · personal productivity — one developer
@@ -388,15 +335,15 @@
     <div class="high">Waves 4–5 · lifecycle automation — hybrid team (humans + agents)</div>
   </div>
 
-  <div class="note"><b>The real shift, in three lines:</b><br>
-     · <b>The project calls the agent</b> — it acts when a PR opens, a ticket lands, a build breaks;
-       not when you remember to prompt it.<br>
-     · It owns <b>a recurring job end-to-end, around the clock</b> — and you move from operator to
-       <b>supervisor at the gate</b>.<br>
-     · The gain moves from <b>one developer's speed</b> to <b>the whole project's flow</b>.</div>
-  <div class="note"><b>Your wave-4 build, concretely:</b> take the thing you already do with a copilot
-     when someone remembers to ask — <b>wire it to the event that should trigger it</b>, give it the
-     job end-to-end, and put yourself at the gate.</div>
+  <div class="shiftwords">
+    <div class="swrow big"><span class="from">You call the tool</span><span class="arr">→</span>
+      <span class="to">the project calls <span class="em">the agent</span></span></div>
+    <div class="swrow"><span class="from">Operator</span><span class="arr">→</span>
+      <span class="to">supervisor <span class="em">at the gate</span></span></div>
+    <div class="swrow"><span class="from">One developer's speed</span><span class="arr">→</span>
+      <span class="to">the whole <span class="em">project's flow</span></span></div>
+  </div>
+
 
   <h2 style="margin-top:44px"><span class="n">2</span>Find your surface — the four NorthStar pillars</h2>
   <p class="lead">The NorthStar: <b>"Incorporate AI into the software development lifecycle in a way
@@ -591,7 +538,6 @@
       <p>From idea to a running start — the <b>NorthStar &amp; agentic maturity</b>, a live
          <b>Xianix</b> example, and SWOT on your own agent play. ~1.5 hours; details on the
          <a href="#sessions">Sessions</a> tab.</p>
-      <div class="where">99x · 65 Walukarama Road, Colombo</div>
     </div>
     <div class="bc">
       <div class="date">Fri 31 Jul</div>
@@ -599,7 +545,6 @@
       <p>One week out: <b>engineering, delivery and senior leadership</b> on the agentic projects
          and challenges we've already seen. Bring your hardest questions — details on the
          <a href="#sessions">Sessions</a> tab.</p>
-      <div class="where">99x · 65 Walukarama Road, Colombo</div>
     </div>
     <div class="bc hero">
       <div class="date">Fri 7 Aug · 5–9 PM</div>
@@ -694,16 +639,6 @@
     <div class="s"><div class="v">60 min</div><div class="l">scoring lap (5 pairs, ~6 tables each)</div></div>
   </div>
 
-  <h2 style="font-size:22px;margin-top:34px">The mentor pool — 26 people</h2>
-  <p class="lead">Set aside from competition; ten of them rove as the five judge pairs (one pair per
-     route block for the scoring lap) and the pool runs mentor laps all evening.</p>
-  <div class="teamlist">
-    <span class="tchip ai">Agentic AI Platform · 8</span><span class="tchip ai">SuperOffice AI · 7</span>
-    <span class="tchip ai">THEPrep-AI · 3</span><span class="tchip ai">AI Hub · 2</span>
-    <span class="tchip ai">Cantor AI · 2</span><span class="tchip ai">Gture Bridgeston AI · 2</span>
-    <span class="tchip ai">Pengefix-AI · 1</span><span class="tchip ai">Sharefox-AI · 1</span>
-  </div>
-
   <h2 style="font-size:22px;margin-top:34px">The participating teams — all 29</h2>
   <p class="lead">One list, one column tells you if the team is a project standing alone (4+ members)
      or a domain combination of smaller projects. Every team fields 3 builders. BUS Research joins
@@ -741,6 +676,17 @@
     <tr><td>28</td><td><b>Products &amp; IoT</b></td><td><span class="tchip ai" style="font-size:12px;padding:3px 12px">Domain combined</span></td><td>Plaato · Grunt · Norwegian SubSea · Kahoot</td><td class="r">6</td></tr>
     <tr><td>29</td><td><b>Enablement</b></td><td><span class="tchip ai" style="font-size:12px;padding:3px 12px">Domain combined</span></td><td>BA · UX · QA Development · Internal Projects</td><td class="r">6</td></tr>
   </table>
+
+  <h2 style="font-size:22px;margin-top:34px">The mentor pool — 26 people</h2>
+  <p class="lead">Set aside from competition; ten of them rove as the five judge pairs (one pair per
+     route block for the scoring lap) and the pool runs mentor laps all evening.</p>
+  <div class="teamlist">
+    <span class="tchip ai">Agentic AI Platform · 8</span><span class="tchip ai">SuperOffice AI · 7</span>
+    <span class="tchip ai">THEPrep-AI · 3</span><span class="tchip ai">AI Hub · 2</span>
+    <span class="tchip ai">Cantor AI · 2</span><span class="tchip ai">Gture Bridgeston AI · 2</span>
+    <span class="tchip ai">Pengefix-AI · 1</span><span class="tchip ai">Sharefox-AI · 1</span>
+  </div>
+
 
   <div class="note"><b>Still open:</b> do the five <i>customer-AI</i> rows (THEPrep-AI, Cantor AI,
      Bridgeston AI, Pengefix-AI, Sharefox-AI) compete instead of joining the mentor pool (29 → ~31 teams)? ·
@@ -842,7 +788,7 @@
   </div>
 
   <h2 style="margin-top:44px"><span class="n">🎭</span>Backdrops</h2>
-  <p class="lead">Three stage backdrops — <b>7680×4320 (16:9)</b>. Backdrops are viewed from metres away,
+  <p class="lead">Four stage backdrops — <b>7680×4320 (16:9)</b>. Backdrops are viewed from metres away,
      so this one file prints crisp at 3 m wide (~65 dpi) and holds fine up to ~6 m (~32 dpi). Tell the
      printer: <i>scale proportionally, 16:9 source, standard bleed</i> — key content sits in the center 80%.
      Non-16:9 frame? Send the dimensions and we re-compose. Full guidance:
@@ -859,6 +805,12 @@
       <div class="cap"><b>The Decision</b> The tagline at poster scale — hollow "agents deliver",
         solid "you decide", a glowing gate line, the robot on the far side.
         <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/backdrops/backdrop-decide.png">print original</a></div>
+    </div>
+    <div class="mcard">
+      <div class="img dark"><img src="assets/backdrop-waves.jpg" alt="Backdrop — The 5 Waves ladder"></div>
+      <div class="cap"><b>Backdrop — The Waves</b> The 5-wave ladder in the site theme: build one level up,
+        you build here, the project calls the agent.
+        <a href="https://raw.githubusercontent.com/asitha-w/ELEVATE2026/main/marketing/backdrops/backdrop-waves.png">print original</a></div>
     </div>
     <div class="mcard">
       <div class="img dark"><img src="assets/backdrop-northstar.jpg" alt="Backdrop — The NorthStar"></div>
