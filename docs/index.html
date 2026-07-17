@@ -151,32 +151,6 @@
   .fstep h3{font-size:17.5px;font-weight:800;margin-top:8px}
   .fstep p{font-size:14px;color:#B3AFC8;margin-top:6px}
   .fstep p b{color:#D9D6CF}
-  .stair{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;align-items:end;margin:32px 0 4px;max-width:1500px}
-  .sw{display:flex;flex-direction:column;justify-content:flex-end}
-  .sw .wk{font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#E38E65}
-  .sw h4{font-size:16.5px;font-weight:800;color:#F0EEE9;margin-top:3px}
-  .sw .ex{font-size:13px;color:#938FB0;font-style:italic;margin-top:6px}
-  .sw .step{margin-top:14px;border-radius:10px 10px 0 0;background:#403C4A}
-  .sw.hot .step{background:#E38E65}
-  .ybh{align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
-       color:#0D0C24;background:#E38E65;border-radius:999px;padding:4px 12px;margin-bottom:10px}
-  .brkline{position:absolute;left:60%;bottom:0;width:2.5px;height:130px;background:#E05252;border-radius:2px}
-  .brkline::before{content:"✕";position:absolute;top:-24px;left:-6px;color:#E05252;font-weight:800;font-size:15px}
-  @media(max-width:980px){.stair{grid-template-columns:1fr 1fr;align-items:stretch}
-    .sw .step{height:8px !important}.brkline{display:none}.ybh{margin-top:8px}}
-  .shiftwords{margin:40px 0 14px;display:flex;flex-direction:column;gap:18px}
-  .swrow{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
-  .swrow .from{color:#6B6786;font-size:clamp(15px,1.8vw,22px)}
-  .swrow .arr{color:#E38E65;font-size:clamp(17px,2vw,24px)}
-  .swrow .to{color:#F0EEE9;font-size:clamp(17px,2.2vw,26px)}
-  .swrow .to .em{color:#E38E65}
-  .swrow.big .from{font-size:clamp(18px,2.4vw,30px)}
-  .swrow.big .arr,.swrow.big .to{font-size:clamp(20px,2.8vw,34px)}
-  .wavecap{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin:12px 0 4px;max-width:1500px}
-  .wavecap div{font-size:13.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-  .wavecap .low{color:#938FB0}
-  .wavecap .high{color:#E38E65}
-  .wavecap .broke{color:#E05252;text-transform:none;letter-spacing:0;font-weight:700;margin-top:4px}
   .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px;margin:28px 0 8px}
   .plc{border:2.5px solid;border-radius:16px;padding:24px 28px;background:#1A1738}
   .plc h3{font-size:24px;font-weight:800}
@@ -315,35 +289,9 @@
      broke. The real elevation is waves 4–5: <b>lifecycle automation by a hybrid team</b>. Build
      <b>one level up from where you work today</b>: a wave-4 build — an agent that owns a lifecycle
      stage, with a human at the gate.</p>
-  <div class="stair">
-    <div class="sw"><div class="wk">Wave 01</div><h4>Conversational AI</h4>
-      <div class="ex">ChatGPT, copy/paste</div><div class="step" style="height:26px"></div></div>
-    <div class="sw"><div class="wk">Wave 02</div><h4>AI-Native Editors</h4>
-      <div class="ex">Cursor, Windsurf, Antigravity</div><div class="step" style="height:66px"></div></div>
-    <div class="sw"><div class="wk">Wave 03</div><h4>CLI Coding Agents</h4>
-      <div class="ex">Claude Code, Copilot CLI</div><div class="step" style="height:106px"></div></div>
-    <div class="sw hot"><div class="ybh">▼ you build here</div><div class="wk">Wave 04</div>
-      <h4>Autonomous Lifecycle Agents</h4>
-      <div class="ex">GH Code Review, Google Code Assist</div><div class="step" style="height:156px"></div></div>
-    <div class="sw hot"><div class="wk">Wave 05</div><h4>Custom Agent Workforces</h4>
-      <div class="ex">Build specialized agents for your enterprise</div><div class="step" style="height:206px"></div></div>
-    <div class="brkline"></div>
-  </div>
-  <div class="wavecap">
-    <div class="low">Waves 1–3 · personal productivity — one developer
-      <div class="broke">✕ the broken promise: a fully automated SDLC</div></div>
-    <div class="high">Waves 4–5 · lifecycle automation — hybrid team (humans + agents)</div>
-  </div>
-
-  <div class="shiftwords">
-    <div class="swrow big"><span class="from">You call the tool</span><span class="arr">→</span>
-      <span class="to">the project calls <span class="em">the agent</span></span></div>
-    <div class="swrow"><span class="from">Operator</span><span class="arr">→</span>
-      <span class="to">supervisor <span class="em">at the gate</span></span></div>
-    <div class="swrow"><span class="from">One developer's speed</span><span class="arr">→</span>
-      <span class="to">the whole <span class="em">project's flow</span></span></div>
-  </div>
-
+  <figure><a href="assets/backdrop-waves.jpg"><img src="assets/backdrop-waves.jpg" alt="The 5 waves of AI tooling — build one level up, the project calls the agent"></a>
+  <figcaption><b>The ladder.</b> Waves 1–3 made one developer faster; the real shift starts at wave 4 —
+  the project calls the agent, and you hold the gate.</figcaption></figure>
 
   <h2 style="margin-top:44px"><span class="n">2</span>Find your surface — the four NorthStar pillars</h2>
   <p class="lead">The NorthStar: <b>"Incorporate AI into the software development lifecycle in a way
