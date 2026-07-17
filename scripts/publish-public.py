@@ -39,7 +39,8 @@ j = html.find("  </div>\n", html.find('data-tab="marketing"')) + len("  </div>\n
 if i < 0 or j < len("  </div>\n"):
     sys.exit("publish-public: tabgroups block not found")
 html = html[:i] + '''  <div class="tabs" style="margin-top:30px">
-    <a href="#calendar" data-tab="calendar" class="on">Event Calendar</a>
+    <a href="#purpose" data-tab="purpose" class="on">Purpose</a>
+    <a href="#calendar" data-tab="calendar">Event Calendar</a>
     <a href="#guide" data-tab="guide">Team Guide</a>
     <a href="#pack" data-tab="pack">Evaluation</a>
     <a href="#sessions" data-tab="sessions">Sessions</a>
