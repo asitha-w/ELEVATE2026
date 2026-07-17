@@ -67,26 +67,29 @@
   .mile.big::before{left:-40px}
 
   /* purpose */
-  .era{border:2px solid #2E2B4B;border-radius:16px;padding:32px 38px;margin:26px 0;max-width:1500px}
+  .eras{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:26px 0;align-items:stretch}
+  @media(max-width:1120px){.eras{grid-template-columns:1fr}}
+  .era{border:2px solid #2E2B4B;border-radius:16px;padding:26px 28px;display:flex;flex-direction:column}
   .era .k{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#938FB0}
-  .era h3{font-size:clamp(22px,2.6vw,30px);font-weight:800;margin-top:8px}
-  .era p{color:#B3AFC8;font-size:16px;margin-top:12px;max-width:1050px}
+  .era h3{font-size:clamp(20px,1.6vw,25px);font-weight:800;margin-top:8px}
+  .era p{color:#B3AFC8;font-size:15px;margin-top:12px}
   .era p b{color:#F0EEE9}
   .era .words{margin-top:16px;font-size:13.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#6B6786}
   .era2{background:#1A1738}
   .era3{border-color:#E38E65}
   .era3 .k{color:#E38E65}
-  .eq{margin-top:24px;padding-top:20px;border-top:1.5px solid #2E2B4B}
+  .eq{margin-top:auto;padding-top:20px;border-top:1.5px solid #2E2B4B}
+  .era .words{margin-bottom:20px}
   .eq .ql{display:block;font-size:12.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
   .eq.then .ql{color:#6B6786}
-  .eq.then .qt{font-size:clamp(20px,2.6vw,32px);font-weight:800;color:#6B6786;text-transform:uppercase;letter-spacing:.02em}
+  .eq.then .qt{font-size:clamp(19px,1.5vw,24px);font-weight:800;color:#6B6786;text-transform:uppercase;letter-spacing:.02em}
   .eq.now .ql{color:#E38E65}
-  .eq.now .qt{font-size:clamp(26px,3.6vw,46px);font-weight:800;color:#F0EEE9;text-transform:uppercase;letter-spacing:.02em}
+  .eq.now .qt{font-size:clamp(23px,2vw,32px);font-weight:800;color:#F0EEE9;text-transform:uppercase;letter-spacing:.02em}
   .eq.now .qt .em{color:#E38E65}
-  .legs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:20px 0 6px}
-  .leg{border:1.5px solid #3A3656;border-radius:12px;padding:16px 20px}
+  .legs{display:flex;flex-direction:column;gap:12px;margin:18px 0 6px}
+  .leg{border:1.5px solid #3A3656;border-radius:12px;padding:13px 18px}
   .leg h4{font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#E38E65}
-  .leg p{font-size:14.5px;color:#B3AFC8;margin-top:8px}
+  .leg p{font-size:14px;color:#B3AFC8;margin-top:6px}
   .leg p b{color:#F0EEE9}
   .tagclose{margin:40px 0 10px;font-size:clamp(24px,3.2vw,40px);font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:#F0EEE9}
   .tagclose .em{color:#E38E65}
@@ -242,6 +245,7 @@
   <p class="lead">One evening, 25+ teams, one purpose — and it starts with what our customers
      are really asking for.</p>
 
+  <div class="eras">
   <div class="era era1">
     <div class="k">The ground we stood on</div>
     <h3>We built software by selling effort.</h3>
@@ -286,6 +290,7 @@
        real project</b>, holds the human gate, and proves the difference with a <b>measured
        number</b>. The strongest of the night go to the 99x expert panel — then to customers as
        real offerings.</p>
+  </div>
   </div>
 
   <div class="tagclose">Agents deliver. <span class="em">You decide.</span></div>
