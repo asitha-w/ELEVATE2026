@@ -67,7 +67,10 @@
   .mile.big::before{left:-40px}
 
   /* purpose */
-  .eras{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:26px 0;align-items:stretch}
+  .eras{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:26px 0;align-items:end}
+  .era1{min-height:430px}
+  .era2{min-height:560px}
+  @media(max-width:1120px){.era1,.era2{min-height:0}}
   @media(max-width:1120px){.eras{grid-template-columns:1fr}}
   .era{border:2px solid #2E2B4B;border-radius:16px;padding:26px 28px;display:flex;flex-direction:column}
   .era .k{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#938FB0}
