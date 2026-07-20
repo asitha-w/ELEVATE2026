@@ -222,6 +222,10 @@
   .epcard h3{font-size:17.5px;font-weight:800;color:#F0EEE9;display:flex;align-items:center;gap:10px}
   .epcard h3 .num{display:inline-flex;flex:none;width:27px;height:27px;border-radius:50%;background:#D08770;color:#0D0C24;
        font-size:13.5px;align-items:center;justify-content:center}
+  .epcard h3 .ttl{flex:1}
+  .epcard h3 .ex{flex:none;border:1.5px solid #3A3656;border-radius:999px;padding:3px 11px;font-size:10.5px;
+       font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#938FB0;text-decoration:none}
+  .epcard h3 .ex:hover{border-color:#D08770;color:#D08770}
   .epcard .owns{font-size:14.5px;color:#D9D6CF;margin-top:12px}
   .epcard .owns b{color:#F0EEE9}
   .epcard .row{font-size:13.5px;color:#938FB0;margin-top:9px;line-height:1.5}
@@ -272,13 +276,13 @@
     <div class="tgroup"><div class="tglab pub">For everyone</div>
       <div class="tabs">
         <a href="#purpose" data-tab="purpose" class="on">Purpose</a>
-        <a href="#faq" data-tab="faq">FAQ</a>
         <a href="#calendar" data-tab="calendar">Event Calendar</a>
         <a href="#guide" data-tab="guide">Team Guide</a>
         <a href="#extended" data-tab="extended">Extended Guide</a>
         <a href="#pack" data-tab="pack">Evaluation</a>
         <a href="#sessions" data-tab="sessions">Sessions</a>
         <a href="#composition" data-tab="composition">Teams</a>
+        <a href="#faq" data-tab="faq">FAQ</a>
       </div></div>
     <div class="tgroup"><div class="tglab org">Organisers</div>
       <div class="tabs orgt">
@@ -776,11 +780,11 @@
   <div class="epgrid">
     <div class="epcard" id="ep1">
       <div class="st">Requirement</div>
-      <h3><span class="num">1</span>Ticket triage &amp; tracker actions</h3>
+      <h3><span class="num">1</span><span class="ttl">Ticket triage &amp; tracker actions</span>
+         <a class="ex" href="https://siliconangle.com/2026/05/06/atlassian-opens-teamwork-graph-pushes-rovo-agentic-execution-team-26/"
+            title="In the wild: Atlassian Rovo agents in Jira — 5M monthly users, millions of workflow actions automated. (vendor-reported)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> picking up assigned tickets, acting on comment mentions,
          routing and updating issues inside your tracker — every action logged.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://siliconangle.com/2026/05/06/atlassian-opens-teamwork-graph-pushes-rovo-agentic-execution-team-26/">Atlassian
-         Rovo agents in Jira</a> — 5M monthly users, millions of workflow actions automated (vendor-reported).</div>
       <div class="row"><b>The gate:</b> a human assigns or mentions the agent; admins govern what it may
          touch; the audit log keeps it honest.</div>
       <div class="foot"><span class="chip c1">Higher Pace</span>
@@ -789,12 +793,11 @@
 
     <div class="epcard" id="ep2">
       <div class="st">Solutioning</div>
-      <h3><span class="num">2</span>Backlog grooming &amp; duplicate hunting</h3>
+      <h3><span class="num">2</span><span class="ttl">Backlog grooming &amp; duplicate hunting</span>
+         <a class="ex" href="https://arxiv.org/html/2507.10753v1"
+            title="In the wild: measured with senior PMs at two Nordic consultancies — 12–21 duplicates found vs 7–12 by humans, 45% faster per duplicate, satisfaction 2–4/10 → 7–9/10. (measured, published study)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> sweeping the backlog for duplicates and stale issues,
          drafting the merges and rewrites for approval.</div>
-      <div class="row"><b>In the wild:</b> measured with senior PMs at two Nordic consultancies — the agent
-         found <a href="https://arxiv.org/html/2507.10753v1">12–21 duplicates where humans found 7–12</a>,
-         45% faster per duplicate, and satisfaction jumped from 2–4/10 to 7–9/10 (measured, published study).</div>
       <div class="row"><b>The gate:</b> nothing changes in the tracker until a human accepts each suggestion.</div>
       <div class="foot"><span class="chip c5">A Team That Thrives</span>
          <a class="m" href="#menu">metric: chore hours ↓ · team pulse ↑</a></div>
@@ -802,13 +805,11 @@
 
     <div class="epcard" id="ep3">
       <div class="st">Construction</div>
-      <h3><span class="num">3</span>In-session agentic coding</h3>
+      <h3><span class="num">3</span><span class="ttl">In-session agentic coding</span>
+         <a class="ex" href="https://www.anthropic.com/research/claude-code-expertise"
+            title="In the wild: across ~400,000 real Claude Code sessions, people held ~70% of planning decisions while the agent carried ~80% of execution. Skilled steering separates 33% verified success from 15%. (vendor telemetry)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> the execution loop — writing, fixing, testing — while you
          keep the plan.</div>
-      <div class="row"><b>In the wild:</b> across
-         <a href="https://www.anthropic.com/research/claude-code-expertise">~400,000 real Claude Code
-         sessions</a>, people held ~70% of planning decisions while the agent carried ~80% of execution
-         (vendor telemetry). Skilled steering is what separates 33% verified success from 15%.</div>
       <div class="row"><b>The gate:</b> you — steering in session, reviewing everything that lands.</div>
       <div class="foot"><span class="chip c1">Higher Pace</span>
          <a class="m" href="#menu">metric: lead time for a real task ↓</a></div>
@@ -816,12 +817,11 @@
 
     <div class="epcard" id="ep4">
       <div class="st">Construction</div>
-      <h3><span class="num">4</span>Async issue-to-PR agents</h3>
+      <h3><span class="num">4</span><span class="ttl">Async issue-to-PR agents</span>
+         <a class="ex" href="https://docs.github.com/copilot/concepts/agents/coding-agent/about-coding-agent"
+            title="In the wild: GitHub Copilot coding agent, Cursor background agents, OpenAI Codex, Claude Code remote tasks — none auto-merge by default. (documented)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> a whole ticket — assigned like a teammate, works unattended
          in a sandbox, hands back a pull request.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://docs.github.com/copilot/concepts/agents/coding-agent/about-coding-agent">GitHub
-         Copilot coding agent</a>, Cursor background agents, OpenAI Codex, Claude Code remote tasks
-         (documented — and none of them auto-merge by default).</div>
       <div class="row"><b>The gate:</b> the pull request. The agent never merges its own work.</div>
       <div class="foot"><span class="chip c1">Higher Pace</span>
          <a class="m" href="#menu">metric: task cycle time ↓</a></div>
@@ -829,13 +829,11 @@
 
     <div class="epcard" id="ep5">
       <div class="st">Quality</div>
-      <h3><span class="num">5</span>First-pass code review</h3>
+      <h3><span class="num">5</span><span class="ttl">First-pass code review</span>
+         <a class="ex" href="https://blog.cloudflare.com/ai-code-review/"
+            title="In the wild: Cloudflare's in-house reviewer ran 131,000+ reviews across 48,000 merge requests in its first 30 days, 0.6% human-override rate. Copilot code review and CodeRabbit are the common off-the-shelf picks. (engineering blog)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> the first full review of every merge request — security,
          performance, quality — before a human ever looks at the diff.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://blog.cloudflare.com/ai-code-review/">Cloudflare's
-         in-house reviewer</a> ran 131,000+ reviews across 48,000 merge requests in its first 30 days, with
-         a 0.6% human-override rate (engineering blog). Copilot code review and CodeRabbit are the common
-         off-the-shelf picks.</div>
       <div class="row"><b>The gate:</b> tiered — advisory comments flow through; a critical finding blocks
          the merge until a human overrides, and every override is logged.</div>
       <div class="foot"><span class="chip c2">Better Quality</span>
@@ -844,12 +842,11 @@
 
     <div class="epcard" id="ep6">
       <div class="st">Quality</div>
-      <h3><span class="num">6</span>The regression suite, owned</h3>
+      <h3><span class="num">6</span><span class="ttl">The regression suite, owned</span>
+         <a class="ex" href="https://qaskills.sh/blog/qa-wolf-ai-testing-guide-2026"
+            title="In the wild: QA Wolf's AI-plus-human managed service — teams gate releases on a suite they never author themselves. (documented)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> creating <i>and maintaining</i> the end-to-end test suite —
          triaging flakes and fixing broken tests as the app changes, not generating tests once.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://qaskills.sh/blog/qa-wolf-ai-testing-guide-2026">QA
-         Wolf's AI-plus-human managed service</a> (documented) — teams gate releases on a suite they never
-         author themselves.</div>
       <div class="row"><b>The gate:</b> your team approves the coverage and owns the release decision on
          pass / fail.</div>
       <div class="foot"><span class="chip c2">Better Quality</span>
@@ -858,13 +855,11 @@
 
     <div class="epcard" id="ep7">
       <div class="st">Deployment</div>
-      <h3><span class="num">7</span>Dependency &amp; upgrade toil</h3>
+      <h3><span class="num">7</span><span class="ttl">Dependency &amp; upgrade toil</span>
+         <a class="ex" href="https://docs.renovatebot.com/key-concepts/automerge/"
+            title="In the wild: Renovate and Dependabot auto-merging behind branch protection. (documented in the platform docs)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> detecting outdated or vulnerable dependencies, opening the
          PRs, and merging the safe ones on its own — behind your required checks.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://docs.renovatebot.com/key-concepts/automerge/">Renovate</a>
-         and Dependabot auto-merging behind
-         <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request">branch
-         protection</a> (documented in the platform docs).</div>
       <div class="row"><b>The gate:</b> the policy is the gate — you define which checks must pass and
          which update types may self-merge.</div>
       <div class="foot"><span class="chip c1">Higher Pace</span>
@@ -873,12 +868,12 @@
 
     <div class="epcard" id="ep8">
       <div class="st">Run &amp; Support</div>
-      <h3><span class="num">8</span>First-response incident investigation</h3>
+      <h3><span class="num">8</span><span class="ttl">First-response incident investigation</span>
+         <a class="ex" href="https://incident.io/blog/ai-sre-agent-definition"
+            title="In the wild: incident.io's AI SRE posts its investigation within a minute or two of an incident firing. (vendor-reported)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> the first minutes of an incident — parallel diagnostic
          queries, hypotheses, and a written findings report in the incident channel before you've even
          context-switched.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://incident.io/blog/ai-sre-agent-definition">incident.io's
-         AI SRE</a> posts its investigation within a minute or two of an incident firing (vendor-reported).</div>
       <div class="row"><b>The gate:</b> the responding engineer makes the diagnosis call — the agent never
          closes incidents or pushes fixes.</div>
       <div class="foot"><span class="chip c5">A Team That Thrives</span>
@@ -887,13 +882,11 @@
 
     <div class="epcard" id="ep9">
       <div class="st">Run &amp; Support</div>
-      <h3><span class="num">9</span>First-line support resolution</h3>
+      <h3><span class="num">9</span><span class="ttl">First-line support resolution</span>
+         <a class="ex" href="https://www.intercom.com/help/en/articles/8205718-fin-ai-agent-outcomes"
+            title="In the wild: Intercom's Fin and Decagon report resolution rates from 42% to 70%+ at companies like Notion and Rippling. (vendor case studies — treat the exact numbers as theirs)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> answering and closing the support conversations it can —
          end-to-end — and escalating the rest.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://www.intercom.com/help/en/articles/8205718-fin-ai-agent-outcomes">Intercom's
-         Fin</a> and <a href="https://decagon.ai/case-studies/notion">Decagon</a> report resolution rates
-         from 42% to 70%+ at companies like Notion and Rippling (vendor case studies — treat the exact
-         numbers as theirs).</div>
       <div class="row"><b>The gate:</b> escalation to a human — and humans own the knowledge the agent
          answers from.</div>
       <div class="foot"><span class="chip c3">Extended Value</span>
@@ -902,11 +895,11 @@
 
     <div class="epcard" id="ep10">
       <div class="st">Continuous Feedback</div>
-      <h3><span class="num">10</span>Feedback mining at scale</h3>
+      <h3><span class="num">10</span><span class="ttl">Feedback mining at scale</span>
+         <a class="ex" href="https://www.enterpret.com/customers/notion"
+            title="In the wild: Enterpret at Notion cut the monthly user-insights report from two weeks to three days. (vendor case study)">eg</a></h3>
       <div class="owns"><b>The agent owns:</b> ingesting and categorizing every channel of user feedback —
          tickets, reviews, NPS, calls — and surfacing the trends worth acting on.</div>
-      <div class="row"><b>In the wild:</b> <a href="https://www.enterpret.com/customers/notion">Enterpret at
-         Notion</a> cut the monthly user-insights report from two weeks to three days (vendor case study).</div>
       <div class="row"><b>The gate:</b> product leadership makes the roadmap call — the agent never
          prioritizes.</div>
       <div class="foot"><span class="chip c3">Extended Value</span>
@@ -1220,7 +1213,7 @@
 
 <script>
 (function(){
-  var tabs = ["purpose","faq","pack","guide","extended","calendar","sessions","composition","marketing"];
+  var tabs = ["purpose","calendar","guide","extended","pack","sessions","composition","faq","marketing"];
   function show(name){
     tabs.forEach(function(t){
       document.getElementById("tab-"+t).hidden = (t !== name);
