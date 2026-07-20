@@ -232,6 +232,21 @@
   .epcard .foot .m{font-weight:700;font-size:13px}
   .epcard .st{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#938FB0;margin-bottom:8px}
 
+  /* faq */
+  .faqgroup{margin:28px 0}
+  .faqgroup .glab{font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#D08770;margin:0 0 12px 2px}
+  .faq{border:2px solid #2E2B4B;border-radius:12px;background:#1A1738;margin-bottom:12px;overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:16px 22px;font-size:15.5px;font-weight:700;color:#F0EEE9;
+       display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";flex:none;color:#D08770;font-size:20px;font-weight:800}
+  .faq[open] summary::after{content:"–"}
+  .faq[open] summary{border-bottom:1.5px solid #2E2B4B}
+  .faq .a{padding:4px 22px 20px;font-size:14.5px;color:#D9D6CF;line-height:1.6}
+  .faq .a b{color:#F0EEE9}
+  .faq .a p{margin:0 0 10px}
+  .faq .a p:last-child{margin-bottom:0}
+
   /* marketing */
   .mkt{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin:30px 0 10px}
   .mcard{border:2px solid #2E2B4B;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
@@ -257,6 +272,7 @@
     <div class="tgroup"><div class="tglab pub">For everyone</div>
       <div class="tabs">
         <a href="#purpose" data-tab="purpose" class="on">Purpose</a>
+        <a href="#faq" data-tab="faq">FAQ</a>
         <a href="#calendar" data-tab="calendar">Event Calendar</a>
         <a href="#guide" data-tab="guide">Team Guide</a>
         <a href="#extended" data-tab="extended">Extended Guide</a>
@@ -329,6 +345,117 @@
   </div>
 
   <div class="tagclose">Agents deliver. <span class="em">You decide.</span></div>
+</section>
+
+</div>
+
+<!-- ========== TAB 0b · FAQ ========== -->
+<div class="tab" id="tab-faq" hidden>
+
+<section id="faqtop">
+  <h2><span class="n">❓</span>Questions we've actually been asked</h2>
+  <p class="lead" style="max-width:700px">Same questions kept coming up on the runway, so here they are in
+     one place — from what this event even is, to what you need on the table on the night.</p>
+
+  <div class="faqgroup">
+    <div class="glab">What this is</div>
+
+    <details class="faq" open>
+      <summary>Is ELEVATE actually a hackathon?</summary>
+      <div class="a">
+        <p>Yes, in the ways that matter — one night, small teams, real building, a panel that picks
+           winners at the end.</p>
+        <p>What's different is <b>what "winning" means</b>. A traditional hackathon rewards how much
+           you could execute under time pressure — raw <b>speed of execution</b>. Agents have made
+           execution speed cheap for everyone now; <a href="#purposetop">effort is no longer the scarce
+           thing</a> — judgment is. So ELEVATE doesn't score how fast you typed. It scores whether you
+           gave an agent <b>one real, recurring job</b> on your real project, put a <b>human decision
+           gate</b> in front of it, and can prove — with a number — that it moved the needle. Same
+           night, same energy, a different scoreboard.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>If not speed, what exactly gets scored?</summary>
+      <div class="a">
+        <p>Six steps, in order, on one card per team (<a href="#scorecards">the floor scorecard</a>):
+           <b>the pain</b> — is it real and costly · <b>the mapping</b> — pain → declared pillar →
+           measure · <b>the agent</b> — human as operator or as approver · <b>the gate</b> — where the
+           human decides, shown firing · <b>the proof</b> — did the declared pillar actually move ·
+           <b>the offering</b> — a named user, workflow and cost story beyond the demo. /30 total —
+           see <a href="#judges">how the evening flows</a>.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>What counts as "genuinely agentic" — and what doesn't?</summary>
+      <div class="a">
+        <p>The qualifying bar, checked before a team is even ranked: <b>genuinely agentic</b> — a
+           prompt chain you drive step by step is not an agent, it should be running multi-step work
+           with you closer to approver than operator · <b>ran on the real project</b> — rough is fine,
+           mock data is not · <b>pillar declared</b> — you're only scored on the pillar you name.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faqgroup">
+    <div class="glab">What you actually need to deliver</div>
+
+    <details class="faq">
+      <summary>What do we need to bring to the table on the night?</summary>
+      <div class="a">
+        <p>One team, one metric — a <b>declared pillar</b>, one agent doing one recurring job
+           end-to-end with a <b>human gate</b> in front of production, and <b>two numbers</b>: a
+           baseline from before, and what the agent drove it to. Bring both, not one. The full
+           walk-through is on the <a href="#onemetric">Team Guide</a>; for the concrete catalog of jobs
+           teams elsewhere already hand to agents, see the <a href="#lifeline">Extended Guide</a>.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Do we need a real customer deployment to score well?</summary>
+      <div class="a">
+        <p>No. <a href="#proofladder">Projected is fine — no metric is not.</a> If production wasn't
+           reachable in your two weeks, show the math behind your projection candidly. What costs a
+           team is asserting movement with nothing behind it — not the absence of a live customer.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>We don't know where to start — how do we pick our pain?</summary>
+      <div class="a">
+        <p>Walk your own project stage by stage and ask what recurs, what it costs, and who feels it —
+           <a href="#elevatepath">the four moves</a> on the Team Guide. If that's still too abstract,
+           the <a href="#lifeline">Extended Guide</a> lays your project's lifecycle out left to right
+           with ten spots teams elsewhere already hand to agents — steal the one that hurts your
+           project most.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faqgroup">
+    <div class="glab">The night, and after</div>
+
+    <details class="faq">
+      <summary>What's the timeline before and on the night?</summary>
+      <div class="a">
+        <p>Two ramp-up sessions carry every team in — Fri 24 Jul (idea to a running start) and Fri 31
+           Jul (the panel) — then event day, Fri 7 Aug, 5–9 PM, one floor, judges' scoring lap
+           7:00–8:00, Judges' Pick 8 announced 8:15. Full detail on <a href="#calendar">Event
+           Calendar</a>.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>What happens to the Judges' Pick 8 — and to everyone else?</summary>
+      <div class="a">
+        <p>The eight teach the whole company what they built, the same evening. The strongest go on to
+           the 99x expert panel — and from there, toward real customer offerings (that's exactly what
+           scorecard step six, "the offering," is checking for). Every team leaves with 2–3 written
+           notes from judges, Judges' Pick 8 or not.</p>
+      </div>
+    </details>
+  </div>
 </section>
 
 </div>
@@ -1093,7 +1220,7 @@
 
 <script>
 (function(){
-  var tabs = ["purpose","pack","guide","extended","calendar","sessions","composition","marketing"];
+  var tabs = ["purpose","faq","pack","guide","extended","calendar","sessions","composition","marketing"];
   function show(name){
     tabs.forEach(function(t){
       document.getElementById("tab-"+t).hidden = (t !== name);
