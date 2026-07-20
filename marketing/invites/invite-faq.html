@@ -1,0 +1,65 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:2400px;height:3000px;overflow:hidden}
+  body{width:1200px;height:1500px;overflow:hidden;transform:scale(2);transform-origin:0 0;
+       font-family:"Avenir Next","Segoe UI","Helvetica Neue",system-ui,sans-serif;color:#fff;
+       background:#120e1b;position:relative;display:flex;flex-direction:column;align-items:center;
+       padding:66px 80px 52px;text-align:center}
+  .glow1{position:absolute;left:-220px;top:-180px;width:900px;height:900px;border-radius:50%;
+        background:radial-gradient(circle,rgba(122,79,192,.45) 0%,rgba(122,79,192,0) 65%)}
+  .glow2{position:absolute;right:-260px;bottom:-200px;width:1000px;height:1000px;border-radius:50%;
+        background:radial-gradient(circle,rgba(90,56,168,.38) 0%,rgba(90,56,168,0) 65%)}
+  .dots{position:absolute;right:56px;top:64px;width:104px;height:104px;opacity:.5;
+       background-image:radial-gradient(circle,#9a7ad6 2.5px,transparent 3px);background-size:26px 26px}
+  .waves{position:absolute;left:0;bottom:0;width:300px;height:210px;opacity:.85}
+  .robot{position:absolute;right:-26px;bottom:0;width:302px}
+  .robot img{width:100%;display:block}
+  .inner{position:relative;display:flex;flex-direction:column;align-items:center;flex:1;width:100%}
+  .logo{width:620px;margin-top:6px}
+  .logo img{width:100%;display:block}
+  .star{width:44px;height:44px;margin-top:42px;background:linear-gradient(180deg,#e8ddff,#8d63e0);
+       clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);
+       filter:drop-shadow(0 0 14px rgba(150,110,230,.8))}
+  .invite{margin-top:22px;font-size:24px;font-weight:700;letter-spacing:.55em;text-transform:uppercase;color:#b9a3e8;text-indent:.55em}
+  .bar{margin-top:34px;background:#7a5cd6;color:#fff;font-size:43px;font-weight:800;letter-spacing:.12em;
+      text-transform:uppercase;padding:22px 54px;clip-path:polygon(3% 0,100% 0,97% 100%,0 100%);line-height:1.25;max-width:1020px}
+  .sub2{margin-top:16px;font-size:26px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#cfc3ea}
+  .body{margin-top:36px;font-size:25px;line-height:1.7;color:#d9d0ee;max-width:880px;letter-spacing:.03em}
+  .body b{color:#fff}
+  .agenda{margin-top:32px;width:100%;max-width:880px;text-align:left}
+  .ag{display:flex;gap:24px;align-items:flex-start;padding:18px 8px}
+  .ag + .ag{border-top:1.5px solid rgba(154,122,214,.35)}
+  .ag .n{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:24px;font-weight:800;color:#9a7ad6;flex-shrink:0;padding-top:3px}
+  .ag .t{font-size:26px;font-weight:800;letter-spacing:.02em}
+  .ag .d{font-size:22px;color:#cfc3ea;line-height:1.5;margin-top:4px}
+  .ag .d b{color:#fff}
+  .when{margin-top:48px;border:3px solid #7a5cd6;border-radius:18px;padding:26px 54px;background:rgba(18,14,27,.72);max-width:660px;position:relative;z-index:2}
+  .when .d{font-size:34px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .when .v{font-size:22px;color:#cfc3ea;margin-top:9px;letter-spacing:.06em}
+  .tag{margin-top:auto;font-size:23px;font-weight:800;letter-spacing:.42em;text-transform:uppercase;color:#9a7ad6;text-indent:.42em;position:relative;z-index:2}
+</style></head><body>
+  <div class="glow1"></div><div class="glow2"></div><div class="dots"></div>
+  <svg class="waves" viewBox="0 0 300 210" fill="none">
+    <path d="M0 210 A 46 46 0 0 1 46 164" stroke="#7a5cd6" stroke-width="3" opacity=".9"/>
+    <path d="M0 210 A 86 86 0 0 1 86 124" stroke="#7a5cd6" stroke-width="3" opacity=".7"/>
+    <path d="M0 210 A 126 126 0 0 1 126 84" stroke="#7a5cd6" stroke-width="3" opacity=".5"/>
+    <path d="M0 210 A 166 166 0 0 1 166 44" stroke="#7a5cd6" stroke-width="3" opacity=".34"/>
+    <path d="M0 210 A 206 206 0 0 1 206 4" stroke="#7a5cd6" stroke-width="3" opacity=".2"/>
+  </svg>
+  <div class="robot"><img src="../logos/elevate-robot.png" alt=""></div>
+  <div class="inner">
+    <div class="logo"><img src="../logos/elevate-logo-white-purple.png" alt="ELEVATE 2026"></div>
+    <div class="star"></div>
+    <div class="invite">Everyone — your questions answered</div>
+    <div class="bar">ELEVATE Hackathon — FAQ</div>
+    <div class="sub2">Same night. A different scoreboard.</div>
+    <div class="agenda">
+      <div class="ag"><div class="n">✦</div><div><div class="t">Is this really a hackathon?</div><div class="d">Traditional hackathons score raw execution speed. Agents made that cheap for everyone — so ELEVATE scores <b>judgment</b> instead: one real job, a human gate, a proven number.</div></div></div>
+      <div class="ag"><div class="n">✦</div><div><div class="t">Do we need a live customer deployment?</div><div class="d">No. <b>Projected is fine — no metric is not.</b> If production wasn't reachable, show the math behind your number, candidly.</div></div></div>
+      <div class="ag"><div class="n">✦</div><div><div class="t">What do we actually bring to the table?</div><div class="d">One team, one metric: a declared pillar, one agent-owned job, a human gate, and <b>two numbers</b> — baseline and driven.</div></div></div>
+    </div>
+    <div class="when"><div class="d">Fri 7 Aug 2026 · 5–9 PM</div><div class="v">99x · 349 Colombo Main Rd, Colombo 00300</div></div>
+    <div class="tag">Agents deliver. You decide.</div>
+  </div>
+</body></html>
