@@ -3,7 +3,7 @@
 
 Base repo (this one) is the source of truth. This script:
   1. builds a public index.html: Organisers tab group + Marketing & Printables tab
-     stripped, tab-bar grouping removed (plain five tabs), cross-references to the
+     stripped, tab-bar grouping removed (plain public tabs), cross-references to the
      stripped tab neutralized, footer pointed at the org repo;
   2. copies only the assets the public page references;
   3. pushes the build to the org repo's gh-pages branch (Pages serves it).
@@ -41,16 +41,18 @@ if i < 0 or j < len("  </div>\n"):
 html = html[:i] + '''  <div class="tabs" style="margin-top:30px">
     <a href="#purpose" data-tab="purpose" class="on">Purpose</a>
     <a href="#calendar" data-tab="calendar">Event Calendar</a>
-    <a href="#guide" data-tab="guide">Team Guide</a>
+    <a href="#guide" data-tab="guide">Guide</a>
+    <a href="#extended" data-tab="extended">Walkthrough</a>
     <a href="#pack" data-tab="pack">Evaluation</a>
     <a href="#sessions" data-tab="sessions">Sessions</a>
     <a href="#composition" data-tab="composition">Teams</a>
+    <a href="#faq" data-tab="faq">FAQ</a>
   </div>
 ''' + html[j:]
 
 # 2. drop the Marketing & Printables tab entirely
 html = cut(html, '<!-- ========== TAB 6 · MARKETING ==========', "\n<footer", "marketing tab", keep_end=True)
-html = sub(html, '"composition","marketing"', '"composition"', "js tabs array")
+html = sub(html, '"composition","faq","marketing"', '"composition","faq"', "js tabs array")
 
 # 3. neutralize references to the stripped tab
 html = sub(html, ''' Both print boards are on the <a href="#printables">Marketing &amp; Printables</a> tab.''', "", "judges boards ref")
