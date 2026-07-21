@@ -44,7 +44,6 @@ html = html[:i] + '''  <div class="tabs" style="margin-top:30px">
     <a href="#guide" data-tab="guide">Guide</a>
     <a href="#extended" data-tab="extended">Walkthrough</a>
     <a href="#pack" data-tab="pack">Evaluation</a>
-    <a href="#sessions" data-tab="sessions">Sessions</a>
     <a href="#composition" data-tab="composition">Teams</a>
     <a href="#faq" data-tab="faq">FAQ</a>
   </div>
