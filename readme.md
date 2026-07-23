@@ -1,7 +1,7 @@
 # ELEVATE 2026
 
 99x agentic-AI hackathon — judging rubric & event pack.
-**⚠️ Postponed — new dates to be announced. Event: date TBA · 5–9 PM · 99x, 349 Colombo Main Rd, Colombo 00300 — one floor, one round, Judges' Pick 8.**
+**Event: Fri 14 Aug 2026 · 5–9 PM · 99x, 349 Colombo Main Rd, Colombo 00300 — one floor, one round, Judges' Pick 8. (Moved from 7 Aug.)**
 
 - 🌐 **Site:** https://asitha-w.github.io/ELEVATE2026/ — four tabs:
   **The Pack** (rubric & event graphics) · **Event Calendar** (runway to event day) ·
